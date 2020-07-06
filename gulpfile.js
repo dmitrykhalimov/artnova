@@ -30,8 +30,8 @@ gulp.task("css", function () {
     .pipe(postcss([
       autoprefixer()
     ]))
-    .pipe(csso())
-    .pipe(rename("style-min.css"))
+    //.pipe(csso())
+    .pipe(rename("style.css"))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
@@ -87,7 +87,7 @@ gulp.task("sprite", function() {
 gulp.task("html", function () {
   return gulp.src("source/*.html")
     /*.pipe(posthtml()) */
-    .pipe(htmlmin({ collapseWhitespace: true }))
+    /*.pipe(htmlmin({ collapseWhitespace: true }))*/
     .pipe(gulp.dest("build"));
 })
 
