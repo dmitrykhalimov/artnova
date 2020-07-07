@@ -12,17 +12,17 @@
     <header class="page-header">
       <nav class="main-nav">
         <ul class="main-nav__list">
-          <li class="main-nav__item"><a href="#">Главная</a></li>
-          <li class="main-nav__item"><a href="#">Преподаватели</a></li>
-          <li class="main-nav__item"><a href="#">Уроки</a>
+          <li class="main-nav__item"><a>Главная</a></li>
+          <li class="main-nav__item"><a href="teachers.html">Преподаватели</a></li>
+          <li class="main-nav__item"><a>Уроки</a>
             <ul class="main-nav__submenu">
-              <li class="main-nav__submenu-item"><a href="#">Уроки вокала</a></li>
-              <li class="main-nav__submenu-item"><a href="#">Уроки гитары</a></li>
-              <li class="main-nav__submenu-item"><a href="#">Вокал для детей</a></li>
+              <li class="main-nav__submenu-item"><a href="vocal.html">Уроки вокала</a></li>
+              <li class="main-nav__submenu-item"><a href="guitar.html">Уроки гитары</a></li>
+              <li class="main-nav__submenu-item"><a href="vocal-kids.html">Вокал для детей</a></li>
             </ul>
           </li>
-          <li class="main-nav__item"><a href="#">Видео</a></li>
-          <li class="main-nav__item"><a href="#">Контакты</a></li>
+          <li class="main-nav__item"><a href="video.html">Видео</a></li>
+          <li class="main-nav__item"><a href="contacts.html">Контакты</a></li>
         </ul>
       </nav>
       <div class="page-header__logo">
@@ -69,21 +69,21 @@
         <h2 class="teachers__heading">Мы готовы научить вас</h2>
         <ul class="teachers__list">
           <li class="teachers__item">
-            <a href = "#">
+            <a href="teachers.html">
               <img src="https://dummyimage.com/262x262" alt="Фотография Натальи Фесенко">
               <h3 class="teachers__name">Наталья Фесенко</h3>
               <p class="teachers__info">директор студии педагог по вокалу</p>
             </a>
           </li>
           <li class="teachers__item">
-            <a href = "#">
+            <a href="teachers.html">
               <img src="https://dummyimage.com/262x262" alt="Фотография Александра Гущина">
               <h3 class="teachers__name">Александр Гущин</h3>
               <p class="teachers__info">педагог по гитаре</p>
             </a>
           </li>
           <li class="teachers__item">
-            <a href = "#">
+            <a href="teachers.html">
               <img src="https://dummyimage.com/262x262" alt="Фотография Елизаветы Никитной">
               <h3 class="teachers__name">Елизавета Никитана</h3>
               <p class="teachers__info">педагог по вокалу</p>
@@ -113,15 +113,15 @@
         <ul class="begin__list">
           <li class="begin__item">
             <h3 class="begin__name">Уроки вокала</h3>
-            <a class="begin__button button" href="#">Узнать больше</a>
+            <a class="begin__button button" href="vocal.html">Узнать больше</a>
           </li>
           <li class="begin__item">
             <h3 class="begin__name">Уроки гитары</h3>
-            <a class="begin__button button" href="#">Узнать больше</a>
+            <a class="begin__button button" href="guitar.html">Узнать больше</a>
           </li>
           <li class="begin__item">
             <h3 class="begin__name">Вокал для детей</h3>
-            <a class="begin__button button" href="#">Узнать больше</a>
+            <a class="begin__button button" href="vocal-kids.html">Узнать больше</a>
           </li>
         </ul>
       </section>
@@ -149,8 +149,54 @@
         </div>
         <div class="photos__arrow photos__arrow--right"></div>
       </section>
+      <section class="consult">
+        <h2 class="consult__heading">Записаться на консультацию</h2>
+        <form class="consult__form" method="post" autocomplete="off" action="https://echo.htmlacademy.ru/courses">
+          <label class="consult__label" for="name">Ваше имя</label>
+          <input class="consult__input" type="text" id="name" name="name" placeholder="Ваше имя" required>
+          <label class="consult__label" for="phone">Номер телефона</label>
+          <input class="consult__input" type="tel" id="phone" name="phone" placeholder="Номер телефона (не забыть поставить ограничения" required>
+          <button class="consult__submit" type="submit">Отправить</button>
+          <input class="consult__acceptance" type="checkbox">
+          <a class="consult__text" href="#">Даю согласие на обработку персональных данных</a>
+        </form>
+      </section>
+      <div class="bottom-decorative"></div>
     </main>
-    <footer class="page-footer"></footer>
-
+    <footer class="page-footer">
+      <ul class="footer-menu">
+        <li class="footer-menu__item"><a>Главная</a></li>
+        <li class="footer-menu__item"><a href="teachers.html">Преподаватели</a></li>
+        <li class="footer-menu__item"><a href="vocal.html">Уроки вокала</a></li>
+        <li class="footer-menu__item"><a href="guitar.html">Уроки гитары</a></li>
+        <li class="footer-menu__item"><a href="vocal-kids.html">Вокал для детей</a></li>
+        <li class="footer-menu__item"><a href="video.html">Видео</a></li>
+        <li class="footer-menu__item"><a href="contacts.html">Контакты</a></li>
+      </ul>
+      <div class="page-footer__conatiner">
+        <img width="152" hegiht="172" src="https://dummyimage.com/193x193" alt="Логотип студии Арт Нова">
+        <ul class="page-header__social-list">
+          <li class="page-header__social-item page-header__social-item--vk"><a href="#">Вконтакте</a></li>
+          <li class="page-header__social-item page-header__social-item--in"><a href="#">Instagram</a></li>
+          <li class="page-header__social-item page-header__social-item--fb"><a href="#">Facebook</a></li>
+          <li class="page-header__social-item page-header__social-item--tw"><a href="#"> Twitter</a></li>
+        </ul>
+      </div>
+      <ul class="contacts">
+        <li class="contacts__item">
+          <h3 class="contacts__heading">Телефон</h3>
+          <p class="contacts__text">8-911-976-43-18</p>
+        </li>
+        <li class="contacts__item">
+          <h3 class="contacts__heading">Адрес</h3>
+          <p class="contacts__text">ст. м. "Кировский завод"</p>
+          <p class="contacts__text">пр. Стачк, д.72, ауд. 258-259</p>
+        </li>
+        <li class="contacts__item">
+          <h3 class="contacts__heading">Напишите нам</h3>
+          <p class="contacts__text contacts__text--mail"><a href="mailto:director@artnova-spb.ru">director@artnova-spb.ru</a></p>
+        </li>
+      </ul>
+    </footer>
   </body>
 </html>
