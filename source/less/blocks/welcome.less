@@ -1,25 +1,49 @@
 .welcome {
-  margin: 0 auto;
-  width: 1350px;
-  min-height: 595px;
+  box-sizing: border-box;
+
   display: flex;
   flex-direction: flex-start;
   justify-content: space-between;
   align-items: flex-start;
+
+  margin: 0 auto;
+  padding-left: 80px;
+  padding-right: 80px;
+
+  width: 1350px;
+  min-height: 595px;
+
   .outline(orange);
 }
 
+.welcome img {
+  margin-top: 106px;
+}
 
 .welcome__container {
+  box-sizing: border-box;
+  margin-top: 155px;
+  padding-top: 19px;
+  padding-left: 29px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  width: 800px;
+
   background: @red;
   color: white;
   font-size: 21px;
   line-height: 24px;
-  width: 600px;
 }
 
 .welcome__heading {
+  .list-reset;
   font-size: 21px;
   line-height: 24px;
   font-weight: normal;
+  letter-spacing: -0.2px;
+}
+
+.welcome__text {
+  padding-top: 0;
+  letter-spacing: -0.1px;
 }

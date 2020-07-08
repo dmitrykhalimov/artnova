@@ -1,3 +1,6 @@
+.main-nav {
+  margin-right: 108px;
+}
 .main-nav__list,
 .main-nav__submenu-list {
   list-style: none;
@@ -6,9 +9,11 @@
 .main-nav__list {
   display: flex;
   justify-content: space-between;
+
+  margin-top: 108px;
   padding: 0;
-  .outline(green);
-  width: 500px;
+  //.outline(green);
+  width: 438px;
 
 }
 
@@ -18,12 +23,33 @@
   color: @black;
 }
 
+.main-nav__item--lessons {
+  position: relative;
+}
 .main-nav__submenu-list {
+  box-sizing: border-box;
+
   display: none;
+
+  position: absolute;
+  left: -9px;
+  top: 20px;
+
+  padding-left: 10px;
+  padding-bottom: 3px;
+
+  width: 155px;
+
   background-color: @red;
 }
 
+.main-nav__submenu-item {
+  padding-top: 6px;
+  padding-bottom: 3px;
+}
+
 .main-nav__submenu-item a {
+  letter-spacing: -0.2px;
   color: white;
 }
 
