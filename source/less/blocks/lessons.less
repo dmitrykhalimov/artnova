@@ -3,10 +3,35 @@
   font-weight: normal;
   font-size: 26px;
   line-height: 29px;
+  .outline;
+  margin: 0 auto;
+  width: 1350px;
+  min-height: 448px;
 }
 
+.lessons__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  .outline(purple);
+  min-height: 428px;
+}
+
+.lessons__container:nth-child(2) {
+  background-color: @gray;
+  flex-direction: row-reverse;
+}
 .lessons__price-heading {
   font-weight: normal;
   font-size: 26px;
   line-height: 29px;
+}
+
+.lessons__prices {
+  .outline(orange);
+  min-height: 160px;
+}
+
+.lessons__price-heading {
+  margin: 0;
 }
