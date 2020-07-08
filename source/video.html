@@ -14,26 +14,49 @@
         <ul class="main-nav__list">
           <li class="main-nav__item"><a href="index.html">Главная</a></li>
           <li class="main-nav__item"><a href="teachers.html">Преподаватели</a></li>
-          <li class="main-nav__item"><a>Уроки</a>
-            <ul class="main-nav__submenu">
-              <li class="main-nav__submenu-item"><a href="vocal.html">Уроки вокала</a></li>
-              <li class="main-nav__submenu-item"><a href="guitar.html">Уроки гитары</a></li>
-              <li class="main-nav__submenu-item"><a href="vocal-kids.html">Вокал для детей</a></li>
-            </ul>
+          <li class="main-nav__item main-nav__item--lessons">
+            <div class="main-nav__submenu">
+              <a>Уроки</a>
+              <ul class="main-nav__submenu-list">
+                <li class="main-nav__submenu-item"><a href="vocal.html">Уроки вокала</a></li>
+                <li class="main-nav__submenu-item"><a href="guitar.html">Уроки гитары</a></li>
+                <li class="main-nav__submenu-item"><a href="vocal-kids.html">Вокал для детей</a></li>
+              </ul>
+            </div>
           </li>
           <li class="main-nav__item"><a>Видео</a></li>
           <li class="main-nav__item"><a href="contacts.html">Контакты</a></li>
         </ul>
       </nav>
       <div class="page-header__logo">
-        <img width="150" height="172" src="https://dummyimage.com/150x172" alt="Сайт вокальной студии Арт-Нова">
+        <img width="150" height="172" src="img/logo-header.svg" alt="Сайт вокальной студии Арт-Нова">
       </div>
       <div class="page-header__social-nav">
         <ul class="page-header__social-list">
-          <li class="page-header__social-item page-header__social-item--vk"><a href="#">Вконтакте</a></li>
-          <li class="page-header__social-item page-header__social-item--in"><a href="#">Instagram</a></li>
-          <li class="page-header__social-item page-header__social-item--fb"><a href="#">Facebook</a></li>
-          <li class="page-header__social-item page-header__social-item--tw"><a href="#"> Twitter</a></li>
+          <li class="page-header__social-item page-header__social-item--vk">
+            <a href="https://vk.com/vokalnayastudiyaspb">
+              <img width="37" height="37" src="img/icon-vk-header.svg">
+              <span class="visually-hidden">Вконтакте</span>
+            </a>
+          </li>
+          <li class="page-header__social-item page-header__social-item--in">
+            <a href="https://www.instagram.com/artnova_studio/">
+              <img width="37" height="37" src="img/icon-in-header.svg">
+              <span class="visually-hidden">Instagram</span>
+            </a>
+          </li>
+          <li class="page-header__social-item page-header__social-item--fb">
+            <a href="#">
+              <img width="37" height="37" src="img/icon-fb-header.svg">
+              <span class="visually-hidden">Facebook</span>
+            </a>
+          </li>
+          <li class="page-header__social-item page-header__social-item--tw">
+            <a href="https://twitter.com/ndirector">
+              <img width="37" height="37" src="img/icon-tw-header.svg">
+              <span class="visually-hidden">Twitter</span>
+            </a>
+          </li>
         </ul>
       </div>
     </header>
@@ -58,11 +81,11 @@
       <section class="consult">
         <h2 class="consult__heading">Записаться на консультацию</h2>
         <form class="consult__form" method="post" autocomplete="off" action="https://echo.htmlacademy.ru/courses">
-          <label class="consult__label" for="name">Ваше имя</label>
-          <input class="consult__input" type="text" id="name" name="name" placeholder="Ваше имя" required>
-          <label class="consult__label" for="phone">Номер телефона</label>
+          <label class="consult__label visually-hidden" for="name">Ваше имя</label>
+          <input class="consult__input " type="text" id="name" name="name" placeholder="Ваше имя" required>
+          <label class="consult__label visually-hidden" for="phone">Номер телефона</label>
           <input class="consult__input" type="tel" id="phone" name="phone" placeholder="Номер телефона (не забыть поставить ограничения" required>
-          <button class="consult__submit" type="submit">Отправить</button>
+          <button class="consult__submit button" type="submit">Отправить</button>
           <input class="consult__acceptance" type="checkbox">
           <a class="consult__text" href="#">Даю согласие на обработку персональных данных</a>
         </form>
@@ -76,16 +99,38 @@
         <li class="footer-menu__item"><a href="vocal.html">Уроки вокала</a></li>
         <li class="footer-menu__item"><a href="guitar.html">Уроки гитары</a></li>
         <li class="footer-menu__item"><a href="vocal-kids.html">Вокал для детей</a></li>
-        <li class="footer-menu__item"><a>Видео</a></li>
+        <li class="footer-menu__item"><a href="video.html">Видео</a></li>
         <li class="footer-menu__item"><a href="contacts.html">Контакты</a></li>
       </ul>
       <div class="page-footer__conatiner">
-        <img width="152" hegiht="172" src="https://dummyimage.com/193x193" alt="Логотип студии Арт Нова">
-        <ul class="page-header__social-list">
-          <li class="page-header__social-item page-header__social-item--vk"><a href="#">Вконтакте</a></li>
-          <li class="page-header__social-item page-header__social-item--in"><a href="#">Instagram</a></li>
-          <li class="page-header__social-item page-header__social-item--fb"><a href="#">Facebook</a></li>
-          <li class="page-header__social-item page-header__social-item--tw"><a href="#"> Twitter</a></li>
+        <img width="152" hegiht="172" src="img/logo-footer.svg" alt="Логотип студии Арт Нова">
+        <ul class="page-footer__social-list">
+          <li class="page-footer__social-item page-footer__social-item--vk">
+            <a href="https://vk.com/vokalnayastudiyaspb">
+              <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M18.7601 0.371124C28.8661 0.371124 37.0664 8.62917 37.0664 18.6774C37.0664 28.7834 28.8661 37.0415 18.7601 37.0415C8.71184 37.0415 0.453796 28.7834 0.453796 18.6774C0.453796 8.62917 8.71184 0.371124 18.7601 0.371124ZM23.7842 16.6562C22.3982 16.6562 21.0701 16.6562 19.6841 16.6562C19.6841 15.4435 19.5109 13.9998 19.9729 12.8448C20.3193 12.0363 21.2433 12.2096 21.994 12.2096C22.5715 12.2096 23.149 12.2096 23.7265 12.2096C23.7265 10.9391 23.7265 9.61087 23.7265 8.28266C21.994 8.05166 19.9151 7.8207 18.2404 8.45594C15.4107 9.55316 14.8332 12.7293 15.1797 16.714H11.5415V20.9296H15.1219V29.3609H19.6263V20.9874H22.9757C23.2067 19.5437 23.4955 18.0999 23.7842 16.6562V16.6562ZM18.7601 3.31627C27.2491 3.31627 34.179 10.2461 34.179 18.6774C34.179 27.1665 27.2491 34.0963 18.7601 34.0963C10.271 34.0963 3.34123 27.1665 3.34123 18.6774C3.34123 10.2461 10.271 3.31627 18.7601 3.31627Z" fill="#FEFEFE"/>
+              </svg>
+              <span class="visually-hidden">Вконтакте</span>
+            </a>
+          </li>
+          <li class="page-footer__social-item page-footer__social-item--in">
+            <a href="https://www.instagram.com/artnova_studio/">
+              <img width="37" height="37" src="img/icon-in-header.svg">
+              <span class="visually-hidden">Instagram</span>
+            </a>
+          </li>
+          <li class="page-footer__social-item page-footer__social-item--fb">
+            <a href="#">
+              <img width="37" height="37" src="img/icon-fb-header.svg">
+              <span class="visually-hidden">Facebook</span>
+            </a>
+          </li>
+          <li class="page-footer__social-item page-footer__social-item--tw">
+            <a href="https://twitter.com/ndirector">
+              <img width="37" height="37" src="img/icon-tw-header.svg">
+              <span class="visually-hidden">Twitter</span>
+            </a>
+          </li>
         </ul>
       </div>
       <ul class="contacts">
@@ -96,7 +141,7 @@
         <li class="contacts__item">
           <h3 class="contacts__heading">Адрес</h3>
           <p class="contacts__text">ст. м. "Кировский завод"</p>
-          <p class="contacts__text">пр. Стачк, д.72, ауд. 258-259</p>
+          <p class="contacts__text">пр. Стачек, д.72, ауд. 258-259</p>
         </li>
         <li class="contacts__item">
           <h3 class="contacts__heading">Напишите нам</h3>
