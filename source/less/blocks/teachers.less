@@ -1,11 +1,17 @@
 .teachers {
-  .outline(yellow);
+  //.outline(yellow);
   margin: 0 auto;
   width: 1350px;
-  min-height: 588px;
+  min-height: 495px;
+  padding-top: 90px;
+  letter-spacing: -0.2px;
+  background: url("../../img/bg-section.svg") 4px 0 no-repeat;
 }
 
 .teachers__list {
+  margin: 0 auto;
+  width: 1050px;
+  padding: 0;
   display: flex;
   justify-content: space-between;
   list-style: none;
@@ -13,6 +19,7 @@
 
 .teachers__heading {
   margin: 0;
+  margin-bottom: 60px;
   text-align: center;
   font-weight: normal;
   font-size: 42px;
@@ -21,6 +28,8 @@
 }
 
 .teachers__name {
+  .list-reset;
+  margin-top: 3px;
   font-size: 26px;
   font-weight: normal;
   line-height: 29px;
@@ -28,13 +37,15 @@
   color: @black;
 }
 .teachers__item {
-  .outline;
+  //.outline;
 }
+
 .teachers__info {
+  margin: 0 auto;
   text-align: center;
   font-size: 21px;
   line-height: 24px;
   color: @black;
-  .outline;
   width: 200px;
+  //.outline;
 }

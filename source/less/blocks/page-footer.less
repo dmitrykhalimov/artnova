@@ -1,14 +1,29 @@
 .page-footer {
+  box-sizing: border-box;
   background-color: @black;
-  .outline();
+  //.outline();
   margin: 0 auto;
   width: 1350px;
-  min-height: 405px;
+  min-height: 355px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+  padding-top: 50px;
 }
 
-
+.page-footer__social-list {
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 35px;
+  //.outline;
+}
 .page-footer__social-list img {
   .outline(green);
+}
+
+.page-footer__container {
+  text-align: center;
+  //.outline(yellow);
+  margin-left: 240px;
+  width: 200px;
 }

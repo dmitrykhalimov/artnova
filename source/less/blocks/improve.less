@@ -1,14 +1,27 @@
 .improve {
-  .outline();
+  //.outline;
   margin: 0 auto;
   width: 1350px;
-  min-height: 605px;
+  min-height: 525px;
+  padding-top: 86px;
+  letter-spacing: -0.2px;
+  background: url("../../img/bg-section.svg") 4px 0 no-repeat;
 }
 
 .improve__list {
+  padding: 0;
+  padding-top: 50px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   list-style: none;
+  width: 1280px;
+}
+
+.improve__item {
+  //.outline;
+  width: 450px;
+  padding-top: 180px;
 }
 
 .improve__heading {
@@ -21,6 +34,8 @@
 }
 
 .improve__type {
+  margin-top: 30px;
+  margin-bottom: 14px;
   text-align: center;
   font-weight: normal;
   font-size: 31px;
@@ -29,8 +44,21 @@
 }
 
 .improve__text {
+  .list-reset;
   font-size: 26px;
   line-height: 29px;
   text-align: center;
   color: @black;
+}
+
+.improve__item--body {
+  background: url("../../img/improve-body.svg") 52% 2% no-repeat;
+}
+
+.improve__item--brain {
+  background: url("../../img/improve-brain.svg") 52% 2% no-repeat;
+}
+
+.improve__item--you {
+  background: url("../../img/improve-you.svg") 52% 2% no-repeat;
 }

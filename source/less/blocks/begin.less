@@ -1,19 +1,27 @@
 .begin {
-  .outline;
-  margin: 0 auto;
+  background: url("../../img/bg-section.svg") 4px 0 no-repeat;
+  //.outline;
+
   width: 1350px;
-  min-height: 628px;
+
+  margin: 0 auto;
+  padding-top: 83px;
+
+  letter-spacing: -0.2px;
 }
 
 .begin__list {
+  margin-bottom: 0;
+  padding: 0;
   display: flex;
   justify-content: space-between;
-  background-color: gray;
+
   list-style: none;
 }
 
 .begin__heading {
   margin: 0;
+  padding-bottom: 30px;
   text-align: center;
   font-size: 42px;
   font-weight: normal;
@@ -21,10 +29,30 @@
   color: @red;
 }
 
+.begin__item {
+  margin: 0 auto;
+  width: 100%;
+  background-color: gray;
+  min-height: 450px;
+  //.outline(green);
+}
+
 .begin__name {
+  //.outline;
   color: @white;
   font-size: 42px;
   font-weight: normal;
   line-height: 47px;
   text-align: center;
+  margin-top: 195px;
+  margin-bottom: 118px;
+}
+
+.begin__button {
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+  display: block;
+  width: 174px;
 }

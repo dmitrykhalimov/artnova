@@ -1,31 +1,55 @@
 .consult {
-  .outline(green);
-  background-color: @red;
+  //.outline(green);
+  background: url("../../img/bg-section.svg") 4px 0 no-repeat,
+  url("../../img/bg-footer.svg") 4px 100% no-repeat;
   color: @white;
-  .outline();
+  //.outline();
   margin: 0 auto;
+  padding-top: 95px;
   width: 1350px;
-  min-height: 520px;
+  min-height: 425px;
 }
 
 .consult__heading {
   margin: 0;
+  padding-top: 35px;
+  padding-bottom: 35px;
   text-align: center;
   font-weight: normal;
   font-size: 42px;
   line-height: 47px;
+  background-color: @red;
+}
+
+.consult__form {
+  background-color: @red;
+  //.outline(blue);
+  text-align: center;
+  padding-top: 18px;
 }
 
 .consult__input {
+  box-sizing: border-box;
+  border: 0;
   font-family: "FuturaBookC", sans-serif;;
   font-size: 26px;
   line-height: 29px;
-  color: @black;
+  color: @red;
+  height: 45px;
+  width: 485px;
+  margin-right: 22px;
+  padding-top: 1px;
+  padding-left: 15px;
+}
+
+.consult__input::placeholder {
+  color: @red;
 }
 
 .consult__submit {
   opacity: 1;
   background-color: @red;
+  width: 172px;
 }
 
 .consult__text {
@@ -33,4 +57,29 @@
   text-decoration: underline;
   font-size: 26px;
   line-height: 29px;
+}
+
+.consult__acceptance {
+  position: relative;
+  //.outline(purple);
+  margin-top: 40px;
+  padding-top: 10px;
+  padding-bottom: 60px;
+}
+
+.consult__acceptance-input + label::before {
+  box-sizing: border-box;
+  position: absolute;
+  top: 10px;
+  left: 384px;
+  content: '';
+  width: 36px;
+  height: 36px;
+  background-color: white;
+}
+
+.consult__text {
+  //.outline(green);
+  display: block;
+  padding-left: 75px;
 }

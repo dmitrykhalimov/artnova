@@ -1,8 +1,36 @@
 .photos {
-  .outline(tomato);
+  position: relative;
+  //.outline(tomato);
   margin: 0 auto;
   width: 1350px;
   min-height: 252px;
   overflow: hidden;
 }
 
+.photos__carousel {
+  display: flex;
+}
+
+.photos__carousel img {
+  .outline(purple);
+}
+
+.photos__arrow::before {
+  top: 0;
+  position: absolute;
+  content: '';
+  width: 70px;
+  height: 193px;
+
+}
+
+.photos__arrow--left::before {
+  left: 0;
+  background: rgba(173, 255, 47, 0.2)
+  url("../img/icon-arrow-left.svg") 100% 50% no-repeat;
+}
+.photos__arrow--right::before {
+  right: 0;
+  background: rgba(173, 255, 47, 0.2)
+  url("../img/icon-arrow-right.svg") 0 50% no-repeat;
+}
