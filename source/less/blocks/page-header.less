@@ -1,11 +1,18 @@
 .page-header {
-  box-sizing: border-box;
-  margin: 0 auto;
-  min-height: 230px;
-  width: 1350px;
   display: flex;
-  //.outline(wheat);
+  flex-direction: space-between;
+
+  box-sizing: border-box;
+
+
+  margin: 0 auto;
   padding-left: 54px;
+
+  min-height: 230px;
+  max-width: 1350px;
+
+
+  .outline(wheat);
 }
 
 .page-header__social-list {
@@ -24,4 +31,5 @@
 .page-header__logo {
   padding-top: 28px;
   //.outline(purple);
+  flex-shrink: 0;
 }

@@ -1,4 +1,5 @@
 .video {
+  box-sizing: border-box;
   font-style: normal;
   font-weight: normal;
   font-size: 26px;
@@ -6,9 +7,27 @@
   margin: 0 auto;
   width: 1350px;
   min-height: 1480px;
-  .outline(purple);
+  //.outline(purple);
+  padding-left: 64px;
+  padding-top: 38px;
 }
 
 .video__text {
   margin: 0;
+  margin-bottom: 30px;
+}
+
+.video__items {
+  //.outline;
+  width: 1220px;
+  padding-top: 20px;
+}
+
+.video__items img:nth-child(3n),
+.video__items img:nth-child(3n - 1) {
+  margin-left: 20px;
+}
+
+.video__items img {
+  margin-bottom: 65px;
 }

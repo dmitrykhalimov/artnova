@@ -1,17 +1,26 @@
 .teacher {
-  .outline(wheat);
+  box-sizing: border-box;
+  //.outline(wheat);
   margin: 0 auto;
   width: 1350px;
-  min-height: 603px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: flex-start;
+  padding-left: 72px;
+  padding-top: 31px;
+  padding-bottom: 41px;
 }
 
+.teacher img {
+  flex-shrink: 0;
+  margin-right: 40px;
+  margin-top: 6px;
+}
 
 
 .teacher__name,
 .teacher__title b {
+  .list-reset;
   font-weight: normal;
   font-style: normal;
   font-size: 26px;
@@ -19,8 +28,44 @@
   color: @red;
 }
 
+.teacher__title {
+  margin: 0;
+}
+
 .teacher__education,
 .teacher__about {
   font-size: 21px;
   line-height: 24px;
+}
+
+.teacher__education {
+  margin-top: 18px;
+  padding-right: 235px;
+  letter-spacing: -0.1px;
+
+}
+
+.teacher__about {
+  margin-top: 18px;
+  letter-spacing: -0.1px;
+}
+
+.teacher__video {
+  //.outline;
+}
+
+.teacher__video img {
+  //.outline;
+}
+
+section.teacher:nth-child(4),
+section.teacher:nth-child(5) {
+  background: url("../../img/bg-section.svg") -4px 0 no-repeat;
+  padding-top: 96px;
+  padding-right: 0;
+}
+
+section.teacher:nth-child(4) .teacher__education,
+section.teacher:nth-child(5) .teacher__education{
+  padding-right: 120px;
 }
