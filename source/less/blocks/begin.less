@@ -33,7 +33,7 @@
   margin: 0 auto;
   width: 100%;
   min-height: 450px;
-  .outline(green);
+  //.outline(green);
 }
 
 .begin__item--guitar::before {
@@ -52,6 +52,38 @@
   filter: contrast(55%);
 }
 
+.begin__item--vocal::before {
+  position: absolute;
+  display: block;
+  content: '';
+  //.outline(orange);
+  background: url("../img/bg-main-begin-vocal@1x.jpg") 0 0 no-repeat;
+  background-size: 100%;
+
+  width: 450px;
+  height: 450px;
+
+  z-index: -1;
+
+  filter: contrast(55%);
+}
+
+.begin__item--kids::before {
+  position: absolute;
+  display: block;
+  content: '';
+  //.outline(orange);
+  background: url("../img/bg-main-begin-kids@1x.jpg") 0 0 no-repeat;
+  background-size: 100%;
+
+  width: 450px;
+  height: 450px;
+
+  z-index: -1;
+
+  filter: contrast(55%);
+}
+
 .begin__item:hover::before {
   filter: contrast(80%) hue-rotate(-5deg);
 }
@@ -59,17 +91,17 @@
 .begin__button {
   box-sizing: border-box;
 }
+
 .begin__item:hover .begin__button {
   background: rgba(255, 255, 255, 0.7);
   color: black;
- // border-color: rgba(255, 255, 255, 0.5);
- border: 0;
+  border: 2px solid rgba(255, 255, 255, 0.7);;
 }
 
 .begin__button:active {
   border-color: rgba(255, 255, 255, 0.5);
-
 }
+
 
 .begin__name {
   //.outline;
