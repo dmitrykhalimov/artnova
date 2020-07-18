@@ -24,7 +24,9 @@
     "posthtml-include": "^1.4.3",
     "readable-stream": "^3.6.0",
     "stylelint": "10.1.x",
-    "stylelint-config-htmlacademy": "0.1.x"
+    "stylelint-config-htmlacademy": "0.1.x",
+    "eslint": "4.16.0",
+    "eslint-config-htmlacademy": "0.4.x"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
