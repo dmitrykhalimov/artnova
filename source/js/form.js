@@ -3,6 +3,11 @@
 var SUCCESS_TEXT = 'Спасибо, мы свяжемся с Вами в ближайшее время!';
 var ERROR_TEXT = 'Произошла непредвиденная ошибка!';
 
+$(function(){
+  $("#phone").mask("+7(999) 999-99-99");
+});
+
+
 $(document).on('submit', 'form', function(evt) {
   evt.preventDefault();
   var user_name = $('#name').val()

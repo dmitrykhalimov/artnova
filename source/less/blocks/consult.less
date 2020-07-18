@@ -83,6 +83,17 @@
   background-color: white;
 }
 
+.consult__acceptance-input:checked + label::after {
+  box-sizing: border-box;
+  position: absolute;
+  top: 15px;
+  left: 386px;
+  content: '';
+  width: 32px;
+  height: 32px;
+  background: url("../../img/icon-tick.svg") 0 0 no-repeat;
+}
+
 .consult__text {
   //.outline(green);
   display: block;
