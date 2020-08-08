@@ -12,7 +12,14 @@
 }
 
 .photos__carousel img {
-  .outline(purple);
+  width: 100%;
+  height: auto;
+}
+
+.photos__carousel div {
+  flex-shrink: 0;
+  width: 193px;
+  height: 193px;
 }
 
 .photos__arrow::before {
@@ -21,17 +28,17 @@
   content: '';
   width: 70px;
   height: 193px;
-
+  z-index: 10;
 }
 
 .photos__arrow--left::before {
   left: 0;
-  background: rgba(173, 255, 47, 0.2)
+  background: rgba(149, 156, 175, 0.281)
   url("../img/icon-arrow-left.svg") 100% 50% no-repeat;
 }
 .photos__arrow--right::before {
   right: 0;
-  background: rgba(173, 255, 47, 0.2)
+  background: rgba(149, 156, 175, 0.589)
   url("../img/icon-arrow-right.svg") 0 50% no-repeat;
 }
 

@@ -6,18 +6,21 @@
   var cursorLeft = document.querySelector('.photos__arrow--left');
   var cursorRight = document.querySelector('.photos__arrow--right');
 
-  slide(slider, sliderItems, cursorLeft, cursorRight);
-
-  var slide = function (wrapper, items, prev, next) {
-
-  };
+  var swiper = new Swiper('.swiper-container', {
+    loop: true,
+    slidesPerView: 7,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    }
+  });
 
   var onLeftClick = function () {
-    alert('Нажат левый скролл');
+    swiper.slidePrev();
   };
 
   var onRightClick = function () {
-    alert('Нажат правый кролл');
+    swiper.slideNext();
   };
 
   cursorLeft.addEventListener('click', onLeftClick);
