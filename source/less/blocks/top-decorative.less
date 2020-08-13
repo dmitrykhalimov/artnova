@@ -3,9 +3,15 @@
   margin: 0 auto;
   margin-top: 0px;
   width: 100%;
-  min-height: 12vw;
+  min-height: 120px;
+  //min-height: 8.9vw;
   .outline(blue);
-  background: url("../../img/bg-top.svg") 0 0 no-repeat;
-  background-size: 100%;
+  background: url("../../img/bg-top2.svg") center center no-repeat;
 }
 
+@media (max-width: 1023px) {
+  .top-decorative {
+    min-height: 50px;
+    background-size: auto 90px;
+  }
+}
