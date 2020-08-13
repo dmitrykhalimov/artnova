@@ -1,37 +1,45 @@
 .people {
-  //.outline;
+  .outline;
   margin: 0 auto;
-  width: 1350px;
+  width: 100%;
   min-height: 428px;
 
-  background: url("../img/bg-section.svg") 4px 0 no-repeat;
-}
-
-.people__list {
-  margin: 0;
-  padding: 0;
   padding-top: 85px;
-  padding-left: 85px;
+
+  background: url("../img/bg-section2.svg") center top no-repeat;
+}
+.people__list {
+  box-sizing: border-box;
+
   list-style: none;
-  height: 360px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 88vw;
+  max-width: 1400px;
+  .outline(wheat);
+  padding: 0;
+
+  column-count: 2;
+  column-gap: 70px;
 }
 
 .people__item {
-  margin-bottom: 31px;
   font-size: 26px;
   line-height: 29px;
   text-align: center;
-  //.outline(green);
-  width: 560px;
+  .outline(green);
+  width: 100%;
+  margin-bottom: 31px;
+
+  /*
+
+
+  ;*/
 }
 
+/*
 .people__item:nth-child(1n+5) {
   margin-left: 20px;
-}
+}*/
 
 .people__item b {
   color: @red;
