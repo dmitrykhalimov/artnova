@@ -1,9 +1,8 @@
 .photos {
   position: relative;
-  //.outline(tomato);
+  .outline(tomato);
   margin: 0 auto;
-  width: 1350px;
-  min-height: 252px;
+  width: 100%;
   overflow: hidden;
 }
 
@@ -16,18 +15,12 @@
   height: auto;
 }
 
-.photos__carousel div {
-  flex-shrink: 0;
-  width: 193px;
-  height: 193px;
-}
-
 .photos__arrow::before {
   top: 0;
   position: absolute;
   content: '';
   width: 70px;
-  height: 193px;
+  height: 100%;
   z-index: 10;
 }
 

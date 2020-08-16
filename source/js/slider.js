@@ -12,7 +12,18 @@
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
-    }
+    },
+    breakpoints: {
+      1500: {
+        slidesPerView: 9,
+      },
+      1600: {
+        slidesPerView: 10,
+      },
+      1700: {
+        slidesPerView: 11,
+      }
+    },
   });
 
   var onLeftClick = function () {
