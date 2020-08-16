@@ -1,21 +1,23 @@
 .improve {
-  //.outline;
+  .outline;
   margin: 0 auto;
-  width: 1350px;
+  width: 100%;
   min-height: 525px;
   padding-top: 86px;
   letter-spacing: -0.2px;
-  background: url("../../img/bg-section.svg") 4px 0 no-repeat;
+  background: url("../img/bg-section2.svg") top center no-repeat;
 }
 
 .improve__list {
+  .outline(gray);
   padding: 0;
   padding-top: 50px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   list-style: none;
-  width: 1280px;
+  width: 95%;
+  max-width: 1555px;
 }
 
 .improve__item {
@@ -61,4 +63,23 @@
 
 .improve__item--you {
   background: url("../../img/improve-you.svg") 52% 2% no-repeat;
+}
+
+@media (max-width: 1023px) {
+  .improve__heading {
+    .h2-tablet;
+  }
+
+  .improve__type {
+    .h3-tablet;
+  }
+
+  .improve__text {
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  .improve__type {
+    font-size: 28px;
+  }
 }
