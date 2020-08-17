@@ -1,12 +1,12 @@
 .consult {
   //.outline(green);
-  background: url("../../img/bg-section.svg") 4px 0 no-repeat,
-  url("../../img/bg-footer.svg") 4px 101% no-repeat;
+  background: url("../img/bg-section2.svg") top center no-repeat,
+  url("../img/bg-footer2.svg") bottom center no-repeat;
   color: @white;
   //.outline();
   margin: 0 auto;
   padding-top: 95px;
-  width: 1350px;
+  width: 100%;
   min-height: 425px;
 }
 
@@ -41,7 +41,7 @@
   line-height: 29px;
   color: @red;
   height: 45px;
-  width: 485px;
+  width: 35%;
   margin-right: 22px;
   padding-top: 1px;
   padding-left: 15px;
@@ -66,17 +66,20 @@
 
 .consult__acceptance {
   position: relative;
-  //.outline(purple);
+  .outline(purple);
+  max-width: 768px;
+  margin: 0 auto;
   margin-top: 40px;
   padding-top: 10px;
   padding-bottom: 60px;
+
 }
 
 .consult__acceptance-input + label::before {
   box-sizing: border-box;
   position: absolute;
   top: 10px;
-  left: 384px;
+  left: 80px;
   content: '';
   width: 36px;
   height: 36px;
@@ -87,7 +90,7 @@
   box-sizing: border-box;
   position: absolute;
   top: 15px;
-  left: 386px;
+  left: 82px;
   content: '';
   width: 32px;
   height: 32px;
