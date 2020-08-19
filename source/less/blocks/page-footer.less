@@ -3,11 +3,19 @@
   background-color: @black;
   //.outline();
   margin: 0 auto;
-  width: 1350px;
+  width: 100%;
   min-height: 355px;
-  display: flex;
-  justify-content: flex-start;
+
   padding-top: 50px;
+}
+
+.page-footer__wrapper {
+  .outline(red);
+  display: flex;
+  justify-content: space-between;
+  width: 89%;
+  max-width: 1500px;
+  margin: 0 auto;
 }
 
 .page-footer__social-list {
@@ -28,7 +36,17 @@
 
 .page-footer__container {
   text-align: center;
-  //.outline(yellow);
-  margin-left: 240px;
+  .outline(yellow);
   width: 200px;
+  margin-left: 80px;
+}
+
+@media (max-width: 1023px) {
+  .page-footer__wrapper {
+    width: 90%;
+  }
+
+  .page-footer__container {
+    margin-left: 0;
+  }
 }
