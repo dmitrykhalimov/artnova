@@ -7,11 +7,10 @@
   font-style: normal;
   font-weight: normal;
   color: @red;
-  //.outline(wheat);
+  .outline(wheat);
   margin: 0 auto;
   letter-spacing: -0.2px;
-
-  width: 200px;
+  text-align: center;
 }
 
 .page-main__heading-container {
@@ -21,4 +20,11 @@
 
   //.outline(green);
   background: url("../img/bg-main2.svg") center top no-repeat;
+}
+
+@media (max-width: 1023px) {
+  .page-main__heading {
+    font-size: 36px;
+    line-height: 41px;
+  }
 }

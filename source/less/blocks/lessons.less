@@ -3,31 +3,50 @@
   font-weight: normal;
   font-size: 26px;
   line-height: 29px;
-  //.outline;
-  margin: 0 auto;
-  width: 1350px;
+  .outline;
+  width: 100%;
   min-height: 448px;
 }
 
 .lessons__container {
+  box-sizing: border-box;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: flex-start;
-  //.outline(purple);
-  min-height: 386px;
-  padding-left: 73px;
-  padding-right: 75px;
+  .outline(purple);
   padding-top: 37px;
+  width: 89%;
+  max-width: 1500px;
+  margin: 0 auto;
 }
 
 .lessons__container img {
   flex-shrink: 0;
+  width: 43.3%;
 }
 
-.lessons__container:nth-child(2) {
+.lessons__container--vertical img {
+  width: auto;
+  height: 32vw;
+}
+
+
+.lessons__container:nth-child(n) p,
+.lessons__container:nth-child(n) ol,
+.lessons__container:nth-child(n) ul {
+  margin-left: 45px;
+}
+
+
+.lessons__container:nth-child(2n) p {
+  margin-right: 45px;
+}
+
+.lessons__container:nth-child(2n) {
   background-color: @gray;
   flex-direction: row-reverse;
 }
+
 .lessons__price-heading {
   font-weight: normal;
   font-size: 26px;
@@ -46,19 +65,32 @@
 }
 
 .lessons__text {
+  .outline(blue);
   margin: 0;
-  width: 636px;
+  width: 100%;
+}
+
+.lessons__text p {
+  margin: 0;
+  margin-bottom: 20px;
 }
 
 .lessons__list {
+  box-sizing: border-box;
   .list-reset;
-  width: 636px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
   margin-top: 20px;
-  padding-top: 16px;
 }
 
 .lessons__item {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
   margin-left: 23px;
+  margin-bottom: 10px;
+  width: 86%;
 }
 
 
@@ -68,4 +100,68 @@
 
 .lessons__price-detailed {
   margin: 0;
+}
+
+@media (max-width: 1349px) {
+  .lessons__container {
+    width: 95%;
+  }
+  .lessons__list {
+    width: 93%;
+    .outline(tomato);
+  }
+
+  .lessons__text,
+  .lessons__item {
+    .p-mid-desktop;
+
+  }
+
+  .lessons__item {
+    width: 93%;
+    .outline(green);
+  }
+
+  .lessons__container img {
+    flex-shrink: 0;
+    width: 48.3%;
+  }
+
+  .lessons__container--vertical img {
+    width: auto;
+    height: 42vw;
+  }
+
+  // .lessons__text
+}
+
+@media (max-width: 1023px) {
+  .lessons__container {
+    width: 100%;
+  }
+
+  .lessons__text,
+  .lessons__item {
+    .p-tablet;
+  }
+
+  .lessons__text p {
+    margin-bottom: 10px;
+  }
+
+  .lessons__container:nth-child(n) p,
+  .lessons__container:nth-child(n) ol,
+  .lessons__container:nth-child(n) ul {
+  margin-left: 25px;
+}
+
+
+.lessons__container:nth-child(2n) p {
+  margin-right: 25px;
+}
+
+.lessons__list {
+  width: 89%;
+  .outline(tomato);
+}
 }
