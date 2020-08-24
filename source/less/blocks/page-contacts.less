@@ -126,3 +126,46 @@
     max-width: 700px;
   }
 }
+
+@media (max-width: 767px) {
+  .page-contacts {
+    flex-direction: column-reverse;
+    padding: 0;
+  }
+
+  .page-contacts__container {
+    .outline(tomato);
+    box-sizing: border-box;
+    .list-reset;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5vw;
+  }
+
+  .page-contacts__about,
+  .page-contacts__links {
+    .outline(blue);
+    display: block;
+    margin: 0 auto;
+    max-width: 450px;
+  }
+
+  .page-contacts__text {
+    .outline(green);
+    .p-mobile;
+    text-align: center;
+  }
+
+  .page-contacts img {
+    max-width: 450px;
+  }
+
+  .page-contacts__map {
+    min-height: auto;
+  }
+
+}
+
+

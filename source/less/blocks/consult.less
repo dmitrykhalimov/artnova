@@ -102,3 +102,45 @@
   display: block;
   padding-left: 75px;
 }
+
+@media (max-width: 767px) {
+  .consult__acceptance {
+    padding-bottom: 20px;
+  }
+
+  .consult {
+    padding-top: 70px;
+  }
+
+  .consult__heading {
+    .h2-mobile;
+    box-sizing: border-box;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 0;
+  }
+
+  .consult__input {
+    .p-mobile;
+    margin: 0;
+    min-width: 87.5%;
+    margin-bottom: 20px;
+  }
+
+  .consult__text {
+    .p-mobile;
+    box-sizing: border-box;
+    padding-left: 50px;
+    padding-right: 50px;
+    .outline(lime);
+  }
+
+  .consult__acceptance-input + label::before {
+    left: 5vw;
+  }
+
+  .consult__acceptance-input:checked + label::after {
+    left: 5.5vw;
+  }
+}
