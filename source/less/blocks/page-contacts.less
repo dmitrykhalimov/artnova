@@ -15,7 +15,7 @@
   width: 100%;
   max-width: 1650px;
 
-  .outline(green);
+  //.outline(green);
 }
 
 .page-contacts__text {
@@ -48,11 +48,12 @@
   width: 100%;
   min-height: 613px;
 
-  .outline(purple);
+  //.outline(purple);
 }
 
 .page-contacts__map iframe {
   width: 100%;
+  display:block;
 }
 
 .page-contacts img {
@@ -100,7 +101,7 @@
     width: 100%;
     max-width: 1650px;
 
-    .outline(green);
+    //.outline(green);
   }
 
   .page-contacts {
@@ -131,10 +132,16 @@
   .page-contacts {
     flex-direction: column-reverse;
     padding: 0;
+    margin-bottom: 10px;
+  }
+
+  .page-contacts__map iframe {
+    width: 100%;
+    display:block;
   }
 
   .page-contacts__container {
-    .outline(tomato);
+    //.outline(tomato);
     box-sizing: border-box;
     .list-reset;
     width: 100%;
@@ -142,30 +149,34 @@
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 5vw;
+
+    background: url("../img/bg-contacts-piano-hihat.svg") 10px 30px no-repeat,
+    url("../img/bg-contacts-piano-mobile.svg") right 250px no-repeat;
   }
 
   .page-contacts__about,
   .page-contacts__links {
-    .outline(blue);
+    //.outline(blue);
     display: block;
     margin: 0 auto;
-    max-width: 450px;
+    max-width: 550px;
   }
 
   .page-contacts__text {
-    .outline(green);
+    //.outline(green);
     .p-mobile;
-    text-align: center;
+    text-align: left;
+    margin-bottom: 20px;
   }
 
   .page-contacts img {
-    max-width: 450px;
+    max-width: 550px;
+    margin-bottom: 10px;
   }
 
   .page-contacts__map {
     min-height: auto;
   }
-
 }
 
 

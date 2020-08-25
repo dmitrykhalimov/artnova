@@ -13,29 +13,38 @@
   <body>
     <header class="page-header">
       <div class="page-header__wrapper">
+
         <div class="page-header__container">
-          <nav class="main-nav">
+
+          <nav class="main-nav main-nav--closed">
+            <button class="main-nav__button"></button>
             <ul class="main-nav__list">
-            <li class="main-nav__item"><a>Главная</a></li>
-            <li class="main-nav__item"><a href="teachers.html">Преподаватели</a></li>
-            <li class="main-nav__item main-nav__item--lessons">
-              <div class="main-nav__submenu">
-                <a>Уроки</a>
-                <ul class="main-nav__submenu-list">
-                  <li class="main-nav__submenu-item"><a href="vocal.html">Уроки вокала</a></li>
-                  <li class="main-nav__submenu-item"><a href="guitar.html">Уроки гитары</a></li>
-                  <li class="main-nav__submenu-item"><a href="vocal-kids.html">Вокал для детей</a></li>
-                </ul>
-              </div>
-            </li>
-            <li class="main-nav__item"><a href="video.html">Видео</a></li>
-            <li class="main-nav__item"><a href="contacts.html">Контакты</a></li>
+              <li class="main-nav__item"><a>Главная</a></li>
+              <li class="main-nav__item"><a href="teachers.html">Преподаватели</a></li>
+              <li class="main-nav__item main-nav__item--lessons">
+                <div class="main-nav__submenu">
+                  <a>Уроки</a>
+                  <ul class="main-nav__submenu-list">
+                    <li class="main-nav__submenu-item"><a href="vocal.html">Уроки вокала</a></li>
+                    <li class="main-nav__submenu-item"><a href="guitar.html">Уроки гитары</a></li>
+                    <li class="main-nav__submenu-item"><a href="vocal-kids.html">Вокал для детей</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="main-nav__item"><a href="video.html">Видео</a></li>
+              <li class="main-nav__item"><a href="contacts.html">Контакты</a></li>
             </ul>
           </nav>
           <div class="page-header__logo">
-            <img width="150" height="172" src="img/logo-header.svg" alt="Сайт вокальной студии Арт-Нова">
+            <a>
+              <picture>
+                <source width="209" height="60" media="(max-width: 768px)" srcset="img/logo-header-mobile.svg">
+                <img width="150" height="172" src="img/logo-header.svg" alt="Сайт вокальной студии Арт-Нова">
+              </picture>
+            </a>
           </div>
         </div>
+
         <ul class="page-header__social-list">
         <li class="page-header__social-item page-header__social-item--vk">
           <a href="https://vk.com/vokalnayastudiyaspb">
@@ -79,9 +88,9 @@
       </div>
       <section class="video">
         <div class="video__description">
-          <p class="video__text">Отчетные концерты студии Арт Нова – это яркие, запоминающиеся выступления наших учеников. Мы&nbspвсегда&nbspс&nbspнетерпением ждем наши отчетные концерты, чтобы порадоваться вашим успехам, поддержать вас и&nbspпродолжать работать дальше.</p>
-          <p class="video__text">Лучшие концертные площадки города всегда рады предоставить нам свою сцену и лучших звукорежиссеров, чтобы&nbspвыступления наших учеников проходили на высшем уровне! </p>
-          <p class="video__text">Мы даем Вам возможность почувствовать себя звездой на профессиональной сцене.</p>
+          <p class="video__text">Отчетные концерты студии Арт Нова – это <strong>яркие, запоминающиеся выступления наших учеников.</strong> Мы&nbspвсегда&nbspс&nbspнетерпением ждем наши отчетные концерты, чтобы порадоваться вашим успехам, поддержать вас и&nbspпродолжать работать дальше.</p>
+          <p class="video__text"><strong>Лучшие концертные площадки</strong> города всегда рады предоставить нам свою сцену и лучших звукорежиссеров, чтобы&nbspвыступления наших учеников проходили на высшем уровне! </p>
+          <p class="video__text">Мы даем Вам возможность почувствовать себя звездой на <strong>профессиональной сцене.</strong></p>
         </div>
         <div class="video__items">
           <iframe width="389" height="219" src="https://www.youtube.com/embed/8nXAG_8OWvg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -93,6 +102,7 @@
           <iframe width="389" height="219" src="https://www.youtube.com/embed/X6WqoRTsjAk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           <iframe width="389" height="219" src="https://www.youtube.com/embed/7285bceJx6w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           <iframe width="389" height="219" src="https://www.youtube.com/embed/X6WqoRTsjAk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <button class="video__show-more button">Показать еще</button>
         </div>
       </section>
       <section class="consult" id="consult">
@@ -177,6 +187,7 @@
         </ul>
       </div>
     </footer>
-
+    <script src="js/menu.js"></script>
+    <script src="js/video.js"></script>
   </body>
 </html>
