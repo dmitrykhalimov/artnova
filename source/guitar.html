@@ -15,14 +15,14 @@
           <nav class="main-nav main-nav--closed">
             <button class="main-nav__button"></button>
             <ul class="main-nav__list">
-              <li class="main-nav__item"><a>Главная</a></li>
+              <li class="main-nav__item"><a href="index.html">Главная</a></li>
               <li class="main-nav__item"><a href="teachers.html">Преподаватели</a></li>
-              <li class="main-nav__item main-nav__item--lessons">
+              <li class="main-nav__item main-nav__item--active main-nav__item--lessons">
                 <div class="main-nav__submenu">
                   <a>Уроки</a>
                   <ul class="main-nav__submenu-list">
                     <li class="main-nav__submenu-item"><a href="vocal.html">Уроки вокала</a></li>
-                    <li class="main-nav__submenu-item"><a href="guitar.html">Уроки гитары</a></li>
+                    <li class="main-nav__submenu-item main-nav__submenu-item--active"><a href="guitar.html">Уроки гитары</a></li>
                     <li class="main-nav__submenu-item"><a href="vocal-kids.html">Вокал для детей</a></li>
                   </ul>
                 </div>
@@ -157,7 +157,10 @@
           <li class="footer-menu__item"><a href="contacts.html">Контакты</a></li>
         </ul>
         <div class="page-footer__container">
-          <img width="152" hegiht="172" src="img/logo-footer.svg" alt="Логотип студии Арт Нова">
+          <picture>
+            <source media="(max-width: 767px)" srcset="img/logo-footer-mobile.svg">
+            <img width="152" hegiht="172" src="img/logo-footer.svg" alt="Логотип студии Арт Нова">
+          </picture>
           <ul class="page-footer__social-list">
             <li class="page-footer__social-item page-footer__social-item--vk">
               <a href="https://vk.com/vokalnayastudiyaspb">
@@ -195,16 +198,15 @@
         </div>
         <ul class="contacts">
           <li class="contacts__item">
-            <h3 class="contacts__heading">Телефон</h3>
+            <h3 class="contacts__heading">Телефон:</h3>
             <p class="contacts__text">+7-911-976-43-18</p>
           </li>
           <li class="contacts__item">
-            <h3 class="contacts__heading">Адрес</h3>
-            <p class="contacts__text">ст. м. "Кировский завод"</p>
-            <p class="contacts__text">пр. Стачек, д.72, ауд. 258-259</p>
+            <h3 class="contacts__heading">Адрес:</h3>
+            <p class="contacts__text">ст. м. "Кировский завод" пр. Стачек, д.72, ауд. 258-259</p>
           </li>
           <li class="contacts__item">
-            <h3 class="contacts__heading">Напишите нам</h3>
+            <h3 class="contacts__heading">Напишите нам:</h3>
             <p class="contacts__text contacts__text--mail"><a href="mailto:director@artnova-spb.ru">director@artnova-spb.ru</a></p>
           </li>
         </ul>

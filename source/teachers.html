@@ -77,18 +77,15 @@
         </ul>
       </div>
     </header>
-
     <main class="page-main">
       <div class="top-decorative"></div>
       <div class="page-main__heading-container">
         <h1 class="page-main__heading">Преподаватели</h1>
       </div>
       <section class="teacher">
-        <div class="teacher__wrapper">
-
+        <div class="teacher__wrapper" id="natalia">
           <img width="351" height="521" src="img/teachers-natasha-desktop@2x.jpg" alt="Фотография преподавателя Натальи Фесенко">
-
-          <div class="teacher__container" id="natalia">
+          <div class="teacher__container" >
             <h2 class="teacher__name">Наталья Фесенко</h2>
             <p class="teacher__title"><b>директор студии, преподаватель вокала</b></p>
 
@@ -102,9 +99,9 @@
         </div>
       </section>
       <section class="teacher">
-        <div class="teacher__wrapper">
+        <div class="teacher__wrapper" id="elizaveta">
           <img width="351" height="521" src="img/teachers-liza-desktop@2x.jpg" alt="Фотография преподавателя Елизаветы Никитиной">
-          <div class="teacher__container" id="elizaveta">
+          <div class="teacher__container">
             <h2 class="teacher__name">Елизавета Никитина</h2>
             <p class="teacher__title"><b>преподаватель вокала</b></p>
             <p class="teacher__education">Образование: Музыкальный колледж им. М.П. Мусоргского, Санкт-Петербург отделение: эстрадный вокал, ЛГУ им. А.С. Пушкина. Факультет искусств, кафедра музыкальных дисциплин. Квалификация - преподаватель музыки, педагог вокала.</p>
@@ -116,9 +113,9 @@
         </div>
       </section>
       <section class="teacher">
-        <div class="teacher__wrapper">
+        <div class="teacher__wrapper" id="alexander">
           <img width="351" height="521" src="img/teachers-sasha-desktop@2x.jpg" alt="Фотография преподавателя Александра Гущина">
-          <div class="teacher__container" id="alexander">
+          <div class="teacher__container">
             <h2 class="teacher__name">Александр Гущин</h2>
             <p class="teacher__title"><b>преподаватель гитары</b></p>
             <p class="teacher__education">Образование: Кузбасская Государственная педагогическая академия</p>
@@ -157,7 +154,10 @@
           <li class="footer-menu__item"><a href="contacts.html">Контакты</a></li>
         </ul>
         <div class="page-footer__container">
-          <img width="152" hegiht="172" src="img/logo-footer.svg" alt="Логотип студии Арт Нова">
+          <picture>
+            <source media="(max-width: 767px)" srcset="img/logo-footer-mobile.svg">
+            <img width="152" hegiht="172" src="img/logo-footer.svg" alt="Логотип студии Арт Нова">
+          </picture>
           <ul class="page-footer__social-list">
             <li class="page-footer__social-item page-footer__social-item--vk">
               <a href="https://vk.com/vokalnayastudiyaspb">
@@ -195,16 +195,15 @@
         </div>
         <ul class="contacts">
           <li class="contacts__item">
-            <h3 class="contacts__heading">Телефон</h3>
+            <h3 class="contacts__heading">Телефон:</h3>
             <p class="contacts__text">+7-911-976-43-18</p>
           </li>
           <li class="contacts__item">
-            <h3 class="contacts__heading">Адрес</h3>
-            <p class="contacts__text">ст. м. "Кировский завод"</p>
-            <p class="contacts__text">пр. Стачек, д.72, ауд. 258-259</p>
+            <h3 class="contacts__heading">Адрес:</h3>
+            <p class="contacts__text">ст. м. "Кировский завод" пр. Стачек, д.72, ауд. 258-259</p>
           </li>
           <li class="contacts__item">
-            <h3 class="contacts__heading">Напишите нам</h3>
+            <h3 class="contacts__heading">Напишите нам:</h3>
             <p class="contacts__text contacts__text--mail"><a href="mailto:director@artnova-spb.ru">director@artnova-spb.ru</a></p>
           </li>
         </ul>

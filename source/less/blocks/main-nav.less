@@ -11,6 +11,11 @@
   border-bottom: 2px solid @red;
 }
 
+.main-nav__submenu-item--active a {
+  box-sizing: border-box;
+  border-bottom: 2px solid @white;
+}
+
 .main-nav__list {
   display: flex;
   justify-content: space-between;
@@ -192,11 +197,16 @@
 
   .main-nav__submenu-item a {
     color: @black;
-    display: block;
+    display: inline-block;
 
     &:hover {
       color: @red;
       text-decoration: none;
     }
+  }
+
+  .main-nav__submenu-item--active a {
+    box-sizing: border-box;
+    border-bottom: 2px solid @red;
   }
 }

@@ -53,3 +53,39 @@
     width: 200px;
   }
 }
+
+@media (max-width: 768px) {
+  .contacts {
+    display: table;
+    //.outline;
+    width: 280px;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+    margin: 0 auto;
+  }
+
+  .contacts__item {
+    display: table-row;
+
+  }
+
+  .contacts__heading {
+    display: table-cell;
+    //.outline(green);
+    height: 20px;
+    width: 80px;
+    text-align: left;
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 50px;
+  }
+
+  .contacts__text {
+    display: table-cell;
+    //.outline(purple);
+    text-align: left;
+    font-size: 14px;
+    line-height: 17px;
+    width: 170px;
+  }
+}
