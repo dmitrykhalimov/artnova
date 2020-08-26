@@ -129,3 +129,67 @@
     .outline(green);
   }
 }
+
+@media (max-width: 767px) {
+  .teachers {
+    background-size: auto 32px;
+    padding-top: 50px;
+  }
+
+  .teachers__heading {
+    .h2-mobile-big;
+  }
+
+  .teachers__list {
+    flex-direction: column;
+    max-width: 500px;
+  }
+
+  .teachers__name,
+  .teachers__info {
+    font-size: 16px;
+    line-height: 18px;
+    .outline;
+    float: right;
+    width: 45%;
+
+    @media (min-width: 500px) {
+      font-size: 18px;
+      line-height: 20px;
+
+    }
+  }
+
+  .teachers__name {
+    margin-top: 25%;
+    color: @red;
+  }
+
+  .teachers__info {
+    margin-top: 20px;
+  }
+
+  .teachers__item img {
+    width: 50%;
+    float: left;
+    max-width: 247px;
+  }
+
+  .teachers__item::before {
+    width: 47%;
+    max-width: 236px;
+    max-height: 242px;
+    height: 80%;
+    left: 1%;
+    top: 20%;
+  }
+
+  .teachers__item:nth-child(2n) img {
+    float: right;
+  }
+
+  .teachers__item:nth-child(2n)::before {
+    left: auto;
+    right: 1%;
+  }
+}

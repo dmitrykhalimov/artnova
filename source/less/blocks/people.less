@@ -59,3 +59,26 @@
     line-height: 24px;
   }
 }
+
+@media (max-width: 767px) {
+  .people {
+    background-size: auto 32px;
+    padding-top: 50px;
+  }
+
+  .people__list {
+    width: 100%;
+    max-width: 550px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    column-count: 1;
+    column-gap: 0;
+  }
+
+  .people__item {
+    width: 100%;
+    .p-mobile;
+    margin-bottom: 20px;
+  }
+}

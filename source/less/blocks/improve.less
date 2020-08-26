@@ -65,6 +65,10 @@
   background: url("../img/improve-you.svg") 52% 2% no-repeat;
 }
 
+.improve__pagination {
+  display: none;
+}
+
 @media (max-width: 1023px) {
   .improve__heading {
     .h2-tablet;
@@ -87,4 +91,53 @@
     margin-top: 10px;
     font-size: 28px;
   }
+}
+
+@media (max-width: 767px) {
+  .improve {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    min-height: 0;
+    padding-bottom: 30px;
+    background-size: auto 32px;
+    padding-top: 50px;
+  }
+
+  .improve__heading {
+    font-size: 26px;
+    line-height: 29px;
+  }
+
+  .improve__item {
+    background-size: 55px;
+  }
+
+  .improve__list {
+    margin: 0;
+    width: 100%;
+
+  }
+  .improve__item {
+    width: 100%;
+    flex-shrink: 0;
+    padding-top: 120px;
+  }
+
+  .improve__type {
+    font-size: 24px;
+    line-height: 26px;
+  }
+
+  .improve__text {
+    font-size: 16px;
+    line-height: 20px;
+    width: 90vw;
+    margin: 0 auto;
+  }
+
+  .improve__pagination {
+    display: block;
+  }
+
 }
