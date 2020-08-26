@@ -9,29 +9,38 @@
   <body>
     <header class="page-header">
       <div class="page-header__wrapper">
+
         <div class="page-header__container">
-          <nav class="main-nav">
+
+          <nav class="main-nav main-nav--closed">
+            <button class="main-nav__button"></button>
             <ul class="main-nav__list">
-            <li class="main-nav__item"><a>Главная</a></li>
-            <li class="main-nav__item"><a href="teachers.html">Преподаватели</a></li>
-            <li class="main-nav__item main-nav__item--lessons">
-              <div class="main-nav__submenu">
-                <a>Уроки</a>
-                <ul class="main-nav__submenu-list">
-                  <li class="main-nav__submenu-item"><a href="vocal.html">Уроки вокала</a></li>
-                  <li class="main-nav__submenu-item"><a href="guitar.html">Уроки гитары</a></li>
-                  <li class="main-nav__submenu-item"><a href="vocal-kids.html">Вокал для детей</a></li>
-                </ul>
-              </div>
-            </li>
-            <li class="main-nav__item"><a href="video.html">Видео</a></li>
-            <li class="main-nav__item"><a href="contacts.html">Контакты</a></li>
+              <li class="main-nav__item"><a>Главная</a></li>
+              <li class="main-nav__item"><a href="teachers.html">Преподаватели</a></li>
+              <li class="main-nav__item main-nav__item--lessons">
+                <div class="main-nav__submenu">
+                  <a>Уроки</a>
+                  <ul class="main-nav__submenu-list">
+                    <li class="main-nav__submenu-item"><a href="vocal.html">Уроки вокала</a></li>
+                    <li class="main-nav__submenu-item"><a href="guitar.html">Уроки гитары</a></li>
+                    <li class="main-nav__submenu-item"><a href="vocal-kids.html">Вокал для детей</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="main-nav__item"><a href="video.html">Видео</a></li>
+              <li class="main-nav__item"><a href="contacts.html">Контакты</a></li>
             </ul>
           </nav>
           <div class="page-header__logo">
-            <img width="150" height="172" src="img/logo-header.svg" alt="Сайт вокальной студии Арт-Нова">
+            <a>
+              <picture>
+                <source width="209" height="60" media="(max-width: 768px)" srcset="img/logo-header-mobile.svg">
+                <img width="150" height="172" src="img/logo-header.svg" alt="Сайт вокальной студии Арт-Нова">
+              </picture>
+            </a>
           </div>
         </div>
+
         <ul class="page-header__social-list">
         <li class="page-header__social-item page-header__social-item--vk">
           <a href="https://vk.com/vokalnayastudiyaspb">
@@ -201,5 +210,6 @@
         </ul>
       </div>
     </footer>
+    <script src="js/menu.js"></script>
   </body>
 </html>

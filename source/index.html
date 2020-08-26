@@ -11,29 +11,38 @@
   <body>
     <header class="page-header">
       <div class="page-header__wrapper">
+
         <div class="page-header__container">
-          <nav class="main-nav">
+
+          <nav class="main-nav main-nav--closed">
+            <button class="main-nav__button"></button>
             <ul class="main-nav__list">
-            <li class="main-nav__item"><a>Главная</a></li>
-            <li class="main-nav__item"><a href="teachers.html">Преподаватели</a></li>
-            <li class="main-nav__item main-nav__item--lessons">
-              <div class="main-nav__submenu">
-                <a>Уроки</a>
-                <ul class="main-nav__submenu-list">
-                  <li class="main-nav__submenu-item"><a href="vocal.html">Уроки вокала</a></li>
-                  <li class="main-nav__submenu-item"><a href="guitar.html">Уроки гитары</a></li>
-                  <li class="main-nav__submenu-item"><a href="vocal-kids.html">Вокал для детей</a></li>
-                </ul>
-              </div>
-            </li>
-            <li class="main-nav__item"><a href="video.html">Видео</a></li>
-            <li class="main-nav__item"><a href="contacts.html">Контакты</a></li>
+              <li class="main-nav__item"><a>Главная</a></li>
+              <li class="main-nav__item"><a href="teachers.html">Преподаватели</a></li>
+              <li class="main-nav__item main-nav__item--lessons">
+                <div class="main-nav__submenu">
+                  <a>Уроки</a>
+                  <ul class="main-nav__submenu-list">
+                    <li class="main-nav__submenu-item"><a href="vocal.html">Уроки вокала</a></li>
+                    <li class="main-nav__submenu-item"><a href="guitar.html">Уроки гитары</a></li>
+                    <li class="main-nav__submenu-item"><a href="vocal-kids.html">Вокал для детей</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="main-nav__item"><a href="video.html">Видео</a></li>
+              <li class="main-nav__item"><a href="contacts.html">Контакты</a></li>
             </ul>
           </nav>
           <div class="page-header__logo">
-            <img width="150" height="172" src="img/logo-header.svg" alt="Сайт вокальной студии Арт-Нова">
+            <a>
+              <picture>
+                <source width="209" height="60" media="(max-width: 768px)" srcset="img/logo-header-mobile.svg">
+                <img width="150" height="172" src="img/logo-header.svg" alt="Сайт вокальной студии Арт-Нова">
+              </picture>
+            </a>
           </div>
         </div>
+
         <ul class="page-header__social-list">
         <li class="page-header__social-item page-header__social-item--vk">
           <a href="https://vk.com/vokalnayastudiyaspb">
@@ -77,18 +86,24 @@
 
       <section class="welcome">
         <div class="welcome__wrapper">
-          <img width="295" height="427" src="img/main-about2@2x.png">
+
+          <img width="295" height="427" src="img/main-about@2x.jpg">
+
           <div class="welcome__container">
-            <h2 class="welcome__heading">Добро пожаловать в Арт Нову!</h2>
-            <p class="welcome__text">Меня зовут Наталья Фесенко. В 2005 году я открыла вокальную студию Арт Нова в&nbspСанкт-Петербурге. Сегодня студия Арт Нова – это уроки эстрадного вокала и гитары для начинающих и не только. Наша профессиональная команда преподавателей работает с учениками от 4-х до 60-ти лет, которые имеют самый разный уровень начальной подготовки. Наши выпускники – студенты творческих ВУЗов и участники известных музыкальных проектов.</p>
+
+            <h2 class="welcome__heading">Добро пожаловать в Арт&nbsp;Нову!</h2>
+            <p class="welcome__text">Меня зовут Наталья Фесенко. В 2005 году я открыла вокальную студию Арт Нова в&nbspСанкт-Петербурге.</p>
+            <p class="welcome__text">Сегодня студия Арт Нова – это уроки эстрадного вокала и гитары для начинающих и не только. Наша профессиональная команда преподавателей работает с учениками от 4-х до 60-ти лет, которые имеют самый разный уровень начальной подготовки. Наши выпускники – студенты творческих ВУЗов и участники известных музыкальных проектов.</p>
             <p class="welcome__text">Мы всегда рады новым лицам! Присоединяйтесь!</p>
             <a class="welcome__button button" href="#consult">Записаться</a>
           </div>
         </div>
       </section>
+
       <section class="index-video">
         <iframe width="735" height="414" src="https://www.youtube.com/embed/wb0QKIvKCfs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </section>
+      <!--
       <section class="people">
         <h2 class="visually-hidden">К нам приходят люди</h2>
           <ul class="people__list">
@@ -289,7 +304,7 @@
       </div>
     </footer>
 
-    <!--<script src="js/backend.js"></script>-->
+    <script src="js/backend.js"></script>-->
     <script src="js/jquery.maskedinput.js"></script>
     <script src="js/form.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
@@ -299,5 +314,6 @@
       });
     </script>
     <script src="js/slider.js"></script>
+    <script src="js/menu.js"></script>
   </body>
 </html>

@@ -95,3 +95,80 @@
     width: 270px;
   }
 };
+
+@media (max-width: 767px) {
+  .welcome {
+    background-size: auto 32px;
+  }
+  .welcome__wrapper {
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+    max-width: 550px;
+    padding-right: 20px;
+  }
+
+  .welcome img {
+    position: absolute;
+    top: -50px;
+    left: 20px;
+    width: 47vw;
+    height: 70vw;
+    max-width: 257px;
+    max-height: 373px;
+
+    //display: none;
+  }
+
+  .welcome__container {
+    box-sizing: border-box;
+    display: block;
+    width: 80%;
+    margin: 0;
+    padding-right: 5px;
+    padding-left: 20px;
+  }
+
+  .welcome__container::before {
+    content: "";
+    position: relative;
+    float: left;
+    top: -20px;
+    left: -20px;
+
+    width: 34vw;
+    height: 55vw;
+    max-width: 174px;
+    max-height: 330px;
+    //background-color: blue;
+  }
+
+  .welcome__heading,
+  .welcome__text {
+    font-size: 15px;
+    line-height: 17px;
+    font-weight: normal;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+
+    @media (min-width: 500px) {
+      font-size: 16px;
+      line-height: 18px;
+    }
+  }
+
+  .welcome__text--lefty {
+    padding-left: 100px;
+    margin-bottom: 10px;
+  }
+
+  .welcome__heading {
+    padding-left: 100px;
+  }
+
+
+}
