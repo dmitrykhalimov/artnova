@@ -12,9 +12,27 @@
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
+      dynamicBullets: true,
     },
+
     breakpoints: {
-      1500: {
+      320: {
+        slidesPerView: 1,
+      },
+
+      500: {
+        slidesPerView: 3,
+      },
+
+      768: {
+        slidesPerView: 5,
+      },
+
+      1024: {
+        slidesPerView: 7,
+      },
+
+      1368: {
         slidesPerView: 9,
       },
       1600: {

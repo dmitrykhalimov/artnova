@@ -17,7 +17,7 @@
           <nav class="main-nav main-nav--closed">
             <button class="main-nav__button"></button>
             <ul class="main-nav__list">
-              <li class="main-nav__item"><a>Главная</a></li>
+              <li class="main-nav__item main-nav__item--active"><a>Главная</a></li>
               <li class="main-nav__item"><a href="teachers.html">Преподаватели</a></li>
               <li class="main-nav__item main-nav__item--lessons">
                 <div class="main-nav__submenu">
@@ -178,19 +178,20 @@
           </li>
         </ul>
       </section>
-<!--
+
       <section class="how-to">
-        <h2 class="how-to__heading">Что нужно сделать, чтобы начать заниматься в студии Арт Нова?</h2>
-        <ol class="how-to__list">
-          <li class="how-to__item">Записаться на бесплатную консультацию.</li>
-          <li class="how-to__item">Прийти в студию к назначенному времени. Ваше общение проходит один на один с педагогом, поэтому волноваться не стоит.</li>
-          <li class="how-to__item">Педагог протестирует ваши музыкальные способности (чистоту интонирования, чувство ритма, ваш музыкальный слух).</li>
-          <li class="how-to__item">Исходя из Ваших целей и задач – мы составим индивидуальную программу обучения.</li>
-        </ol>
-        <p class="how-to__text">Вы приходите в студию Арт Нова, чтобы получать положительные эмоции – и мы готовы поделиться ими с Вами. Нам не важно сколько Вам лет и есть ли у Вас опыт в области музыки. У каждого из Вас есть своя цель – и мы помогаем ее осуществить.</p>
+        <h2 class="how-to__heading">Что нужно сделать, чтобы начать заниматься в&nbsp;студии Арт Нова?</h2>
+        <ul class="how-to__list">
+          <li class="how-to__item how-to__item--call">Записаться на бесплатную консультацию.</li>
+          <li class="how-to__item how-to__item--visit">Прийти в студию к назначенному времени. Ваше общение проходит один на один с педагогом, поэтому волноваться не стоит.</li>
+          <li class="how-to__item how-to__item--level">Педагог протестирует ваши музыкальные способности (чистоту интонирования, чувство ритма, ваш музыкальный слух).</li>
+          <li class="how-to__item how-to__item--program">Исходя из Ваших целей и задач – мы составим индивидуальную программу обучения.</li>
+        </ul>
+
       </section>
 
       <section class="photos swiper-container">
+        <div class="photos__heading">Наши фотографии</div>
         <div class="photos__arrow photos__arrow--left"></div>
         <div class="photos__carousel swiper-wrapper">
           <div class="swiper-slide">
@@ -222,7 +223,9 @@
           </div>
         </div>
         <div class="photos__arrow photos__arrow--right"></div>
+        <div class="photos__pagination swiper-pagination"></div>
       </section>
+
       <section class="consult" id="consult">
         <h2 class="consult__heading">Записаться на консультацию</h2>
         <form class="consult__form" method="post" autocomplete="off" action="ma2il.php">
@@ -305,7 +308,7 @@
       </div>
     </footer>
 
-    <script src="js/backend.js"></script>-->
+    <!-- <script src="js/backend.js"></script> -->
     <script src="js/jquery.maskedinput.js"></script>
     <script src="js/form.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
@@ -314,7 +317,7 @@
         $("#phone").mask("+7(999) 999-99-99");
       });
     </script>
-    <!-- <script src="js/slider.js"></script> -->
+    <script src="js/slider.js"></script>
     <script src="js/improve.js"></script>
     <script src="js/menu.js"></script>
   </body>

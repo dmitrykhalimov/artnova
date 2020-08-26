@@ -1,9 +1,17 @@
 .photos {
   position: relative;
-  .outline(tomato);
+  //.outline(tomato);
   margin: 0 auto;
   width: 100%;
   overflow: hidden;
+}
+
+.photos__pagination {
+  display: none;
+}
+
+.photos__heading {
+  display: none;
 }
 
 .photos__carousel {
@@ -38,4 +46,39 @@
 .photos__arrow--right:hover::before,
 .photos__arrow--left:hover::before {
   opacity: 0.7;
+}
+
+@media (max-width: 767px) {
+  .photos__heading {
+    .h2-mobile-big;
+    width: 100%;
+    color: @red;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: block;
+  }
+
+  .photos__arrow {
+    display: none;
+  }
+
+  .photos {
+    width: 90%;
+  }
+
+  .photos__carousel img {
+    display: block;
+    margin: 0 auto;
+    width: 70vw;
+    //height: 70vw;
+  }
+
+  .photos__carousel {
+    margin-bottom: 30px;
+  }
+
+  .photos__pagination {
+    display: block;
+  }
 }

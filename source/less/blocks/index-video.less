@@ -2,7 +2,7 @@
   margin: 0 auto;
   width: 100%;
 
-  .outline(purple);
+  //.outline(purple);
 
   background: url("../img/bg-section2.svg") center top no-repeat;
   text-align: center;
@@ -18,7 +18,7 @@
 @media (max-width: 1023px) {
   .index-video {
     background-size: auto 32px;
-    padding-top: 45px;
+    padding-top: 50px;
   }
   .index-video iframe {
     width: 71vw;
@@ -27,9 +27,15 @@
 };
 
 @media (max-width: 767px) {
+  .index-video {
+    padding-top: 15vw;
+    padding-bottom: 8vw;
+  }
+
   .index-video iframe {
-    width: 85vw;
-    height: 50vw;
+    width: 100%;
+    height: 55vw;
     max-width: 510px;
+    max-height: 310px;
   }
 }
