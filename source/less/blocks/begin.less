@@ -174,3 +174,42 @@
     line-height: 17px;
   }
 }
+
+@media (max-width: 767px) {
+  .begin {
+    background-size: auto 32px;
+    padding-top: 50px;
+    //background-color: gray;
+  }
+
+  .begin__name {
+    .h2-mobile-big;
+    margin-top: 42%;
+  }
+
+  .begin__heading {
+    .h2-mobile-big;
+  }
+
+  .begin__list {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+
+  }
+
+  .begin__item {
+    width: 100%;
+    max-width: 500px;
+    max-height: 390px;
+    height: 75vw;
+    margin-bottom: 20px;
+  }
+
+  .begin__item::before {
+    width: 100%;
+    max-width: 500px;
+    height: 75vw;
+    max-height: 390px;
+  }
+}
