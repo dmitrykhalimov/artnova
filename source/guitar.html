@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <title>Вокальная студия: Арт Нова</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link href="css/style.css?v=3" rel="stylesheet">
+    <link href="css/style.css?v=5.3" rel="stylesheet">
+    <script src="js/jquery-3.5.1.js"></script>
   </head>
   <body>
     <header class="page-header">
@@ -17,7 +18,7 @@
             <ul class="main-nav__list">
               <li class="main-nav__item"><a href="index.html">Главная</a></li>
               <li class="main-nav__item"><a href="teachers.html">Преподаватели</a></li>
-              <li class="main-nav__item main-nav__item--active main-nav__item--lessons">
+              <li class="main-nav__item main-nav__item--active-desktop main-nav__item--lessons">
                 <div class="main-nav__submenu">
                   <a>Уроки</a>
                   <ul class="main-nav__submenu-list">
@@ -59,7 +60,7 @@
           </a>
         </li>
         <li class="page-header__social-item page-header__social-item--fb">
-          <a href="#">
+          <a href="https://www.facebook.com/artnovastudiospb">
             <svg width="37" height="37">
               <use xlink:href="img/sprite.svg#icon-fb-header"></use>
             </svg>
@@ -98,7 +99,7 @@
               </div>
               <ul class="lessons__list">
                 <li class="lessons__item">электрогитара (эстрадно-джазовая и блюзовая);</li>
-                <li class="lessons__item">гитара акустическая;</li>
+                <li class="lessons__item">гитара акустическая.</li>
               </ul>
               <div class="lessons__text">
                 <p>Уроки гитары проходят индивидуально и рассчитаны на разный уровень подготовки учеников: как для начинающих, так и для «продвинутых» гитаристов. Мы подберем для Вас программу занятий, подходящую Вам по стилистическим предпочтениям и Вашим индивидуальным особенностям</p>
@@ -112,30 +113,30 @@
               <p>В программе обучения игре на гитаре:</h2>
             </div>
             <ul class="lessons__list lessons__list--guitar">
-              <li class="lessons__item">Развитие навыков пальцевой техники и техники игры медиатором;</li>
-              <li class="lessons__item">Обучение основам нотной грамоты и чтения табулатур;</li>
-              <li class="lessons__item">Работа над ритмикой</li>
-              <li class="lessons__item">Разбор базовых и смешанных штрихов;</li>
-              <li class="lessons__item">Обучение игре аккомпанемента и соло (от неоклассики, до рока) </li>
-              <li class="lessons__item">Знакомство со специфическими приемами звукоизвлечения;</li>
-              <li class="lessons__item">Подбор репертуара, ориентированный на ваши музыкальные предпочтения.</li>
+              <li class="lessons__item">развитие навыков пальцевой техники и техники игры медиатором;</li>
+              <li class="lessons__item">обучение основам нотной грамоты и чтения табулатур;</li>
+              <li class="lessons__item">работа над ритмикой;</li>
+              <li class="lessons__item">разбор базовых и смешанных штрихов;</li>
+              <li class="lessons__item">обучение игре аккомпанемента и соло (от неоклассики, до рока);</li>
+              <li class="lessons__item">знакомство со специфическими приемами звукоизвлечения;</li>
+              <li class="lessons__item">подбор репертуара, ориентированный на ваши музыкальные предпочтения.</li>
             </ul>
           </div>
         </div>
         <div class="lessons__prices">
           <h2 class="lessons__price-heading">Стоимость занятий</h2>
-          <p class="lessons__price-detailed">4 индивидуальных занятия по 50 минут — 3000 руб.</p>
-          <p class="lessons__price-detailed">8 индивидуальных занятий по 50 минут — 5800 руб.</p>
+          <p class="lessons__price-detailed">4 индивидуальных занятия по 50 минут — 3500 руб.</p>
+          <p class="lessons__price-detailed">8 индивидуальных занятий по 50 минут — 6500 руб.</p>
         </div>
       </section>
       <section class="consult" id="consult">
         <h2 class="consult__heading">Записаться на консультацию</h2>
-        <form class="consult__form" method="post" autocomplete="off" action="https://echo.htmlacademy.ru/courses">
-          <label class="consult__label visually-hidden" for="name">Ваше имя</label>
-          <input class="consult__input " type="text" id="name" name="name" placeholder="Ваше Имя" required>
-          <label class="consult__label visually-hidden" for="phone">Номер телефона</label>
-          <input class="consult__input" type="tel" id="phone" name="phone" placeholder="Номер телефона" required>
-          <button class="consult__submit button" type="submit">Отправить</button>
+        <form class="consult__form" method="post" autocomplete="off" action="mail.php">
+          <label class="consult__label visually-hidden" for="user_name">Ваше имя</label>
+          <input class="consult__input" type="text" id="name" name="user_name" placeholder="Ваше Имя" required>
+          <label class="consult__label visually-hidden" for="user_phone">Номер телефона</label>
+          <input class="consult__input" type="tel" id="phone" name="user_phone" placeholder="Номер телефона" required>
+          <button class="consult__submit button" id="submit" type="submit">Отправить</button>
           <div class ="consult__acceptance">
             <input class="consult__acceptance-input visually-hidden" type="checkbox" name="acceptance" id="acceptance" required>
             <label for="acceptance" class=""></label>
@@ -179,7 +180,7 @@
               </a>
             </li>
             <li class="page-footer__social-item page-footer__social-item--fb">
-              <a href="#">
+              <a href="https://www.facebook.com/artnovastudiospb">
                 <svg class="test" width="37" height="37">
                   <use xlink:href="img/sprite.svg#icon-fb-header"></use>
                 </svg>
@@ -212,6 +213,8 @@
         </ul>
       </div>
     </footer>
+    <script src="js/jquery.maskedinput.js"></script>
+    <script src="js/form.js"></script>
     <script src="js/menu.js"></script>
   </body>
 </html>

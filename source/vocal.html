@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <title>Вокальная студия: Арт Нова</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link href="css/style.css?v=3" rel="stylesheet">
+    <link href="css/style.css?v=5.3" rel="stylesheet">
+    <script src="js/jquery-3.5.1.js"></script>
   </head>
   <body>
     <header class="page-header">
@@ -15,7 +16,7 @@
             <ul class="main-nav__list">
               <li class="main-nav__item"><a href="index.html">Главная</a></li>
               <li class="main-nav__item"><a href="teachers.html">Преподаватели</a></li>
-              <li class="main-nav__item main-nav__item--active main-nav__item--lessons">
+              <li class="main-nav__item main-nav__item--active-desktop main-nav__item--lessons">
                 <div class="main-nav__submenu">
                   <a>Уроки</a>
                   <ul class="main-nav__submenu-list">
@@ -57,7 +58,7 @@
           </a>
         </li>
         <li class="page-header__social-item page-header__social-item--fb">
-          <a href="#">
+          <a href="https://www.facebook.com/artnovastudiospb">
             <svg width="37" height="37">
               <use xlink:href="img/sprite.svg#icon-fb-header"></use>
             </svg>
@@ -93,7 +94,7 @@
           <img width="521" height="347" src="img/vocal2-desktop@2x.jpg" alt="Фотография поющих девушек">
           <div class="lessons__text">
             <p>Занятия с профессиональными педагогами – это и удовольствие и сложная работа одновременно. Качество и профессионализм – наш принцип работы с каждым учеником. Мы хотим, чтобы каждый из Вас звучал профессионально, пел легко и получал удовольствие от звучания собственного голоса.</p>
-            <p>Даже, если Вы не стремитесь на большую сцену, а учитесь «для себя» - мы научим Вас петь красиво и раскрыть собственное неповторимое звучание. Наши отчетные концерты – это отличная сценический опыт! </p>
+            <p>Даже, если Вы не стремитесь на большую сцену, а учитесь «для себя» - мы научим Вас петь красиво и раскрыть собственное неповторимое звучание. Наши отчетные концерты – это отличный сценический опыт!</p>
           </div>
         </div>
         <div class="lessons__container">
@@ -113,17 +114,17 @@
         </div>
         <div class="lessons__prices">
           <h2 class="lessons__price-heading">Стоимость занятий</h2>
-          <p class="lessons__price-detailed">4 индивидуальных занятия по 45 минут — 3800 руб.</p>
-          <p class="lessons__price-detailed">8 индивидуальных занятий по 45 минут — 6800 руб.</p>
+          <p class="lessons__price-detailed">4 индивидуальных занятия по 45 минут — 4000 руб.</p>
+          <p class="lessons__price-detailed">8 индивидуальных занятий по 45 минут — 7200 руб.</p>
         </div>
         <section class="consult" id="consult">
           <h2 class="consult__heading">Записаться на консультацию</h2>
-          <form class="consult__form" method="post" autocomplete="off" action="https://echo.htmlacademy.ru/courses">
-            <label class="consult__label visually-hidden" for="name">Ваше имя</label>
-            <input class="consult__input " type="text" id="name" name="name" placeholder="Ваше Имя" required>
-            <label class="consult__label visually-hidden" for="phone">Номер телефона</label>
-            <input class="consult__input" type="tel" id="phone" name="phone" placeholder="Номер телефона" required>
-            <button class="consult__submit button" type="submit">Отправить</button>
+          <form class="consult__form" method="post" autocomplete="off" action="mail.php">
+            <label class="consult__label visually-hidden" for="user_name">Ваше имя</label>
+            <input class="consult__input" type="text" id="name" name="user_name" placeholder="Ваше Имя" required>
+            <label class="consult__label visually-hidden" for="user_phone">Номер телефона</label>
+            <input class="consult__input" type="tel" id="phone" name="user_phone" placeholder="Номер телефона" required>
+            <button class="consult__submit button" id="submit" type="submit">Отправить</button>
             <div class ="consult__acceptance">
               <input class="consult__acceptance-input visually-hidden" type="checkbox" name="acceptance" id="acceptance" required>
               <label for="acceptance" class=""></label>
@@ -167,7 +168,7 @@
               </a>
             </li>
             <li class="page-footer__social-item page-footer__social-item--fb">
-              <a href="#">
+              <a href="https://www.facebook.com/artnovastudiospb">
                 <svg class="test" width="37" height="37">
                   <use xlink:href="img/sprite.svg#icon-fb-header"></use>
                 </svg>
@@ -200,6 +201,8 @@
         </ul>
       </div>
     </footer>
+    <script src="js/jquery.maskedinput.js"></script>
+    <script src="js/form.js"></script>
     <script src="js/menu.js"></script>
   </body>
 </html>

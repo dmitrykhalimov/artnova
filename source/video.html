@@ -8,7 +8,8 @@
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
     <link rel="preload" href="css/style.css" as="style">
-    <link href="css/style.css?v=3" rel="stylesheet">
+    <link href="css/style.css?v=5.3" rel="stylesheet">
+    <script src="js/jquery-3.5.1.js"></script>
   </head>
   <body>
     <header class="page-header">
@@ -61,7 +62,7 @@
           </a>
         </li>
         <li class="page-header__social-item page-header__social-item--fb">
-          <a href="#">
+          <a href="https://www.facebook.com/artnovastudiospb">
             <svg width="37" height="37">
               <use xlink:href="img/sprite.svg#icon-fb-header"></use>
             </svg>
@@ -93,24 +94,24 @@
         <div class="video__items">
           <iframe width="389" height="219" src="https://www.youtube.com/embed/8nXAG_8OWvg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           <iframe width="389" height="219" src="https://www.youtube.com/embed/7285bceJx6w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe width="389" height="219" src="https://www.youtube.com/embed/BvXc5LP7L3E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe width="389" height="219" src="https://www.youtube.com/embed/GqM-eWcljGE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe width="389" height="219" src="https://www.youtube.com/embed/O-Xb5yJJrBM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           <iframe width="389" height="219" src="https://www.youtube.com/embed/X6WqoRTsjAk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <iframe width="389" height="219" src="https://www.youtube.com/embed/7285bceJx6w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <iframe width="389" height="219" src="https://www.youtube.com/embed/X6WqoRTsjAk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <iframe width="389" height="219" src="https://www.youtube.com/embed/7285bceJx6w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <iframe width="389" height="219" src="https://www.youtube.com/embed/X6WqoRTsjAk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <iframe width="389" height="219" src="https://www.youtube.com/embed/7285bceJx6w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <iframe width="389" height="219" src="https://www.youtube.com/embed/X6WqoRTsjAk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe width="389" height="219" src="https://www.youtube.com/embed/9UDgm0ivxbo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe width="389" height="219" src="https://www.youtube.com/embed/uilS6KBqrKs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe width="389" height="219" src="https://www.youtube.com/embed/srUFI8BHDAA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           <button class="video__show-more button">Показать еще</button>
         </div>
       </section>
       <section class="consult" id="consult">
         <h2 class="consult__heading">Записаться на консультацию</h2>
-        <form class="consult__form" method="post" autocomplete="off" action="https://echo.htmlacademy.ru/courses">
-          <label class="consult__label visually-hidden" for="name">Ваше имя</label>
-          <input class="consult__input " type="text" id="name" name="name" placeholder="Ваше Имя" required>
-          <label class="consult__label visually-hidden" for="phone">Номер телефона</label>
-          <input class="consult__input" type="tel" id="phone" name="phone" placeholder="Номер телефона" required>
-          <button class="consult__submit button" type="submit">Отправить</button>
+        <form class="consult__form" method="post" autocomplete="off" action="mail.php">
+          <label class="consult__label visually-hidden" for="user_name">Ваше имя</label>
+          <input class="consult__input" type="text" id="name" name="user_name" placeholder="Ваше Имя" required>
+          <label class="consult__label visually-hidden" for="user_phone">Номер телефона</label>
+          <input class="consult__input" type="tel" id="phone" name="user_phone" placeholder="Номер телефона" required>
+          <button class="consult__submit button" id="submit" type="submit">Отправить</button>
           <div class ="consult__acceptance">
             <input class="consult__acceptance-input visually-hidden" type="checkbox" name="acceptance" id="acceptance" required>
             <label for="acceptance" class=""></label>
@@ -154,7 +155,7 @@
               </a>
             </li>
             <li class="page-footer__social-item page-footer__social-item--fb">
-              <a href="#">
+              <a href="https://www.facebook.com/artnovastudiospb">
                 <svg class="test" width="37" height="37">
                   <use xlink:href="img/sprite.svg#icon-fb-header"></use>
                 </svg>
@@ -187,6 +188,8 @@
         </ul>
       </div>
     </footer>
+    <script src="js/jquery.maskedinput.js"></script>
+    <script src="js/form.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/video.js"></script>
   </body>
