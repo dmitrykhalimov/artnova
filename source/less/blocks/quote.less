@@ -1,0 +1,67 @@
+.quote {
+  //.outline(green);
+}
+
+.quote__container {
+  box-sizing: border-box;
+  //.outline(purple);
+  width: 88vw;
+  max-width: 1250px;
+  margin: 0 auto;
+  font-family: 'Caveat', cursive;
+  font-size: 48px;
+  min-height: 280px;
+  padding-top: 60px;
+}
+
+.quote__container blockquote {
+  .list-reset;
+}
+
+.quote__container p {
+  font-size: 48px;
+  //.outline(red);
+  //width: 1000px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  color: @red;
+  text-align: center;
+}
+
+.quote__container cite {
+  font-size: 41px;
+  //.outline(green);
+  float: right;
+}
+
+@media (max-width: 1023px) {
+  .quote__container {
+    min-height: 240px;
+    padding-top: 60px;
+  }
+
+  .quote__container p {
+    font-size: 40px;
+  }
+
+  .quote__container cite {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .quote__container {
+    min-height: 220px;
+    padding-top: 30px;
+
+  }
+
+  .quote__container p {
+    font-size: 30px;
+  }
+
+  .quote__container cite {
+    font-size: 28px;
+  }
+}
