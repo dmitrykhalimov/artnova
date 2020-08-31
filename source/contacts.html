@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="css/style.css?v=5.3" rel="stylesheet">
     <script src="js/jquery-3.5.1.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=f9ac8945-178b-41db-81a7-1a52dd14f595" type="text/javascript"></script>
+    <script src="js/map.js" type="text/javascript"></script>
+
   </head>
   <body>
     <header class="page-header">
@@ -76,7 +79,10 @@
         </ul>
       </div>
     </header>
+
+
     <main class="page-main">
+
       <div class="top-decorative"></div>
       <div class="page-main__heading-container">
         <h1 class="page-main__heading">Контакты</h1>
@@ -95,10 +101,11 @@
         </div>
         <img width="593" height="345" src="img/contacts-desktop@2x.jpg" alt="Фотография крыльца">
       </section>
-
+    </main>
       <section class="page-contacts__map">
-        <div style="position:relative;overflow:hidden;"><iframe src="https://yandex.ru/map-widget/v1/-/CCQlJFBQxA" height="552" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+        <!-- <div style="position:relative;overflow:hidden;"><iframe src="https://yandex.ru/map-widget/v1/-/CCQlJFBQxA" height="552" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div> -->
         <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2002.2464355931534!2d30.260723316347672!3d59.87825798185432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6afcfd3a87c773fb!2z0KDRg9C80LHQsA!5e0!3m2!1sru!2sru!4v1595024808731!5m2!1sru!2sru" width="1200" height="552" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> -->
+        <div id="page-contacts__map-block"></div>
       </section>
       <section class="consult" id="consult">
         <h2 class="consult__heading">Записаться на консультацию</h2>
