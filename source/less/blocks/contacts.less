@@ -7,6 +7,7 @@
 }
 
 
+
 .contacts__heading {
   font-family: "FuturaMediumC", serif;
   font-style: normal;
@@ -45,6 +46,16 @@
 .contacts__text a:active {
   text-decoration: underline;
   opacity: 0.7;
+}
+
+.contacts__text--metro::before {
+  position: relative;
+  display: inline-block;
+  content: '';
+  background: url("../../img/metro-icon.svg") 0 0 no-repeat;
+
+  width: 22px;
+  height: 15px;
 }
 
 @media (max-width: 1023px) {
@@ -88,4 +99,5 @@
     line-height: 17px;
     width: 170px;
   }
+
 }
