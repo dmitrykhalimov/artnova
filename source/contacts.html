@@ -1,9 +1,14 @@
 <!DOCTYPE html>
-<html land="ru">
+<html lang="ru">
   <head>
     <meta charset="utf-8">
     <title>Вокальная студия: Арт Нова</title>
+
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="robots" content="all"/>
+    <meta name="title" content="Контакты - вокальная студия Арт Нова"/>
+    <meta name="description" content="Вокальная студия Арт Нова в Санкт-Петербурге (СПб) приглашает детей и взрослых всех уровней подготовки на занятия по эстрадному вокалу, электрогитаре и акустической гитаре."/>
+
     <link href="css/style.css?v=5.3" rel="stylesheet">
     <script src="js/jquery-3.5.1.js"></script>
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=f9ac8945-178b-41db-81a7-1a52dd14f595" type="text/javascript"></script>
@@ -111,13 +116,13 @@
         <h2 class="consult__heading">Записаться на консультацию</h2>
         <form class="consult__form" method="post" autocomplete="off" action="mail.php">
           <label class="consult__label visually-hidden" for="user_name">Ваше имя</label>
-          <input class="consult__input" type="text" id="name" name="user_name" placeholder="Ваше Имя" required>
+          <input class="consult__input" type="text" id="user_name" name="user_name" placeholder="Ваше Имя" required>
           <label class="consult__label visually-hidden" for="user_phone">Номер телефона</label>
-          <input class="consult__input" type="tel" id="phone" name="user_phone" placeholder="Номер телефона" required>
+          <input class="consult__input" type="tel" id="user_phone" name="user_phone" placeholder="Номер телефона" required>
           <button class="consult__submit button" id="submit" type="submit">Отправить</button>
           <div class ="consult__acceptance">
+            <label for="acceptance"></label>
             <input class="consult__acceptance-input visually-hidden" type="checkbox" name="acceptance" id="acceptance" required>
-            <label for="acceptance" class=""></label>
             <a class="consult__text" href="#">Даю согласие на обработку персональных данных</a>
           </div>
         </form>

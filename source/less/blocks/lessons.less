@@ -8,6 +8,7 @@
   min-height: 448px;
 }
 
+
 .lessons__container {
   box-sizing: border-box;
   display: flex;
@@ -31,19 +32,24 @@
 }
 
 
-.lessons__container:nth-child(n) p,
-.lessons__container:nth-child(n) ol,
-.lessons__container:nth-child(n) ul {
+.lessons__block:nth-child(n) p,
+.lessons__block:nth-child(n) ol,
+.lessons__block:nth-child(n) ul {
   margin-left: 45px;
 }
 
 
-.lessons__container:nth-child(2n) p {
+.lessons__block:nth-child(2n) p {
+  margin-left: 0;
   margin-right: 45px;
 }
 
-.lessons__container:nth-child(2n) {
+.lessons__block:nth-child(2n) {
   background-color: @gray-light;
+  flex-direction: row-reverse;
+}
+
+.lessons__block:nth-child(2n) .lessons__container {
   flex-direction: row-reverse;
 }
 
@@ -106,6 +112,14 @@
 .lessons__price-detailed {
   margin: 0;
 }
+
+.lessons__price-heading {
+  font-size: 32px;
+  line-height: 36px;
+  color: @red;
+  margin-bottom: 10px;
+}
+
 
 @media (max-width: 1349px) {
   .lessons__container {
@@ -179,11 +193,12 @@
 
   .lessons__container img {
     width: 100%;
+    margin-bottom: 10px;
   }
 
-  .lessons__container:nth-child(n) p,
-  .lessons__container:nth-child(n) ol,
-  .lessons__container:nth-child(n) ul {
+  .lessons__block:nth-child(n) p,
+  .lessons__block:nth-child(n) ol,
+  .lessons__block:nth-child(n) ul {
     margin: 0;
     padding-left: 20px;
     padding-right: 20px;
@@ -195,7 +210,7 @@
     .p-mobile;
   }
 
-  .lessons__container:nth-child(2n) p:last-child {
+  .lessons__block:nth-child(2n) p:last-child {
     margin-bottom: 0;
     padding-bottom: 20px;
   }
