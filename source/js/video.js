@@ -26,6 +26,7 @@ var showVideos = function () {
   videos.forEach((video) => {
     video.style.display = 'inline-block';
   });
+  showMoreButton.style.display = 'none';
 };
 
 console.log(window.innerWidth);
