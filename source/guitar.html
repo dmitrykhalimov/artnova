@@ -1,11 +1,17 @@
 <!DOCTYPE html>
-<html land="ru">
+<html lang="ru">
   <head>
     <meta charset="utf-8">
     <title>Вокальная студия: Арт Нова</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="robots" content="all"/>
+    <meta name="title" content="Видео - вокальная студия Арт Нова"/>
+    <meta name="description" content="Видео с мероприятий вокальной студии Арт Нова."/>
+
+    <link href="fonts/FuturaBookC.woff2" as="font" rel="preload" crossorigin="anonymous">
+    <link href="fonts/FuturaMediumC.woff2" as="font" rel="preload" crossorigin="anonymous">
+
     <link href="css/style.css?v=5.5" rel="stylesheet">
-    <script src="js/jquery-3.5.1.js"></script>
   </head>
   <body>
     <header class="page-header">
@@ -35,7 +41,7 @@
           <div class="page-header__logo">
             <a href="index.html">
               <picture>
-                <source width="209" height="60" media="(max-width: 768px)" srcset="img/logo-header-mobile.svg">
+                <source media="(max-width: 768px)" srcset="img/logo-header-mobile.svg">
                 <img width="150" height="172" src="img/logo-header.svg" alt="Сайт вокальной студии Арт-Нова">
               </picture>
             </a>
@@ -84,7 +90,7 @@
         <h1 class="page-main__heading">Уроки гитары</h1>
       </div>
       <section class="lessons">
-        <div class="lessons__block">
+        <div class="lessons__block lessons__block--guitar">
           <div class="lessons__container">
               <img width="521" height="347" src="img/guitar1-desktop@2x.jpg" alt="Фотография девушки на сцене">
               <div class="lessons__text">
@@ -93,7 +99,7 @@
               </div>
           </div>
         </div>
-        <div class="lessons__block">
+        <div class="lessons__block lessons__block--guitar">
           <div class="lessons__container">
               <img width="521" height="347" src="img/guitar2-desktop@2x.jpg" alt="Фотография девушек на сцене">
               <div class="lessons__wrapper">
@@ -110,12 +116,12 @@
               </div>
           </div>
         </div>
-        <div class="lessons__block">
+        <div class="lessons__block lessons__block--guitar">
           <div class="lessons__container">
             <img width="521" height="347" src="img/guitar3-desktop@2x.jpg" alt="Фотография девушки на сцене">
             <div class="lessons__wrapper">
               <div class="lessons__text">
-                <p>В программе обучения игре на гитаре:</h2>
+                <p>В программе обучения игре на гитаре:</p>
               </div>
               <ul class="lessons__list lessons__list--guitar">
                 <li class="lessons__item">развитие навыков пальцевой техники и техники игры медиатором;</li>
@@ -167,7 +173,7 @@
           <a href="index.html">
             <picture>
               <source media="(max-width: 767px)" srcset="img/logo-footer-mobile.svg">
-              <img width="152" hegiht="172" src="img/logo-footer.svg" alt="Логотип студии Арт Нова">
+              <img width="152" height="172" src="img/logo-footer.svg" alt="Логотип студии Арт Нова">
             </picture>
           </a>
           <ul class="page-footer__social-list">
@@ -221,6 +227,7 @@
         </ul>
       </div>
     </footer>
+    <script src="js/jquery-3.5.1.js"></script>
     <script src="js/jquery.maskedinput.js"></script>
     <script src="js/form.js"></script>
     <script src="js/menu.js"></script>
