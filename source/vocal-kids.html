@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Вокальная студия: Арт Нова</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link href="css/style.css?v=5.3" rel="stylesheet">
+    <link href="css/style.css?v=5.5" rel="stylesheet">
     <script src="js/jquery-3.5.1.js"></script>
   </head>
   <body>
@@ -31,15 +31,14 @@
             </ul>
           </nav>
           <div class="page-header__logo">
-            <a>
+            <a href="index.html">
               <picture>
-                <source width="209" height="60" media="(max-width: 768px)" srcset="img/logo-header-mobile.svg">
+                <source media="(max-width: 768px)" srcset="img/logo-header-mobile.svg">
                 <img width="150" height="172" src="img/logo-header.svg" alt="Сайт вокальной студии Арт-Нова">
               </picture>
             </a>
           </div>
         </div>
-
         <ul class="page-header__social-list">
         <li class="page-header__social-item page-header__social-item--vk">
           <a href="https://vk.com/vokalnayastudiyaspb">
@@ -143,14 +142,14 @@
         <h2 class="consult__heading">Записаться на консультацию</h2>
         <form class="consult__form" method="post" autocomplete="off" action="mail.php">
           <label class="consult__label visually-hidden" for="user_name">Ваше имя</label>
-          <input class="consult__input" type="text" id="name" name="user_name" placeholder="Ваше Имя" required>
+          <input class="consult__input" type="text" id="user_name" name="user_name" placeholder="Ваше Имя" required>
           <label class="consult__label visually-hidden" for="user_phone">Номер телефона</label>
-          <input class="consult__input" type="tel" id="phone" name="user_phone" placeholder="Номер телефона" required>
+          <input class="consult__input" type="tel" id="user_phone" name="user_phone" placeholder="Номер телефона" required>
           <button class="consult__submit button" id="submit" type="submit">Отправить</button>
           <div class ="consult__acceptance">
-            <input class="consult__acceptance-input visually-hidden" type="checkbox" name="acceptance" id="acceptance" required>
-            <label for="acceptance" class=""></label>
-            <a class="consult__text" href="#">Даю согласие на обработку персональных данных</a>
+            <input class="consult__acceptance-input visually-hidden" type="checkbox" name="acceptance" id="acceptance" aria-label="Даю согласие на обработку" required>
+            <label for="acceptance"></label>
+            <a class="consult__text" href="acceptance.html" target="_blank">Даю согласие на обработку персональных данных</a>
           </div>
         </form>
       </section>
@@ -168,10 +167,12 @@
           <li class="footer-menu__item"><a href="contacts.html">Контакты</a></li>
         </ul>
         <div class="page-footer__container">
-          <picture>
-            <source media="(max-width: 767px)" srcset="img/logo-footer-mobile.svg">
-            <img width="152" hegiht="172" src="img/logo-footer.svg" alt="Логотип студии Арт Нова">
-          </picture>
+          <a href="index.html">
+            <picture>
+              <source media="(max-width: 767px)" srcset="img/logo-footer-mobile.svg">
+              <img width="152" hegiht="172" src="img/logo-footer.svg" alt="Логотип студии Арт Нова">
+            </picture>
+          </a>
           <ul class="page-footer__social-list">
             <li class="page-footer__social-item page-footer__social-item--vk">
               <a href="https://vk.com/vokalnayastudiyaspb">

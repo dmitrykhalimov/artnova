@@ -62,9 +62,12 @@
   text-decoration: underline;
   font-size: 26px;
   line-height: 29px;
+  //.outline;
+  display: inline-block;
 }
 
 .consult__acceptance {
+  box-sizing: border-box;
   position: relative;
   //.outline(purple);
   max-width: 768px;
@@ -72,26 +75,24 @@
   margin-top: 40px;
   padding-top: 10px;
   padding-bottom: 60px;
+  padding-left: 55px;
 
+}
+
+.consult__acceptance-input {
+  margin-right: 20px;
+}
+
+.consult__acceptance-input + label {
+  position: relative;
 }
 
 .consult__acceptance-input + label::before {
   box-sizing: border-box;
   position: absolute;
-  top: 10px;
-  left: 80px;
+  top: -10px;
+  left: -50px;
   content: '';
-  width: 36px;
-  height: 36px;
-  background-color: white;
-}
-
-.consult__heading::before {
-  box-sizing: border-box;
-  position: absolute;
-  top: 10px;
-  left: 80px;
-  content: 'ываываывавыавы';
   width: 36px;
   height: 36px;
   background-color: white;
@@ -100,24 +101,23 @@
 .consult__acceptance-input:checked + label::after {
   box-sizing: border-box;
   position: absolute;
-  top: 15px;
-  left: 82px;
+  top: -2px;
+  left: -45px;
   content: '';
   width: 32px;
   height: 32px;
   background: url("../img/icon-tick.svg") 0 0 no-repeat;
+  background-size: 85%;
+
 }
 
-.consult__text {
-  //.outline(green);
-  display: block;
-  padding-left: 75px;
-}
+
 
 @media (max-width: 767px) {
   .consult__acceptance {
     padding-bottom: 20px;
     margin-top: 10px;
+    padding-left: 15px;
   }
 
   .consult {
@@ -146,20 +146,39 @@
   .consult__text {
     .p-mobile;
     box-sizing: border-box;
-    padding-left: 70px;
-    padding-right: 40px;
+    width: 250px;
     //.outline(lime);
-  }
-
-  .consult__acceptance-input + label::before {
-    left: 5.5vw;
-  }
-
-  .consult__acceptance-input:checked + label::after {
-    left: 5.5vw;
+    @media (min-width: 500px) {
+      width: 400px;
+    }
   }
 
   .consult__submit {
     margin: 0 auto;
+  }
+
+  .consult__acceptance-input + label::before {
+    top: -12px;
+    left: -15px;
+    width: 24px;
+    height: 24px;
+
+    @media (min-width: 500px) {
+      top: -3px;
+      left: -20px;
+    }
+  }
+
+  .consult__acceptance-input:checked + label::after {
+    top: -7px;
+    left: -12px;
+    width: 24px;
+    height: 24px;
+    background-size: 80%;
+
+    @media (min-width: 500px) {
+      top: 2px;
+      left: -17px;
+    }
   }
 }
