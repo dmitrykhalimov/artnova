@@ -3,9 +3,9 @@
 var TABLET_BREAKPOINT = 768;
 var SHOW_MORE_PER_CLICK = 2;
 var videos = document.querySelectorAll('iframe');
-
 var currentShown = null;
-var VIDEO_QUANTITY = videos.length - 1;
+
+var VIDEO_QUANTITY = videos.length;
 var VIDEO_MOBILE_DEFAULT = 2;
 
 var isDesktop = true;
@@ -59,7 +59,6 @@ window.addEventListener('resize', onChangeSize);
 
 
 var showMoreButton = document.querySelector('.video__show-more');
-console.log(showMoreButton);
 
 var onShowMoreButtonClick = function() {
   loadMoreFilms();
@@ -67,14 +66,16 @@ var onShowMoreButtonClick = function() {
 
 var showMoreFilms = function() {
   currentShown++;
-  videos[currentShown].style.display = 'inline-block';
+  videos[currentShown - 1].style.display = 'inline-block';
 }
 
 var loadMoreFilms = function() {
   if (currentShown <= VIDEO_QUANTITY - 2) {
+    console.log('2 фильма')
     showMoreFilms();
     showMoreFilms();
   } else if (currentShown === VIDEO_QUANTITY - 1) {
+    console.log('1 фильм')
     showMoreFilms();
   }
   console.log(currentShown);
