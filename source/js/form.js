@@ -10,7 +10,7 @@ $(function(){
 
 $(document).on('submit', 'form', function(evt) {
   evt.preventDefault();
-  var user_name = $('#name').val()
+  var user_name = $('#name').val();
   var user_phone = $('#phone').val();
   var dataString = 'user_name=' + user_name + '&user_phone=' + user_phone;
   $.ajax({
