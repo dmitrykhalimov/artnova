@@ -5,13 +5,12 @@
 
   box-sizing: border-box;
 
-  padding-left: 71px;
-  padding-right: 82px;
   padding-top: 15px;
   margin: 0 auto;
+  margin-bottom: 50px;
 
-  width: 1350px;
-  min-height: 552px;
+  width: 88vw;
+  max-width: 1650px;
 }
 
 .page-contacts__text {
@@ -19,6 +18,7 @@
 
   padding-right: 70px;
   margin: 0;
+  margin-bottom: 20px;
 }
 
 .page-contacts__links .page-contacts__text {
@@ -38,12 +38,156 @@
 }
 
 .page-contacts__map {
-  text-align: center;
   margin: 0 auto;
-  width: 1350px;
-  min-height: 613px;
+  padding-bottom: 50px;
+
+  width: 100%;
+  height: 613px;
+
+  text-align: center;
+}
+
+.page-contacts__map iframe {
+  display: block;
+
+  width: 100%;
 }
 
 .page-contacts img {
   flex-shrink: 0;
+
+  width: 50%;
+}
+
+.page-contacts strong,
+.page-contacts b {
+  white-space: nowrap;
+}
+
+.page-contacts__map-block {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 1349px) {
+  .page-contacts {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .page-contacts__text {
+    .p-mid-desktop;
+    margin-bottom: 15px;
+    padding-right: 50px;
+  }
+
+  .page-contacts__links .page-contacts__text {
+    margin-top: 15px;
+    padding-right: 50px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .page-contacts {
+    flex-direction: column;
+    align-items: flex-start;
+
+    box-sizing: border-box;
+
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 15px;
+
+    margin: 0 auto;
+    margin-bottom: 50px;
+
+    width: 100%;
+    max-width: 1650px;
+  }
+
+  .page-contacts__text {
+    .p-tablet;
+
+    margin-bottom: 10px;
+    padding: 0;
+  }
+
+  .page-contacts__links .page-contacts__text {
+    margin-top: 10px;
+    padding: 0;
+  }
+
+  .page-contacts img {
+    flex-shrink: 0;
+
+    margin: 0 auto;
+
+    width: 100%;
+    max-width: 700px;
+  }
+
+  .page-contacts__map {
+    margin: 0 auto;
+
+    width: 100%;
+    height: 500px;
+
+    text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .page-contacts {
+    flex-direction: column-reverse;
+
+    padding: 0;
+    margin-bottom: 10px;
+  }
+
+  .page-contacts__map iframe {
+    display: block;
+    width: 100%;
+  }
+
+  .page-contacts__container {
+    .list-reset;
+
+    box-sizing: border-box;
+
+    width: 100%;
+
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5vw;
+
+    background: url("../img/bg-contacts-piano-hihat.svg") 10px 30px no-repeat,
+      url("../img/bg-contacts-piano-mobile.svg") right 250px no-repeat;
+  }
+
+  .page-contacts__about,
+  .page-contacts__links {
+    display: block;
+
+    margin: 0 auto;
+    max-width: 550px;
+  }
+
+  .page-contacts__text {
+    .p-mobile;
+
+    margin-bottom: 20px;
+
+    text-align: left;
+  }
+
+  .page-contacts img {
+    margin-bottom: 10px;
+
+    max-width: 550px;
+  }
+
+  .page-contacts__map {
+    height: 400px;
+  }
 }

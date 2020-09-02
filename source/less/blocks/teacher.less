@@ -1,26 +1,36 @@
 .teacher {
   box-sizing: border-box;
-  //.outline(wheat);
-  margin: 0 auto;
-  width: 1350px;
+
+  width: 100%;
+}
+
+.teacher__wrapper {
+  box-sizing: border-box;
+
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  padding-left: 72px;
+
+  margin: 0 auto;
   padding-top: 31px;
   padding-bottom: 41px;
+
+  max-width: 1650px;
+  width: 88vw;
 }
+
 
 .teacher img {
   flex-shrink: 0;
+
   margin-right: 40px;
   margin-top: 6px;
 }
 
-
 .teacher__name,
 .teacher__title b {
   .list-reset;
+
   font-weight: normal;
   font-style: normal;
   font-size: 26px;
@@ -40,32 +50,296 @@
 
 .teacher__education {
   margin-top: 18px;
-  padding-right: 235px;
-  letter-spacing: -0.1px;
 
+  width: 50vw;
+
+  letter-spacing: -0.1px;
 }
 
 .teacher__about {
+  box-sizing: border-box;
+
+  position: relative;
+  float: left;
+
   margin-top: 18px;
+  margin-right: 25px;
+
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 55px;
+  padding-right: 45px;
+
+  background-color: @red;
+
+  width: 28vw;
+
+  color: @white;
   letter-spacing: -0.1px;
+
+  @media (min-width: 1875px) {
+    margin-right: 55px;
+    width: 600px;
+  }
+}
+
+/* .page-main__heading::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  contain: '“';
+
+  width: 100px;
+  height: 100px;
+
+  color: black;
+  background-color: green;
+} */
+
+.teacher__about::before {
+  position: absolute;
+  top: 40px;
+  left: 10px;
+  content: "“";
+
+  font-size: 100px;
+  color: @white;
+}
+
+.teacher__about::after {
+  position: absolute;
+  bottom: -10px;
+  right: 10px;
+  content: "“";
+
+  font-size: 100px;
+  color: @white;
 }
 
 .teacher__video {
-  //.outline;
+  display: flex;
+  flex-direction: column;
+
+  float: right;
+
+  margin-top: 18px;
 }
 
-.teacher__video img {
-  //.outline;
+.teacher__video iframe {
+  margin-bottom: 20px;
+
+  width: 29vw;
+  height: 17.5vw;
+
+  border: none;
+
+  @media (min-width: 1875px) {
+    width: 600px;
+    height: 340px;
+  }
 }
 
 section.teacher:nth-child(4),
 section.teacher:nth-child(5) {
-  background: url("../../img/bg-section.svg") -4px 0 no-repeat;
   padding-top: 96px;
   padding-right: 0;
+
+  background: url("../img/bg-section2.svg") -4px 0 no-repeat;
+  background-repeat: repeat-x;
 }
 
-section.teacher:nth-child(4) .teacher__education,
-section.teacher:nth-child(5) .teacher__education{
-  padding-right: 120px;
+@media (max-width: 1349px) {
+  .teacher__wrapper {
+    width: 92vw;
+  }
+
+  .teacher__about {
+    float: none;
+    width: 60vw;
+  }
+
+  .teacher__video {
+    float: none;
+  }
+
+  .teacher__video iframe {
+    width: 400px;
+    height: 240px;
+  }
+}
+
+@media (max-width: 1023px) {
+  section.teacher:nth-child(4),
+  section.teacher:nth-child(5) {
+    padding-top: 46px;
+
+    background-size: auto 42px;
+  }
+
+  .teacher__name {
+    font-size: 26px;
+    line-height: 28px;
+  }
+
+  .teacher__wrapper {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .teacher__title b {
+    display: inline-block;
+
+    width: 30vw;
+
+    font-size: 23px;
+    line-height: 25px;
+  }
+
+  .teacher__education,
+  .teacher__about {
+    .p-tablet;
+
+    width: 50vw;
+  }
+
+  .teacher__about::before,
+  .teacher__about::after {
+    font-size: 85px;
+  }
+
+  .teacher img {
+    width: 290px;
+  }
+
+  .teacher__video iframe {
+    width: 50vw;
+    height: 31vw;
+    max-height: 320px;
+  }
+}
+
+@media (max-width: 767px) {
+  .teacher {
+    padding-bottom: 20px;
+  }
+
+  .teacher--natalia .teacher__wrapper {
+    background: url("../img/bg-teachers-score.svg") right 45% no-repeat;
+  }
+
+  .teacher--elizaveta .teacher__wrapper {
+    background: url("../img/bg-teachers-metronome.svg") left 40% no-repeat;
+  }
+
+  .teacher--alexander .teacher__wrapper {
+    background: url("../img/bg-teachers-guitar.svg") left 45% no-repeat;
+  }
+
+  section.teacher:nth-child(4),
+  section.teacher:nth-child(5) {
+    background-size: auto 32px;
+    padding-top: 50px;
+  }
+
+  .teacher__wrapper {
+    display: block;
+
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+
+    width: 100%;
+  }
+
+  .teacher img {
+    box-sizing: border-box;
+
+    display: block;
+
+    margin: 0 auto;
+    margin-bottom: 20px;
+
+    width: 70vw;
+    max-width: 310px;
+  }
+
+  .teacher__name {
+    .h2-mobile;
+
+    width: 100%;
+
+    text-align: center;
+  }
+
+  .teacher__title b {
+    .h3-mobile;
+
+    display: block;
+
+    width: 70vw;
+
+    margin: 0 auto;
+
+    text-align: center;
+  }
+
+  .teacher__education {
+    .p-mobile;
+
+    margin-bottom: calc(1vw + 15px);
+    padding-left: 20px;
+
+    width: 80vw;
+  }
+
+  .teacher__about {
+    .p-mobile;
+
+    float: right;
+
+    width: 85vw;
+
+    padding-left: 30px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    margin-top: 0;
+    margin-right: 0;
+  }
+
+  .teacher__about::before,
+  .teacher__about::after {
+    font-size: 70px;
+  }
+
+  .teacher__about::before {
+    top: 35px;
+    left: 2px;
+  }
+
+  .teacher__about::after {
+    right: 0;
+  }
+
+  .teacher__video {
+    clear: both;
+
+    margin: 0 auto;
+
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .teacher__video iframe {
+    margin-bottom: 0;
+
+    width: 100%;
+    height: 58vw;
+    max-height: 300px;
+  }
+
+  .teacher__video iframe:nth-child(n+2) {
+    margin-top: 20px;
+  }
 }

@@ -1,68 +1,86 @@
 <!DOCTYPE html>
-<html land="ru">
+<html lang="ru">
   <head>
     <meta charset="utf-8">
     <title>Вокальная студия: Арт Нова</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link href="css/style.css?v=3" rel="stylesheet">
+
+    <meta name="robots" content="all"/>
+    <meta name="title" content="Уроки эстрадного вокала - Вокальная студия Арт Нова, Санкт-Петербург"/>
+    <meta name="description" content="Уроки эстрадного вокала в вокальной студии Арт Нова, Санкт-Петербург. Играть на гитаре может научиться каждый!"/>
+
+    <link href="fonts/FuturaBookC.woff2" as="font" rel="preload" crossorigin="anonymous">
+    <link href="fonts/FuturaMediumC.woff2" as="font" rel="preload" crossorigin="anonymous">
+
+    <link href="css/style.css?v=1.1.5" rel="stylesheet">
+    <!-- Yandex.Metrika counter --> <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(8114368, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/8114368" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
   </head>
   <body>
     <header class="page-header">
-      <nav class="main-nav">
-        <ul class="main-nav__list">
-          <li class="main-nav__item"><a href="index.html">Главная</a></li>
-          <li class="main-nav__item"><a href="teachers.html">Преподаватели</a></li>
-          <li class="main-nav__item main-nav__item--lessons">
-            <div class="main-nav__submenu">
-              <a>Уроки</a>
-              <ul class="main-nav__submenu-list">
-                <li class="main-nav__submenu-item"><a>Уроки вокала</a></li>
-                <li class="main-nav__submenu-item"><a href="guitar.html">Уроки гитары</a></li>
-                <li class="main-nav__submenu-item"><a href="vocal-kids.html">Вокал для детей</a></li>
-              </ul>
-            </div>
-          </li>
-          <li class="main-nav__item"><a href="video.html">Видео</a></li>
-          <li class="main-nav__item"><a href="contacts.html">Контакты</a></li>
-        </ul>
-      </nav>
-      <div class="page-header__logo">
-        <img width="150" height="172" src="img/logo-header.svg" alt="Сайт вокальной студии Арт-Нова">
-      </div>
-      <div class="page-header__social-nav">
+      <div class="page-header__wrapper">
+        <div class="page-header__container">
+          <nav class="main-nav main-nav--closed">
+            <button class="main-nav__button"></button>
+            <ul class="main-nav__list">
+              <li class="main-nav__item"><a href="index.html">Главная</a></li>
+              <li class="main-nav__item"><a href="teachers.html">Преподаватели</a></li>
+              <li class="main-nav__item main-nav__item--active-desktop main-nav__item--lessons">
+                <div class="main-nav__submenu">
+                  <a>Уроки</a>
+                  <ul class="main-nav__submenu-list">
+                    <li class="main-nav__submenu-item main-nav__submenu-item--active"><a>Уроки вокала</a></li>
+                    <li class="main-nav__submenu-item"><a href="guitar.html">Уроки гитары</a></li>
+                    <li class="main-nav__submenu-item"><a href="vocal-kids.html">Вокал для детей</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="main-nav__item"><a href="video.html">Видео</a></li>
+              <li class="main-nav__item"><a href="contacts.html">Контакты</a></li>
+            </ul>
+          </nav>
+          <div class="page-header__logo">
+            <a href="index.html">
+              <picture>
+                <source media="(max-width: 768px)" srcset="img/logo-header-mobile.svg">
+                <img width="150" height="172" src="img/logo-header.svg" alt="Сайт вокальной студии Арт-Нова">
+              </picture>
+            </a>
+          </div>
+        </div>
+
         <ul class="page-header__social-list">
-          <li class="page-header__social-item page-header__social-item--vk">
-            <a href="https://vk.com/vokalnayastudiyaspb">
-              <svg width="37" height="38">
-                <use xlink:href="img/sprite.svg#icon-vk-header"></use>
-              </svg>
-              <span class="visually-hidden">Вконтакте</span>
-            </a>
-          </li>
-          <li class="page-header__social-item page-header__social-item--in">
-            <a href="https://www.instagram.com/artnova_studio/">
-              <svg width="37" height="37">
-                <use xlink:href="img/sprite.svg#icon-in-header"></use>
-              </svg>
-              <span class="visually-hidden">Instagram</span>
-            </a>
-          </li>
-          <li class="page-header__social-item page-header__social-item--fb">
-            <a href="#">
-              <svg width="37" height="37">
-                <use xlink:href="img/sprite.svg#icon-fb-header"></use>
-              </svg>
-              <span class="visually-hidden">Facebook</span>
-            </a>
-          </li>
-          <li class="page-header__social-item page-header__social-item--tw">
-            <a href="https://twitter.com/ndirector">
-              <svg width="37" height="37">
-                <use xlink:href="img/sprite.svg#icon-tw-header"></use>
-              </svg>
-              <span class="visually-hidden">Twitter</span>
-            </a>
-          </li>
+        <li class="page-header__social-item page-header__social-item--vk">
+          <a href="https://vk.com/vokalnayastudiyaspb">
+            <svg width="37" height="38">
+              <use xlink:href="img/sprite.svg#icon-vk-header"></use>
+            </svg>
+            <span class="visually-hidden">Вконтакте</span>
+          </a>
+        </li>
+        <li class="page-header__social-item page-header__social-item--in">
+          <a href="https://www.instagram.com/artnova_studio/">
+            <svg width="37" height="37">
+              <use xlink:href="img/sprite.svg#icon-in-header"></use>
+            </svg>
+            <span class="visually-hidden">Instagram</span>
+          </a>
+        </li>
+        <li class="page-header__social-item page-header__social-item--fb">
+          <a href="https://www.facebook.com/artnovastudiospb">
+            <svg width="37" height="37">
+              <use xlink:href="img/sprite.svg#icon-fb-header"></use>
+            </svg>
+            <span class="visually-hidden">Facebook</span>
+          </a>
+        </li>
+        <li class="page-header__social-item page-header__social-item--tw">
+          <a href="https://twitter.com/ndirector">
+            <svg width="37" height="37">
+              <use xlink:href="img/sprite.svg#icon-tw-header"></use>
+            </svg>
+            <span class="visually-hidden">Twitter</span>
+          </a>
+        </li>
         </ul>
       </div>
     </header>
@@ -72,111 +90,138 @@
         <h1 class="page-main__heading">Уроки вокала</h1>
       </div>
       <section class="lessons">
-        <div class="lessons__container">
-          <img width="521" height="347" src="img/vocal1-desktop@2x.jpg" alt="Фотография девушки на сцене">
-          <p class="lessons__text">Вам пришла в голову интересная мысль научиться петь? Вы долго собирались и наконец-то решились? А, может быть, Вы поступаете в творческий ВУЗ или колледж и срочно ищете педагога по вокалу? Причин может быть много, но ответ один – в студии Арт Нова Вы найдете то, что искали. </p>
+        <div class="lessons__block lessons__block--vocal">
+          <div class="lessons__container">
+            <img width="521" height="347" src="img/vocal1-desktop@2x.jpg" alt="Фотография девушки на сцене">
+            <div class="lessons__text">
+              <p>Вам пришла в голову интересная мысль научиться петь? Вы долго собирались и наконец-то решились?</p>
+              <p>А, может быть, Вы поступаете в творческий ВУЗ или колледж и срочно ищете педагога по вокалу?</p>
+              <p>Причин может быть много, но ответ один – <strong>в студии Арт Нова Вы найдете то, что искали.</strong></p>
+            </div>
+          </div>
         </div>
-        <div class="lessons__container">
-          <img width="521" height="347" src="img/vocal2-desktop@2x.jpg" alt="Фотография поющих девушек">
-          <p class="lessons__text">Занятия с профессиональными педагогами – это и удовольствие и сложная работа одновременно. Качество и профессионализм – наш принцип работы с каждым учеником. Мы хотим, чтобы каждый из Вас звучал профессионально, пел легко и получал удовольствие от звучания собственного голоса. Даже, если Вы не стремитесь на большую сцену, а учитесь «для себя» - мы научим Вас петь красиво и раскрыть собственное неповторимое звучание. Наши отчетные концерты – это отличная сценический опыт! </p>
+        <div class="lessons__block lessons__block--vocal">
+          <div class="lessons__container">
+            <img width="521" height="347" src="img/vocal2-desktop@2x.jpg" alt="Фотография поющих девушек">
+            <div class="lessons__text">
+              <p>Занятия с профессиональными педагогами – это и удовольствие и сложная работа одновременно. Качество и профессионализм – наш принцип работы с каждым учеником. Мы хотим, чтобы каждый из Вас звучал профессионально, пел легко и получал удовольствие от звучания собственного голоса.</p>
+              <p>Даже, если Вы не стремитесь на большую сцену, а учитесь «для себя» - <strong>мы научим Вас петь красиво</strong> и раскрыть собственное неповторимое звучание. Наши отчетные концерты – это отличный сценический опыт!</p>
+            </div>
+          </div>
         </div>
-        <div class="lessons__container">
-          <img width="521" height="347" src="img/vocal3-desktop@1x.jpg" alt="Фотография поющего мужчины">
-          <div class="lessons__wrapper">
-            <p class="lessons__text">Пять причин начать заниматься вокалом</p>
-            <ol class="lessons__list">
-              <li class="lessons__item">Уроки вокала позволяют развить ваш слух и оценить возможности вашего голоса.</li>
-              <li class="lessons__item">Занятия по вокалу — это хорошая возможность обрести уверенность и получить навыки работы с микрофоном.</li>
-              <li class="lessons__item">Уже скоро вы можете удивлять  своих друзей в караоке.</li>
-              <li class="lessons__item">Вы с уверенностью сможете спеть на любом мероприятии, вокальном конкурсе, и даже успешно пройти кастинг.</li>
-              <li class="lessons__item">Вы получите хорошую подготовку, если собираетесь поступать в музыкальное учебное заведение.</li>
-            </ol>
+        <div class="lessons__block lessons__block--vocal">
+          <div class="lessons__container">
+            <img width="521" height="347" src="img/vocal3-desktop@1x.jpg" alt="Фотография поющего мужчины">
+            <div class="lessons__wrapper">
+              <div class="lessons__text">
+                <p><strong>Пять причин начать заниматься вокалом</strong></p>
+              </div>
+              <ol class="lessons__list">
+                <li class="lessons__item">Уроки вокала позволяют развить ваш слух и оценить возможности вашего голоса.</li>
+                <li class="lessons__item">Занятия по вокалу — это хорошая возможность обрести уверенность и получить навыки работы с микрофоном.</li>
+                <li class="lessons__item">Уже скоро вы можете удивлять  своих друзей в караоке.</li>
+                <li class="lessons__item">Вы с уверенностью сможете спеть на любом мероприятии, вокальном конкурсе, и даже успешно пройти кастинг.</li>
+                <li class="lessons__item">Вы получите хорошую подготовку, если собираетесь поступать в музыкальное учебное заведение.</li>
+              </ol>
+            </div>
           </div>
         </div>
         <div class="lessons__prices">
           <h2 class="lessons__price-heading">Стоимость занятий</h2>
-          <p class="lessons__price-detailed">4 индивидуальных занятия по 45 минут — 3800 руб.</p>
-          <p class="lessons__price-detailed">8 индивидуальных занятий по 45 минут — 6800 руб.</p>
+          <p class="lessons__price-detailed">4 индивидуальных занятия по 45 минут — 4000 руб.</p>
+          <p class="lessons__price-detailed">8 индивидуальных занятий по 45 минут — 7200 руб.</p>
         </div>
         <section class="consult" id="consult">
           <h2 class="consult__heading">Записаться на консультацию</h2>
-          <form class="consult__form" method="post" autocomplete="off" action="https://echo.htmlacademy.ru/courses">
+          <form class="consult__form" method="post" autocomplete="off" action="mail.php">
             <label class="consult__label visually-hidden" for="name">Ваше имя</label>
-            <input class="consult__input " type="text" id="name" name="name" placeholder="Ваше Имя" required>
+            <input class="consult__input" type="text" id="name" name="user_name" placeholder="Ваше Имя" required>
             <label class="consult__label visually-hidden" for="phone">Номер телефона</label>
-            <input class="consult__input" type="tel" id="phone" name="phone" placeholder="Номер телефона" required>
-            <button class="consult__submit button" type="submit">Отправить</button>
+            <input class="consult__input" type="tel" id="phone" name="user_phone" placeholder="Номер телефона" required>
+            <button class="consult__submit button" id="submit" type="submit">Отправить</button>
             <div class ="consult__acceptance">
-              <input class="consult__acceptance-input visually-hidden" type="checkbox" name="acceptance" id="acceptance" required>
-              <label for="acceptance" class=""></label>
-              <a class="consult__text" href="#">Даю согласие на обработку персональных данных</a>
+              <input class="consult__acceptance-input visually-hidden" type="checkbox" name="acceptance" id="acceptance" aria-label="Даю согласие на обработку" required>
+              <label for="acceptance"></label>
+              <a class="consult__text" href="acceptance.html" target="_blank">Даю согласие на обработку персональных данных</a>
             </div>
           </form>
         </section>
-      <div class="bottom-decorative"></div>
+      </section>
     </main>
     <footer class="page-footer">
-      <ul class="footer-menu">
-        <li class="footer-menu__item"><a>Главная</a></li>
-        <li class="footer-menu__item"><a href="teachers.html">Преподаватели</a></li>
-        <li class="footer-menu__item"><a href="vocal.html">Уроки вокала</a></li>
-        <li class="footer-menu__item"><a href="guitar.html">Уроки гитары</a></li>
-        <li class="footer-menu__item"><a href="vocal-kids.html">Вокал для детей</a></li>
-        <li class="footer-menu__item"><a href="video.html">Видео</a></li>
-        <li class="footer-menu__item"><a href="contacts.html">Контакты</a></li>
-      </ul>
-      <div class="page-footer__container">
-        <img width="152" hegiht="172" src="img/logo-footer.svg" alt="Логотип студии Арт Нова">
-        <ul class="page-footer__social-list">
-          <li class="page-footer__social-item page-footer__social-item--vk">
-            <a href="https://vk.com/vokalnayastudiyaspb">
-              <svg class="test" width="37" height="38">
-                <use xlink:href="img/sprite.svg#icon-vk-header"></use>
-              </svg>
-              <span class="visually-hidden">Вконтакте</span>
-            </a>
+      <div class="page-footer__wrapper">
+        <ul class="footer-menu">
+          <li class="footer-menu__item"><a href="index.html">Главная</a></li>
+          <li class="footer-menu__item"><a href="teachers.html">Преподаватели</a></li>
+          <li class="footer-menu__item footer-menu__item--active"><a>Уроки вокала</a></li>
+          <li class="footer-menu__item"><a href="guitar.html">Уроки гитары</a></li>
+          <li class="footer-menu__item"><a href="vocal-kids.html">Вокал для детей</a></li>
+          <li class="footer-menu__item"><a href="video.html">Видео</a></li>
+          <li class="footer-menu__item"><a href="contacts.html">Контакты</a></li>
+        </ul>
+        <div class="page-footer__container">
+          <a href="index.html">
+            <picture>
+              <source media="(max-width: 767px)" srcset="img/logo-footer-mobile.svg">
+              <img width="152" height="172" src="img/logo-footer.svg" alt="Логотип студии Арт Нова">
+            </picture>
+          </a>
+          <ul class="page-footer__social-list">
+            <li class="page-footer__social-item page-footer__social-item--vk">
+              <a href="https://vk.com/vokalnayastudiyaspb">
+                <svg class="test" width="37" height="38">
+                  <use xlink:href="img/sprite.svg#icon-vk-header"></use>
+                </svg>
+                <span class="visually-hidden">Вконтакте</span>
+              </a>
+            </li>
+            <li class="page-footer__social-item page-footer__social-item--in">
+              <a href="https://www.instagram.com/artnova_studio/">
+                <svg class="test" width="37" height="37">
+                  <use xlink:href="img/sprite.svg#icon-in-header"></use>
+                </svg>
+                <span class="visually-hidden">Instagram</span>
+              </a>
+            </li>
+            <li class="page-footer__social-item page-footer__social-item--fb">
+              <a href="https://www.facebook.com/artnovastudiospb">
+                <svg class="test" width="37" height="37">
+                  <use xlink:href="img/sprite.svg#icon-fb-header"></use>
+                </svg>
+                <span class="visually-hidden">Facebook</span>
+              </a>
+            </li>
+            <li class="page-footer__social-item page-footer__social-item--tw">
+              <a href="https://twitter.com/ndirector">
+                <svg class="test" width="37" height="37">
+                  <use xlink:href="img/sprite.svg#icon-tw-header"></use>
+                </svg>
+                <span class="visually-hidden">Twitter</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <ul class="contacts">
+          <li class="contacts__item">
+            <h3 class="contacts__heading">Телефон:</h3>
+            <p class="contacts__text">+7-911-976-43-18</p>
           </li>
-          <li class="page-footer__social-item page-footer__social-item--in">
-            <a href="https://www.instagram.com/artnova_studio/">
-              <svg class="test" width="37" height="37">
-                <use xlink:href="img/sprite.svg#icon-in-header"></use>
-              </svg>
-              <span class="visually-hidden">Instagram</span>
-            </a>
+          <li class="contacts__item">
+            <h3 class="contacts__heading">Адрес:</h3>
+            <p class="contacts__text contacts__text--metro"> Кировский завод пр.&nbsp;Стачек,&nbsp;д.72,&nbsp;ауд.&nbsp;258-259</p>
           </li>
-          <li class="page-footer__social-item page-footer__social-item--fb">
-            <a href="#">
-              <svg class="test" width="37" height="37">
-                <use xlink:href="img/sprite.svg#icon-fb-header"></use>
-              </svg>
-              <span class="visually-hidden">Facebook</span>
-            </a>
-          </li>
-          <li class="page-footer__social-item page-footer__social-item--tw">
-            <a href="https://twitter.com/ndirector">
-              <svg class="test" width="37" height="37">
-                <use xlink:href="img/sprite.svg#icon-tw-header"></use>
-              </svg>
-              <span class="visually-hidden">Twitter</span>
-            </a>
+          <li class="contacts__item">
+            <h3 class="contacts__heading">Напишите нам:</h3>
+            <p class="contacts__text contacts__text--mail"><a href="mailto:director@artnova-spb.ru">director@artnova-spb.ru</a></p>
           </li>
         </ul>
       </div>
-      <ul class="contacts">
-        <li class="contacts__item">
-          <h3 class="contacts__heading">Телефон</h3>
-          <p class="contacts__text">8-911-976-43-18</p>
-        </li>
-        <li class="contacts__item">
-          <h3 class="contacts__heading">Адрес</h3>
-          <p class="contacts__text">ст. м. "Кировский завод"</p>
-          <p class="contacts__text">пр. Стачек, д.72, ауд. 258-259</p>
-        </li>
-        <li class="contacts__item">
-          <h3 class="contacts__heading">Напишите нам</h3>
-          <p class="contacts__text contacts__text--mail"><a href="mailto:director@artnova-spb.ru">director@artnova-spb.ru</a></p>
-        </li>
-      </ul>
     </footer>
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/jquery.maskedinput.js"></script>
+    <script src="js/form.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/svg4everybody.min.js"></script>
+    <script>svg4everybody();</script>
   </body>
 </html>

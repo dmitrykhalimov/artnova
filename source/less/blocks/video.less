@@ -1,15 +1,22 @@
 .video {
   box-sizing: border-box;
+
+  margin: 0 auto;
+  width: 100%;
+
   font-style: normal;
   font-weight: normal;
   font-size: 26px;
   line-height: 29px;
+}
+
+.video__description {
+  box-sizing: border-box;
+
   margin: 0 auto;
-  width: 1350px;
-  min-height: 1480px;
-  //.outline(purple);
-  padding-left: 64px;
-  padding-top: 38px;
+
+  width: 88vw;
+  max-width: 1650px;
 }
 
 .video__text {
@@ -18,16 +25,105 @@
 }
 
 .video__items {
-  //.outline;
-  width: 1220px;
   padding-top: 20px;
+  margin: 0 auto;
+
+  width: 88vw;
+  max-width: 1650px;
 }
 
-.video__items img:nth-child(3n),
-.video__items img:nth-child(3n - 1) {
-  margin-left: 20px;
+.video__items iframe:nth-child(3n),
+.video__items iframe:nth-child(3n - 1) {
+  margin-left: 1.5vw;
 }
 
-.video__items img {
-  margin-bottom: 65px;
+.video__items iframe {
+  margin-bottom: 45px;
+  border: none;
+
+  width: 28vw;
+  max-width: 700px;
+  height: 17vw;
+
+  @media (min-width: 1800px) {
+    width: 500px;
+    height: 320px;
+  }
+}
+
+.video__show-more {
+  display: none;
+}
+
+.video__text strong {
+  font-weight: normal;
+  color: @red;
+}
+
+@media (max-width: 1349px) {
+  .video__description {
+    .p-mid-desktop;
+    padding: 0;
+    width: 88.5vw;
+  }
+
+  .video__items {
+    width: 88.5vw;
+  }
+}
+
+@media (max-width: 1023px) {
+  .video__description {
+    .p-tablet;
+    padding: 0;
+    width: 89vw;
+  }
+
+  .video__items {
+    width: 89vw;
+  }
+}
+
+@media (max-width: 767px) {
+  .video {
+    padding-bottom: 20px;
+  }
+
+  .video__description {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    background: url("../img/bg-video-sax.svg") right 20% no-repeat;
+  }
+
+  .video__text {
+    .p-mobile;
+    margin-bottom: 20px;
+  }
+
+  .video__items {
+    width: 100%;
+  }
+
+  .video__items iframe:nth-child(n) {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 60vw;
+  }
+
+  .video__show-more {
+    box-sizing: border-box;
+    display: block;
+
+    margin: 0 auto;
+    margin-top: 20px;
+
+    color: @red;
+    width: 200px;
+
+    border: 1px solid @red;
+    background-color: @white;
+  }
 }

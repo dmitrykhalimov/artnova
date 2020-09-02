@@ -1,20 +1,22 @@
 .begin {
-  background: url("../../img/bg-section.svg") 4px 0 no-repeat;
-  //.outline;
-
-  width: 1350px;
-
-  margin: 0 auto;
   padding-top: 83px;
 
+  width: 100%;
+
   letter-spacing: -0.2px;
+
+  background: url("../img/bg-section2.svg") top center no-repeat;
+  background-repeat: repeat-x;
 }
 
 .begin__list {
-  margin-bottom: 0;
-  padding: 0;
   display: flex;
   justify-content: space-between;
+
+  margin: 0 auto;
+  padding: 0;
+
+  width: calc(50% + 675px);
 
   list-style: none;
 }
@@ -22,7 +24,9 @@
 .begin__heading {
   margin: 0;
   padding-bottom: 30px;
+
   text-align: center;
+
   font-size: 42px;
   font-weight: normal;
   line-height: 47px;
@@ -31,18 +35,24 @@
 
 .begin__item {
   margin: 0 auto;
-  width: 100%;
+
+  width: 450px;
   min-height: 450px;
-  //.outline(green);
 }
 
 .begin__item--guitar::before {
-  position: absolute;
   display: block;
-  content: '';
-  //.outline(orange);
+
+  position: absolute;
+  content: "";
+
   background: url("../img/bg-main-begin-guitar@1x.jpg") 0 0 no-repeat;
   background-size: 100%;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background: url("../img/bg-main-begin-guitar@2x.jpg") 0 0 no-repeat;
+    background-size: 450px auto;
+  }
 
   width: 450px;
   height: 450px;
@@ -53,12 +63,18 @@
 }
 
 .begin__item--vocal::before {
-  position: absolute;
   display: block;
-  content: '';
-  //.outline(orange);
+
+  position: absolute;
+  content: "";
+
   background: url("../img/bg-main-begin-vocal@1x.jpg") 0 0 no-repeat;
   background-size: 100%;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background: url("../img/bg-main-begin-vocal@2x.jpg") 0 0 no-repeat;
+    background-size: 450px auto;
+  }
 
   width: 450px;
   height: 450px;
@@ -69,12 +85,18 @@
 }
 
 .begin__item--kids::before {
-  position: absolute;
   display: block;
-  content: '';
-  //.outline(orange);
+
+  position: absolute;
+  content: "";
+
   background: url("../img/bg-main-begin-kids@1x.jpg") 0 0 no-repeat;
   background-size: 100%;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background: url("../img/bg-main-begin-kids@2x.jpg") 0 0 no-repeat;
+    background-size: 450px auto;
+  }
 
   width: 450px;
   height: 450px;
@@ -88,48 +110,134 @@
   filter: contrast(80%) hue-rotate(-5deg);
 }
 
-.begin__button {
-  box-sizing: border-box;
-}
-
-/*
-.begin__button:hover {
-  background: rgba(255, 255, 255, 0.7);
-  color: black;
-  border: 2px solid rgba(255, 255, 255, 0.7);
-  font-weight: normal;
-}*/
-
-
 .begin__item:hover .begin__button {
-  background: rgba(255, 255, 255, 0.7);
   color: black;
   border: 2px solid rgba(255, 255, 255, 0.7);
   font-weight: normal;
+
+  background: rgba(255, 255, 255, 0.7);
 }
 
 .begin__button:active {
   border-color: rgba(255, 255, 255, 0.5);
 }
 
-
 .begin__name {
-  //.outline;
   display: block;
+
+  margin-top: 195px;
+  margin-bottom: 118px;
+
+  text-align: center;
+
   color: @white;
   font-size: 42px;
   font-weight: normal;
   line-height: 47px;
-  text-align: center;
-  margin-top: 195px;
-  margin-bottom: 118px;
 }
 
 .begin__button {
+  box-sizing: border-box;
+
+  display: block;
+
   margin: 0 auto;
   padding-left: 10px;
   padding-right: 10px;
+
   text-align: center;
-  display: block;
+
   width: 174px;
+}
+
+@media (max-width: 1349px) {
+  .begin__list {
+    width: 100%;
+    height: 32vw;
+  }
+
+  .begin__name {
+    margin-top: 10.5vw;
+    margin-bottom: 5vw;
+
+    font-size: 38px;
+    line-height: 43px;
+  }
+
+  .begin__item {
+    width: 32vw;
+    min-height: 0;
+  }
+
+  .begin__item::before {
+    width: 32vw;
+  }
+}
+
+@media (max-width: 1023px) {
+  .begin {
+    background-size: auto 42px;
+  }
+
+  .begin__heading {
+    .h2-tablet;
+  }
+
+  .begin__name {
+    .h3-tablet;
+  }
+
+  .begin__button {
+    font-size: 15px;
+    line-height: 17px;
+  }
+}
+
+@media (max-width: 767px) {
+  .begin {
+    padding-top: 50px;
+
+    background-size: auto 32px;
+  }
+
+  .begin__name {
+    .h2-mobile-big;
+
+    margin-top: 42%;
+  }
+
+  .begin__heading {
+    .h2-mobile-big;
+  }
+
+  .begin__list {
+    flex-direction: column;
+
+    width: 100%;
+    height: auto;
+    min-width: 320px;
+    min-height: 681px;
+  }
+
+  .begin__item {
+    margin-bottom: 20px;
+
+    width: 100%;
+    max-width: 500px;
+    max-height: 390px;
+    height: 75vw;
+  }
+
+  .begin__item::before {
+    width: 100%;
+    height: 75vw;
+
+    max-width: 500px;
+    min-width: 320px;
+
+    max-height: 390px;
+    min-height: 240px;
+
+    background-size: 100%;
+  }
 }

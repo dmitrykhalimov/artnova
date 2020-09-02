@@ -1,29 +1,141 @@
 .how-to {
   box-sizing: border-box;
-  //.outline(green);
+
+  padding-top: 54px;
+  padding-bottom: 40px;
+
   margin: 0 auto;
-  width: 1350px;
-  min-height: 472px;
+  width: 100%;
+
   font-size: 26px;
   line-height: 29px;
-  padding-left: 90px;
-  padding-top: 54px;
 }
 
 .how-to__heading {
-  margin: 0;
+  margin: 0 auto;
+  padding-bottom: 30px;
+
+  width: 60%;
+
+  text-align: center;
+
+  font-size: 42px;
   font-weight: normal;
-  font-size: 26px;
-  line-height: 29px;
+  line-height: 47px;
+  color: @red;
 }
 
 .how-to__list {
+  margin: 0 auto;
   margin-top: 30px;
-  padding-left: 25px;
-  padding-right: 105px;
+  padding: 0;
+
+  width: 90%;
+  max-width: 1600px;
+
+  list-style: none;
+  columns: 2;
+}
+
+.how-to__item {
+  position: relative;
+
+  margin-bottom: 20px;
+  padding-left: 120px;
+
+  min-height: 100px;
+
+  font-size: 26.0545px;
+  line-height: 29px;
+}
+
+.how-to__item::before {
+  display: block;
+
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: "";
+
+  width: 75px;
+  height: 75px;
+}
+
+.how-to__item--call::before {
+  background: url("../img/how-to-icon-2.svg") 0 0 no-repeat;
+}
+
+.how-to__item--visit::before {
+  background: url("../img/how-to-icon-3.svg") 0 0 no-repeat;
+}
+
+.how-to__item--level::before {
+  background: url("../img/how-to-icon-1.svg") 0 0 no-repeat;
+}
+
+.how-to__item--program::before {
+  background: url("../img/how-to-icon-4.svg") 0 0 no-repeat;
 }
 
 .how-to__text {
   margin-top: 32px;
   padding-right: 150px;
+}
+
+@media (max-width: 1349px) {
+  .how-to__item {
+    font-size: 23px;
+    line-height: 26px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .how-to__heading {
+    .h2-tablet;
+  }
+
+  .how-to__item {
+    padding-left: 100px;
+
+    min-height: 140px;
+
+    font-size: 20px;
+    line-height: 23px;
+  }
+
+  .how-to__text {
+    padding-right: 45px;
+  }
+}
+
+@media (max-width: 767px) {
+  .how-to {
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+
+  .how-to__heading {
+    .h2-mobile-big;
+
+    width: 90%;
+    padding-bottom: 0;
+  }
+
+  .how-to__list {
+    columns: 1;
+  }
+
+  .how-to__item {
+    .p-mobile;
+
+    min-height: 55px;
+    padding-left: 75px;
+  }
+
+  .how-to__item::before {
+    width: 55px;
+    height: 55px;
+
+    background-size: 55px 55px;
+  }
 }

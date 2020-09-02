@@ -1,11 +1,44 @@
 .index-video {
   margin: 0 auto;
-  width: 1350px;
-  min-height: 460px;
-  //.outline(purple);
-
-  background: url("../../img/bg-section.svg") 4px 0 no-repeat;
-  text-align: center;
   padding-top: 95px;
+  padding-bottom: 2.6vw;
+
+  width: 100%;
+
+  background: url("../img/bg-section2.svg") center top no-repeat;
+  background-repeat: repeat-x;
+  text-align: center;
 }
 
+.index-video iframe {
+  width: 55vw;
+  height: 31vw;
+
+  border: none;
+}
+
+@media (max-width: 1023px) {
+  .index-video {
+    background-size: auto 42px;
+    padding-top: 70px;
+  }
+
+  .index-video iframe {
+    width: 71vw;
+    height: 40vw;
+  }
+}
+
+@media (max-width: 767px) {
+  .index-video {
+    padding-top: 15vw;
+    padding-bottom: 8vw;
+  }
+
+  .index-video iframe {
+    width: 100%;
+    height: 55vw;
+    max-width: 510px;
+    max-height: 310px;
+  }
+}

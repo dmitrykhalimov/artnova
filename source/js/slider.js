@@ -9,10 +9,46 @@
   var swiper = new Swiper('.swiper-container', {
     loop: true,
     slidesPerView: 7,
+    preloadImages: false,
+
+    lazy: {
+      loadPrevNext: true,
+    },
+
+    watchSlidesVisibility: true,
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
-    }
+      dynamicBullets: true,
+    },
+
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+      },
+
+      500: {
+        slidesPerView: 3,
+      },
+
+      768: {
+        slidesPerView: 5,
+      },
+
+      1024: {
+        slidesPerView: 7,
+      },
+
+      1368: {
+        slidesPerView: 9,
+      },
+      1600: {
+        slidesPerView: 10,
+      },
+      1700: {
+        slidesPerView: 11,
+      }
+    },
   });
 
   var onLeftClick = function () {

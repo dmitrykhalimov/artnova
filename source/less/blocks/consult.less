@@ -1,23 +1,27 @@
 .consult {
-  //.outline(green);
-  background: url("../../img/bg-section.svg") 4px 0 no-repeat,
-  url("../../img/bg-footer.svg") 4px 101% no-repeat;
-  color: @white;
-  //.outline();
   margin: 0 auto;
   padding-top: 95px;
-  width: 1350px;
+
+  width: 100%;
   min-height: 425px;
+
+  background: url("../img/bg-section2.svg") top center no-repeat,
+    url("../img/bg-footer.svg") bottom center no-repeat;
+  background-repeat: repeat-x, repeat-x;
+  color: @white;
 }
 
 .consult__heading {
   margin: 0;
   padding-top: 35px;
   padding-bottom: 35px;
+
   text-align: center;
+
   font-weight: normal;
   font-size: 42px;
   line-height: 47px;
+
   background-color: @red;
 }
 
@@ -27,24 +31,30 @@
 }
 
 .consult__form {
-  background-color: @red;
-  //.outline(blue);
-  text-align: center;
   padding-top: 18px;
+
+  text-align: center;
+
+  background-color: @red;
 }
 
 .consult__input {
   box-sizing: border-box;
-  border: 0;
-  font-family: "FuturaBookC", sans-serif;;
-  font-size: 26px;
-  line-height: 29px;
-  color: @red;
-  height: 45px;
-  width: 485px;
+
   margin-right: 22px;
   padding-top: 1px;
   padding-left: 15px;
+
+  width: 35%;
+  height: 45px;
+  max-width: 630px;
+
+  font-family: "FuturaBookC", sans-serif;
+  font-size: 26px;
+  line-height: 29px;
+  color: @red;
+
+  border: 0;
 }
 
 .consult__input::placeholder {
@@ -52,50 +62,159 @@
 }
 
 .consult__submit {
-  opacity: 1;
-  background-color: @red;
   width: 172px;
+
+  opacity: 1;
+
+  background-color: @red;
 }
 
 .consult__text {
+  display: inline-block;
+
   color: @white;
   text-decoration: underline;
   font-size: 26px;
   line-height: 29px;
+
+  //border-bottom: 2px solid @white;
 }
 
 .consult__acceptance {
+  box-sizing: border-box;
+
   position: relative;
-  //.outline(purple);
+
+  margin: 0 auto;
   margin-top: 40px;
   padding-top: 10px;
   padding-bottom: 60px;
+  padding-left: 55px;
+
+  max-width: 768px;
+}
+
+.consult__acceptance-input {
+  margin-right: 20px;
+}
+
+.consult__acceptance-input + label {
+  position: relative;
 }
 
 .consult__acceptance-input + label::before {
   box-sizing: border-box;
+
   position: absolute;
-  top: 10px;
-  left: 384px;
-  content: '';
+  top: -10px;
+  left: -50px;
+  content: "";
+
   width: 36px;
   height: 36px;
+
   background-color: white;
 }
 
 .consult__acceptance-input:checked + label::after {
   box-sizing: border-box;
+
   position: absolute;
-  top: 15px;
-  left: 386px;
-  content: '';
+  top: -2px;
+  left: -45px;
+  content: "";
+
   width: 32px;
   height: 32px;
+
   background: url("../img/icon-tick.svg") 0 0 no-repeat;
+  background-size: 85%;
 }
 
-.consult__text {
-  //.outline(green);
-  display: block;
-  padding-left: 75px;
+@media (max-width: 1023px) {
+  .consult {
+    background-size: auto 42px;
+  }
+}
+
+@media (max-width: 767px) {
+  .consult__acceptance {
+    margin-top: 10px;
+
+    padding-bottom: 20px;
+    padding-left: 15px;
+  }
+
+  .consult {
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    min-height: auto;
+
+    background-size: auto 32px;
+  }
+
+  .consult__heading {
+    .h2-mobile;
+
+    box-sizing: border-box;
+
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 0;
+  }
+
+  .consult__input {
+    .p-mobile;
+
+    margin: 0;
+    margin-bottom: 20px;
+
+    min-width: 87.5%;
+  }
+
+  .consult__text {
+    .p-mobile;
+
+    box-sizing: border-box;
+
+    width: 250px;
+
+    @media (min-width: 500px) {
+      width: 400px;
+    }
+  }
+
+  .consult__submit {
+    margin: 0 auto;
+  }
+
+  .consult__acceptance-input + label::before {
+    top: -12px;
+    left: -15px;
+
+    width: 24px;
+    height: 24px;
+
+    @media (min-width: 500px) {
+      top: -3px;
+      left: -20px;
+    }
+  }
+
+  .consult__acceptance-input:checked + label::after {
+    top: -7px;
+    left: -12px;
+
+    width: 24px;
+    height: 24px;
+
+    background-size: 80%;
+
+    @media (min-width: 500px) {
+      top: 2px;
+      left: -17px;
+    }
+  }
 }

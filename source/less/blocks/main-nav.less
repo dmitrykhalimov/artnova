@@ -1,9 +1,23 @@
 .main-nav {
   margin-right: 108px;
 }
+
 .main-nav__list,
 .main-nav__submenu-list {
   list-style: none;
+}
+
+.main-nav__item--active-desktop a,
+.main-nav__item--active a {
+  box-sizing: border-box;
+
+  border-bottom: 2px solid @red;
+}
+
+.main-nav__submenu-item--active a {
+  box-sizing: border-box;
+
+  border-bottom: 2px solid @white;
 }
 
 .main-nav__list {
@@ -12,12 +26,15 @@
 
   margin-top: 108px;
   padding: 0;
-  //.outline(green);
-  width: 438px;
 
+  width: 438px;
 }
 
-.main-nav__item a{
+.main-nav__button {
+  display: none;
+}
+
+.main-nav__item a {
   font-size: @menu-font-size;
   text-transform: uppercase;
   color: @black;
@@ -26,6 +43,7 @@
 .main-nav__item--lessons {
   position: relative;
 }
+
 .main-nav__submenu-list {
   box-sizing: border-box;
 
@@ -71,10 +89,10 @@
   text-decoration: underline;
 }
 
-.main-nav__submenu:hover ul{
+.main-nav__submenu:hover ul {
   display: block;
 }
-/* отложим до лучших времен
+
 @media (max-width: 1349px) {
   .main-nav {
     margin-right: 0;
@@ -98,4 +116,121 @@
   }
 }
 
-*/
+@media (max-width: 767px) {
+  .main-nav {
+    .list-reset;
+
+    box-sizing: border-box;
+
+    width: 100%;
+
+    z-index: 5;
+  }
+
+  .main-nav--closed .main-nav__list {
+    display: none;
+  }
+
+  .main-nav__item--active-desktop a {
+    border: none;
+  }
+
+  .main-nav__list {
+    .list-reset;
+
+    box-sizing: border-box;
+
+    display: block;
+
+    position: absolute;
+    left: 0;
+    top: 100px;
+
+    padding-top: 20px;
+
+    height: auto;
+    width: 100%;
+    min-width: 320px;
+
+    border-top: 2px solid rgb(243, 243, 243);
+
+    background-color: white;
+  }
+
+  .main-nav__button {
+    display: inline-block;
+
+    position: absolute;
+    right: 20px;
+    top: 58px;
+
+    width: 28px;
+    height: 16px;
+
+    border: none;
+
+    background: url("../img/header-button.svg") 0 0 no-repeat;
+  }
+
+  .main-nav--opened .main-nav__button {
+    position: absolute;
+    right: 20px;
+    top: 58px;
+
+    width: 21px;
+    height: 22px;
+
+    border: 0;
+
+    background: url("../img/header-button-close.svg") 0 0 no-repeat;
+  }
+
+  .main-nav__item:nth-child(n) {
+    margin: 0 auto;
+    margin-bottom: 18px;
+
+    text-align: center;
+  }
+
+  .main-nav__item a,
+  .main-nav__submenu a {
+    font-size: 19px;
+  }
+
+  .main-nav__submenu-list {
+    display: block;
+
+    position: static;
+
+    margin: 0;
+    padding: 0;
+
+    width: auto;
+
+    background: none;
+  }
+
+  .main-nav__submenu a {
+    display: none;
+  }
+
+  .main-nav__submenu-item {
+    .list-reset;
+    margin-bottom: 20px;
+  }
+
+  .main-nav__submenu-item a {
+    color: @black;
+    display: inline-block;
+
+    &:hover {
+      color: @red;
+      text-decoration: none;
+    }
+  }
+
+  .main-nav__submenu-item--active a {
+    box-sizing: border-box;
+    border-bottom: 2px solid @red;
+  }
+}

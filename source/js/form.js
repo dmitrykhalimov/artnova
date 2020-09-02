@@ -1,26 +1,29 @@
+/* eslint-disable camelcase */
+/* eslint-disable no-undef */
 'use strict';
 
 var SUCCESS_TEXT = 'Спасибо, мы свяжемся с Вами в ближайшее время!';
 var ERROR_TEXT = 'Произошла непредвиденная ошибка!';
 
-$(function(){
-  $("#phone").mask("+7(999) 999-99-99");
+// eslint-disable-next-line space-before-function-paren
+$(function() {
+  $('#phone').mask('+7(999) 999-99-99');
 });
 
 
-$(document).on('submit', 'form', function(evt) {
+$(document).on('submit', 'form', function (evt) {
   evt.preventDefault();
-  var user_name = $('#name').val()
+  var user_name = $('#name').val();
   var user_phone = $('#phone').val();
   var dataString = 'user_name=' + user_name + '&user_phone=' + user_phone;
   $.ajax({
-    type: "POST",
-    url: "mail.php",
+    type: 'POST',
+    url: 'mail.php',
     data: dataString,
-    success: function() {
+    success: function () {
       changeForm(SUCCESS_TEXT);
     },
-    error: function() {
+    error: function () {
       changeForm(ERROR_TEXT);
     }
   });

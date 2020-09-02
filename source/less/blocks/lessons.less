@@ -1,71 +1,286 @@
 .lessons {
+  width: 100%;
+  min-height: 448px;
+
   font-style: normal;
   font-weight: normal;
   font-size: 26px;
   line-height: 29px;
-  //.outline;
-  margin: 0 auto;
-  width: 1350px;
-  min-height: 448px;
 }
 
+
 .lessons__container {
+  box-sizing: border-box;
+
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: flex-start;
-  //.outline(purple);
-  min-height: 386px;
-  padding-left: 73px;
-  padding-right: 75px;
+
+  margin: 0 auto;
   padding-top: 37px;
+
+  width: 89%;
+  max-width: 1650px;
 }
 
 .lessons__container img {
   flex-shrink: 0;
+
+  width: 43.3%;
+  max-width: 650px;
 }
 
-.lessons__container:nth-child(2) {
-  background-color: @gray;
+.lessons__container--vertical img {
+  width: auto;
+  height: 32vw;
+}
+
+.lessons__block:nth-child(n) p,
+.lessons__block:nth-child(n) ol,
+.lessons__block:nth-child(n) ul {
+  margin-left: 45px;
+}
+
+.lessons__block:nth-child(2n) p {
+  margin-left: 0;
+  margin-right: 45px;
+}
+
+.lessons__block:nth-child(2n) {
+  flex-direction: row-reverse;
+
+  background-color: @gray-light;
+}
+
+.lessons__block:nth-child(2n) .lessons__container {
   flex-direction: row-reverse;
 }
-.lessons__price-heading {
+
+.lessons__container strong {
   font-weight: normal;
-  font-size: 26px;
-  line-height: 29px;
+  color: @red;
 }
 
 .lessons__prices {
-  //.outline(orange);
+  padding-top: 33px;
+
   min-height: 140px;
   text-align: center;
-  padding-top: 33px;
-}
-
-.lessons__price-heading {
-  margin: 0;
 }
 
 .lessons__text {
   margin: 0;
-  width: 636px;
+
+  width: 100%;
+}
+
+.lessons__text p {
+  margin: 0;
+  margin-bottom: 20px;
 }
 
 .lessons__list {
   .list-reset;
-  width: 636px;
+
+  box-sizing: border-box;
+
+  width: 100%;
+
+  margin: 0;
   margin-top: 20px;
-  padding-top: 16px;
+  padding: 0;
 }
 
 .lessons__item {
-  margin-left: 23px;
-}
+  box-sizing: border-box;
 
-
-.lessons__price-heading {
   margin: 0;
+  margin-left: 23px;
+  margin-bottom: 10px;
+  padding: 0;
+
+  width: 86%;
 }
 
 .lessons__price-detailed {
   margin: 0;
+}
+
+.lessons__price-heading {
+  margin: 0;
+  margin-bottom: 10px;
+
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 36px;
+  color: @red;
+}
+
+@media (max-width: 1349px) {
+  .lessons__container {
+    width: 95%;
+  }
+
+  .lessons__list {
+    width: 93%;
+  }
+
+  .lessons__text,
+  .lessons__item {
+    .p-mid-desktop;
+  }
+
+  .lessons__item {
+    width: 93%;
+  }
+
+  .lessons__container img {
+    flex-shrink: 0;
+    width: 48.3%;
+  }
+
+  .lessons__container--vertical img {
+    width: auto;
+    height: 42vw;
+  }
+}
+
+@media (max-width: 1023px) {
+  .lessons__container {
+    width: 100%;
+  }
+
+  .lessons__text,
+  .lessons__item {
+    .p-tablet;
+  }
+
+  .lessons__text p {
+    margin-bottom: 10px;
+  }
+
+  .lessons__container:nth-child(n) p,
+  .lessons__container:nth-child(n) ol,
+  .lessons__container:nth-child(n) ul {
+    margin-left: 25px;
+  }
+
+  .lessons__container:nth-child(2n) p {
+    margin-right: 25px;
+  }
+
+  .lessons__list {
+    width: 89%;
+  }
+}
+
+@media (max-width: 767px) {
+  .lessons__container {
+    display: block;
+    padding-top: 0;
+  }
+
+  .lessons__block--vocal:nth-child(1) {
+    background: url("../../img/bg-vocal-musical-notes.svg") right 110% no-repeat;
+  }
+
+  .lessons__block--vocal:nth-child(2) {
+    background: url("../../img/bg-vocal-synthetiser.svg") right 90% no-repeat,
+      linear-gradient(to right, rgb(242, 242, 242), rgb(242, 242, 242));
+  }
+
+  .lessons__block--vocal:nth-child(3) {
+    background: url("../../img/bg-vocal-tam-tam.svg") right 50% no-repeat,
+      url("../../img/bg-vocal-triangle.svg") left 90% no-repeat;
+  }
+
+  .lessons__block--guitar:nth-child(1) {
+    background: url("../../img/bg-guitar-guitar.svg") right 80% no-repeat;
+  }
+
+  .lessons__block--guitar:nth-child(2) {
+    background: url("../../img/bg-guitar-dual-guitar.svg") right 80% no-repeat,
+      linear-gradient(to right, rgb(242, 242, 242), rgb(242, 242, 242));
+  }
+
+  .lessons__block--guitar:nth-child(3) {
+    background: url("../../img/bg-guitar-pedal-for-guitar.svg") left 70% no-repeat,
+      url("../../img/bg-guitar-electric-guitar.svg") right 92% no-repeat;
+  }
+
+  .lessons__block--vocal-kids:nth-child(1) {
+    background: url("../../img/bg-kids-xylophone.svg") right 90% no-repeat;
+  }
+
+  .lessons__block--vocal-kids:nth-child(2) {
+    background: url("../../img/bg-kids-synthetiser.svg") right 70% no-repeat,
+      linear-gradient(to right, rgb(242, 242, 242), rgb(242, 242, 242));
+  }
+
+  .lessons__block--vocal-kids:nth-child(3) {
+    background: url("../../img/bg-kids-timbrel.svg") left 57% no-repeat;
+  }
+
+  .lessons__container img {
+    display: block;
+
+    margin: 0 auto;
+    margin-bottom: 10px;
+
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .lessons__block:nth-child(n) p,
+  .lessons__block:nth-child(n) ol,
+  .lessons__block:nth-child(n) ul {
+    margin: 0;
+    margin-bottom: 20px;
+
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .lessons__text,
+  .lessons__item {
+    .p-mobile;
+  }
+
+  .lessons__block:nth-child(2n) p:last-child {
+    margin-bottom: 0;
+    padding-bottom: 20px;
+  }
+
+  .lessons__list {
+    width: 100%;
+  }
+
+  .lessons__price-heading {
+    .h2-mobile;
+
+    margin-bottom: 10px;
+
+    color: @red;
+  }
+
+  .lessons__price-detailed {
+    margin: 0 auto;
+
+    width: 70vw;
+  }
+
+  .lessons__prices {
+    .p-mobile;
+  }
+
+  .lessons__container--vertical img {
+    display: block;
+
+    margin: 0 auto;
+    margin-bottom: 20px;
+
+    width: 280px;
+    max-width: auto;
+    height: auto;
+  }
 }

@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 require_once('phpmailer/PHPMailerAutoload.php');
 $mail = new PHPMailer;
@@ -19,10 +19,10 @@ $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, 
 $mail->Port = 465; // TCP port to connect to / этот порт может отличаться у других провайдеров
 
 $mail->setFrom('artnova-mailer@mail.ru'); // от кого будет уходить письмо?
-$mail->addAddress('lmnide32@mail.ru');     // Кому будет уходить письмо 
+$mail->addAddress('director@artnova-spb.ru');     // Кому будет уходить письмо
 //$mail->addAddress('ellen@example.com');               // Name is optional
 //$mail->addReplyTo('info@example.com', 'Information');
-//$mail->addCC('lmnide32@mail.ru');
+$mail->addCC('lmnide32@mail.ru');
 //$mail->addBCC('bcc@example.com');
 //$mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
 //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name

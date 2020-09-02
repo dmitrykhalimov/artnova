@@ -1,0 +1,60 @@
+.acceptance {
+  box-sizing: border-box;
+
+  margin: 0 auto;
+
+  width: 100%;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 29px;
+}
+
+.acceptance__list {
+  .list-reset;
+
+  padding-top: 20px;
+  margin: 0 auto;
+
+  width: 88vw;
+  max-width: 1650px;
+}
+
+.acceptance__item {
+  margin-bottom: 20px;
+}
+
+.acceptance__item a,
+.acceptance__item a:visited {
+  color: @red;
+  text-decoration: underline;
+}
+
+@media (max-width: 1023px) {
+  .acceptance__list {
+    .p-tablet;
+    padding: 0;
+    width: 89vw;
+  }
+
+  .acceptance__item {
+    width: 89vw;
+  }
+}
+
+@media (max-width: 767px) {
+  .acceptance {
+    padding-bottom: 20px;
+  }
+
+  .acceptance__list {
+    box-sizing: border-box;
+    padding-left: 20px;
+  }
+
+  .acceptance__item {
+    .p-mobile;
+    width: 84vw;
+  }
+}

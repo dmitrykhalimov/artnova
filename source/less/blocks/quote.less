@@ -1,0 +1,69 @@
+.quote__container {
+  box-sizing: border-box;
+
+  margin: 0 auto;
+  padding-top: 60px;
+
+  width: 88vw;
+  max-width: 1250px;
+
+  font-family: "Caveat", cursive;
+  font-size: 48px;
+}
+
+.quote__container blockquote {
+  .list-reset;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.quote__container p {
+  margin: 0 auto;
+  margin-bottom: 30px;
+
+  text-align: center;
+
+  font-size: 48px;
+  color: @red;
+}
+
+.quote__container cite {
+  align-self: flex-end;
+
+  margin-bottom: 80px;
+
+  font-size: 41px;
+  color: @black;
+}
+
+@media (max-width: 1023px) {
+  .quote__container {
+    padding-top: 60px;
+  }
+
+  .quote__container p {
+    font-size: 40px;
+  }
+
+  .quote__container cite {
+    margin-bottom: 60px;
+
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 767px) {
+  .quote__container {
+    padding-top: 30px;
+  }
+
+  .quote__container p {
+    font-size: 30px;
+  }
+
+  .quote__container cite {
+    font-size: 28px;
+    margin-bottom: 0;
+  }
+}
