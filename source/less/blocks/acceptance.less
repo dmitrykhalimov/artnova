@@ -31,52 +31,27 @@
 
 
 @media (max-width: 1023px) {
-  .video__description {
+  .acceptance__list {
     .p-tablet;
     padding: 0;
     width: 89vw;
   }
-  .video__items {
+  .acceptance__item {
     width: 89vw;
   }
 }
 
 @media (max-width: 767px) {
-  .video {
+  .acceptance {
     padding-bottom: 20px;
   }
 
-  .video__description {
-    width: 100%;
-    padding-left: 20px;
-    padding-right: 20px;
-
-    background: url("../img/bg-video-sax.svg") right 20% no-repeat;
-  }
-  .video__text {
-    .p-mobile;
-    margin-bottom: 20px;
-  }
-  .video__items {
-    width: 100%;
-  }
-
-  .video__items iframe:nth-child(n) {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 60vw;
-  }
-
-  .video__show-more {
+  .acceptance__list{
     box-sizing: border-box;
-    display: block;
-    border: 1px solid @red;
-    background-color: @white;
-    color: @red;
-    width: 200px;
-    margin: 0 auto;
-    margin-top: 20px;
-
+    padding-left: 20px;
   }
-};
+  .acceptance__item {
+    .p-mobile;
+    width: 84vw;
+  }
+}
