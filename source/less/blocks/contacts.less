@@ -2,13 +2,16 @@
   padding: 0;
   margin-top: 11px;
   margin-right: 30px;
+
   width: 300px;
-  //.outline(blue);
 }
 
-
-
 .contacts__heading {
+  padding: 0;
+  margin: 0;
+  margin-top: 30px;
+  margin-bottom: 4px;
+
   font-family: "FuturaMediumC", serif;
   font-style: normal;
   font-weight: 500;
@@ -17,16 +20,14 @@
   text-transform: uppercase;
   text-align: center;
   color: @white;
-  padding: 0;
-  margin: 0;
-  margin-top: 30px;
-  margin-bottom: 4px;
 }
 
 .contacts__text {
   margin: 0;
   padding: 0;
+
   text-align: center;
+
   color: white;
   font-size: 17px;
   line-height: 19px;
@@ -50,12 +51,14 @@
 
 .contacts__text--metro::before {
   position: relative;
+
   display: inline-block;
-  content: '';
-  background: url("../img/metro-icon.svg") 0 0 no-repeat;
+  content: "";
 
   width: 22px;
   height: 15px;
+
+  background: url("../img/metro-icon.svg") 0 0 no-repeat;
 }
 
 @media (max-width: 1023px) {
@@ -68,36 +71,41 @@
 @media (max-width: 768px) {
   .contacts {
     display: table;
-    //.outline;
+
+    margin: 0 auto;
+
     width: 280px;
+
     border-collapse: separate;
     border-spacing: 0 10px;
-    margin: 0 auto;
   }
 
   .contacts__item {
     display: table-row;
-
   }
 
   .contacts__heading {
     display: table-cell;
-    //.outline(green);
+
+    margin-bottom: 50px;
+
     height: 20px;
     width: 80px;
+
     text-align: left;
+
     font-size: 14px;
     line-height: 17px;
-    margin-bottom: 50px;
   }
 
   .contacts__text {
     display: table-cell;
-    //.outline(purple);
+
+    width: 170px;
+
     text-align: left;
+
     font-size: 14px;
     line-height: 17px;
-    width: 170px;
   }
-
 }

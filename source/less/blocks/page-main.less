@@ -1,24 +1,25 @@
 .page-main__heading {
   box-sizing: border-box;
+
+  margin: 0 auto;
   padding-top: 70px;
-//  margin: 0;
+
+  text-align: center;
+
   font-size: 42px;
   line-height: 47px;
   font-style: normal;
   font-weight: normal;
   color: @red;
-  //.outline(wheat);
-  margin: 0 auto;
   letter-spacing: -0.2px;
-  text-align: center;
 }
 
 .page-main__heading-container {
   margin: 0 auto;
+
   min-height: 125px;
   width: 100%;
 
-  //.outline(green);
   background: url("../img/bg-main2.svg") center top no-repeat;
   background-repeat: repeat-x;
 }
@@ -36,16 +37,19 @@
 
 @media (max-width: 767px) {
   .page-main__heading {
+    padding-top: 50px;
+
+    max-width: 90%;
+
     font-size: 26px;
     line-height: 29px;
-    padding-top: 50px;
-    max-width: 90%;
   }
 
   .page-main__heading-container {
-    //.outline(green);
-    min-height: auto;
     margin-bottom: 20px;
+
+    min-height: auto;
+
     background-size: auto 32px;
   }
 }

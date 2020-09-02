@@ -1,9 +1,10 @@
 .photos {
   position: relative;
-  //.outline(tomato);
-  margin: 0 auto;
-  width: 100%;
   overflow: hidden;
+
+  margin: 0 auto;
+
+  width: 100%;
 }
 
 .photos__pagination {
@@ -24,23 +25,26 @@
 }
 
 .photos__arrow::before {
-  top: 0;
   position: absolute;
-  content: '';
+  content: "";
+  top: 0;
+
   width: 70px;
   height: 98%;
+
   z-index: 10;
 }
 
 .photos__arrow--left::before {
   left: 0;
   background: rgba(149, 156, 175, 0.281)
-  url("../img/icon-arrow-left.svg") 100% 50% no-repeat;
+    url("../img/icon-arrow-left.svg") 100% 50% no-repeat;
 }
+
 .photos__arrow--right::before {
   right: 0;
   background: rgba(149, 156, 175, 0.589)
-  url("../img/icon-arrow-right.svg") 0 50% no-repeat;
+    url("../img/icon-arrow-right.svg") 0 50% no-repeat;
 }
 
 .photos__arrow--right:hover::before,
@@ -51,12 +55,17 @@
 @media (max-width: 767px) {
   .photos__heading {
     .h2-mobile-big;
-    width: 100%;
-    color: @red;
-    text-align: center;
+
+    display: block;
+
     margin-top: 20px;
     margin-bottom: 20px;
-    display: block;
+
+    width: 100%;
+
+    text-align: center;
+
+    color: @red;
     font-weight: normal;
   }
 
@@ -65,15 +74,17 @@
   }
 
   .photos {
-    width: 90%;
     margin-bottom: 20px;
+
+    width: 90%;
   }
 
   .photos__carousel img {
     display: block;
+
     margin: 0 auto;
+
     width: 70vw;
-    //height: 70vw;
   }
 
   .photos__carousel {
