@@ -11,9 +11,7 @@
     <link href="fonts/FuturaBookC.woff2" as="font" rel="preload" crossorigin="anonymous">
     <link href="fonts/FuturaMediumC.woff2" as="font" rel="preload" crossorigin="anonymous">
 
-    <link rel="preload" href="css/style.css" as="style">
-
-    <link href="css/style.css?v=5.7" rel="stylesheet">
+    <link href="css/style.min.css?v=1.0" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
@@ -34,7 +32,7 @@
                   </ul>
                 </div>
               </li>
-              <li class="main-nav__item main-nav__item--active"><a href="video.html">Видео</a></li>
+              <li class="main-nav__item main-nav__item--active"><a>Видео</a></li>
               <li class="main-nav__item"><a href="contacts.html">Контакты</a></li>
             </ul>
           </nav>
@@ -112,10 +110,10 @@
       <section class="consult" id="consult">
         <h2 class="consult__heading">Записаться на консультацию</h2>
         <form class="consult__form" method="post" autocomplete="off" action="mail.php">
-          <label class="consult__label visually-hidden" for="user_name">Ваше имя</label>
-          <input class="consult__input" type="text" id="user_name" name="user_name" placeholder="Ваше Имя" required>
-          <label class="consult__label visually-hidden" for="user_phone">Номер телефона</label>
-          <input class="consult__input" type="tel" id="user_phone" name="user_phone" placeholder="Номер телефона" required>
+          <label class="consult__label visually-hidden" for="name">Ваше имя</label>
+          <input class="consult__input" type="text" id="name" name="user_name" placeholder="Ваше Имя" required>
+          <label class="consult__label visually-hidden" for="phone">Номер телефона</label>
+          <input class="consult__input" type="tel" id="phone" name="user_phone" placeholder="Номер телефона" required>
           <button class="consult__submit button" id="submit" type="submit">Отправить</button>
           <div class ="consult__acceptance">
             <input class="consult__acceptance-input visually-hidden" type="checkbox" name="acceptance" id="acceptance" aria-label="Даю согласие на обработку" required>
@@ -129,12 +127,12 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <ul class="footer-menu">
-          <li class="footer-menu__item"><a>Главная</a></li>
+          <li class="footer-menu__item"><a href="index.html">Главная</a></li>
           <li class="footer-menu__item"><a href="teachers.html">Преподаватели</a></li>
           <li class="footer-menu__item"><a href="vocal.html">Уроки вокала</a></li>
           <li class="footer-menu__item"><a href="guitar.html">Уроки гитары</a></li>
           <li class="footer-menu__item"><a href="vocal-kids.html">Вокал для детей</a></li>
-          <li class="footer-menu__item"><a href="video.html">Видео</a></li>
+          <li class="footer-menu__item footer-menu__item--active"><a>Видео</a></li>
           <li class="footer-menu__item"><a href="contacts.html">Контакты</a></li>
         </ul>
         <div class="page-footer__container">
@@ -197,13 +195,10 @@
     </footer>
     <script src="js/jquery-3.5.1.js"></script>
     <script src="js/jquery.maskedinput.js"></script>
-    <script>
-      $(function(){
-        $("#user_phone").mask("+7(999) 999-99-99");
-      });
-    </script>
     <script src="js/form.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/video.js"></script>
+    <script src="js/svg4everybody.min.js"></script>
+    <script>svg4everybody();</script>
   </body>
 </html>

@@ -13,6 +13,11 @@
   margin-bottom: 12px;
 }
 
+.footer-menu__item--active a {
+  border-bottom: 1px solid @white;
+}
+
+
 .footer-menu__item a {
   font-size: 17px;
   line-height: 19px;
@@ -21,12 +26,7 @@
 }
 
 
-.footer-menu__item a:hover {
-  text-decoration: underline;
-}
-
-.footer-menu__item a:active {
-  text-decoration: underline;
+.footer-menu__item:not(.footer-menu__item--active) a:hover {
   opacity: 0.7;
 }
 

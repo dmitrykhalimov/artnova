@@ -5,15 +5,15 @@
     <title>Вокальная студия: Арт Нова</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="robots" content="all"/>
-    <meta name="title" content="Видео - вокальная студия Арт Нова"/>
-    <meta name="description" content="Видео с мероприятий вокальной студии Арт Нова."/>
+    <meta name="title" content="Вокальная студия Арт Нова"/>
+    <meta name="description" content="Уроки эстрадного вокала, гитары в студии Арт Нова."/>
 
     <link href="fonts/FuturaBookC.woff2" as="font" rel="preload" crossorigin="anonymous">
     <link href="fonts/FuturaMediumC.woff2" as="font" rel="preload" crossorigin="anonymous">
 
     <link href="img/bg-top2.svg" as="image" rel="preload">
 
-    <link href="./css/style.css?v=5.7" rel="stylesheet">
+    <link href="css/style.min.css?v=1.1.5" rel="stylesheet">
     <link href="./css/swiper-bundle.min.css" rel="stylesheet">
   </head>
   <body>
@@ -378,7 +378,7 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <ul class="footer-menu">
-          <li class="footer-menu__item"><a>Главная</a></li>
+          <li class="footer-menu__item footer-menu__item--active"><a>Главная</a></li>
           <li class="footer-menu__item"><a href="teachers.html">Преподаватели</a></li>
           <li class="footer-menu__item"><a href="vocal.html">Уроки вокала</a></li>
           <li class="footer-menu__item"><a href="guitar.html">Уроки гитары</a></li>
@@ -448,14 +448,11 @@
     <script src="js/jquery.maskedinput.js"></script>
     <script src="js/form.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script>
-      $(function(){
-        $("#user_phone").mask("+7(999) 999-99-99");
-      });
-    </script>
     <script src="js/slider.js"></script>
     <script src="js/improve.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/quote.js"></script>
+    <script src="js/svg4everybody.min.js"></script>
+    <script>svg4everybody();</script>
   </body>
 </html>

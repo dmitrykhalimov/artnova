@@ -11,7 +11,7 @@
     <link href="fonts/FuturaBookC.woff2" as="font" rel="preload" crossorigin="anonymous">
     <link href="fonts/FuturaMediumC.woff2" as="font" rel="preload" crossorigin="anonymous">
 
-    <link href="css/style.css?v=5.8" rel="stylesheet">
+    <link href="css/style.min.css?v=1.0" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
@@ -39,7 +39,7 @@
           <div class="page-header__logo">
             <a href="index.html">
               <picture>
-                <source width="209" height="60" media="(max-width: 768px)" srcset="img/logo-header-mobile.svg">
+                <source media="(max-width: 768px)" srcset="img/logo-header-mobile.svg">
                 <img width="150" height="172" src="img/logo-header.svg" alt="Сайт вокальной студии Арт-Нова">
               </picture>
             </a>
@@ -87,6 +87,7 @@
         <h1 class="page-main__heading">Согласие пользователей сайта на обработку персональных данных</h1>
       </div>
       <section class="acceptance">
+        <h2 class="visually-hidden">Текст согласия</h2>
         <ol class="acceptance__list">
           <li class="acceptance__item">Предоставляя свои персональные данные, указанные при регистрации путем заполнения веб-формы на сайте <a href="https://artnova-spb.ru/">https://artnova-spb.ru/</a>, направляемой (заполненной) с использованием Сайта, Пользователь даёт согласие на обработку, хранение и использование своих персональных данных на основании ФЗ № 152-ФЗ «О персональных данных» от 27.07.2006 г. Организации <a href="https://artnova-spb.ru/">https://artnova-spb.ru/</a> далее – «Сайт», на обработку своих персональных данных.</li>
           <li class="acceptance__item">Под персональными данными подразумевается любая информация личного характера, позволяющая установить личность Пользователя такая как: фамилия, имя, отчество, контактные данные (телефон, электронная почта,). Персональные данные Пользователя хранятся исключительно на электронных носителях и обрабатываются с использованием автоматизированных систем, за исключением случаев, когда неавтоматизированная обработка персональных данных необходима в связи с исполнением требований законодательства.</li>
@@ -99,10 +100,10 @@
       <section class="consult" id="consult">
         <h2 class="consult__heading">Записаться на консультацию</h2>
         <form class="consult__form" method="post" autocomplete="off" action="mail.php">
-          <label class="consult__label visually-hidden" for="user_name">Ваше имя</label>
-          <input class="consult__input" type="text" id="user_name" name="user_name" placeholder="Ваше Имя" required>
-          <label class="consult__label visually-hidden" for="user_phone">Номер телефона</label>
-          <input class="consult__input" type="tel" id="user_phone" name="user_phone" placeholder="Номер телефона" required>
+          <label class="consult__label visually-hidden" for="name">Ваше имя</label>
+          <input class="consult__input" type="text" id="name" name="user_name" placeholder="Ваше Имя" required>
+          <label class="consult__label visually-hidden" for="phone">Номер телефона</label>
+          <input class="consult__input" type="tel" id="phone" name="user_phone" placeholder="Номер телефона" required>
           <button class="consult__submit button" id="submit" type="submit">Отправить</button>
           <div class ="consult__acceptance">
             <input class="consult__acceptance-input visually-hidden" type="checkbox" name="acceptance" id="acceptance" aria-label="Даю согласие на обработку" required>
@@ -128,7 +129,7 @@
           <a href="index.html">
             <picture>
               <source media="(max-width: 767px)" srcset="img/logo-footer-mobile.svg">
-              <img width="152" hegiht="172" src="img/logo-footer.svg" alt="Логотип студии Арт Нова">
+              <img width="152" height="172" src="img/logo-footer.svg" alt="Логотип студии Арт Нова">
             </picture>
           </a>
           <ul class="page-footer__social-list">
@@ -185,11 +186,8 @@
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/jquery.maskedinput.js"></script>
     <script src="js/form.js"></script>
-    <script>
-      $(function(){
-        $("#user_phone").mask("+7(999) 999-99-99");
-      });
-    </script>
     <script src="js/menu.js"></script>
+    <script src="js/svg4everybody.min.js"></script>
+    <script>svg4everybody();</script>
   </body>
 </html>
