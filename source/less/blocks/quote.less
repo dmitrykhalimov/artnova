@@ -10,12 +10,13 @@
   margin: 0 auto;
   font-family: 'Caveat', cursive;
   font-size: 48px;
-  min-height: 280px;
   padding-top: 60px;
 }
 
 .quote__container blockquote {
   .list-reset;
+  display: flex;
+  flex-direction: column;
 }
 
 .quote__container p {
@@ -31,12 +32,12 @@
 .quote__container cite {
   font-size: 41px;
   //.outline(green);
-  float: right;
+  align-self: flex-end;
+  margin-bottom: 30px;
 }
 
 @media (max-width: 1023px) {
   .quote__container {
-    min-height: 240px;
     padding-top: 60px;
   }
 
@@ -52,9 +53,7 @@
 
 @media (max-width: 767px) {
   .quote__container {
-    min-height: 220px;
     padding-top: 30px;
-
   }
 
   .quote__container p {
