@@ -10,21 +10,6 @@ ymaps.ready(function () {
       }, {
           searchControlProvider: 'yandex#search'
       }),
-
-      /* Создаём макет содержимого.
-      MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
-          '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
-      ), */
-
-      /* myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
-          hintContent: 'Вокальная студия Арт-Нова',
-      }, {
-          iconLayout: 'default#image',
-          iconImageHref: '../img/map-pin.svg',
-          iconImageSize: [48, 61],
-          iconImageOffset: [-22, -65]
-      }); */
-
       myPlacemark = new ymaps.Placemark(myMap.getCenter(),
        {
         balloonContentBody: [

@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 const QUOTES = [
   {
     quote: 'То, что отнимает жизнь, возвращает музыка.',
@@ -59,7 +61,7 @@ const QUOTES = [
     quote: 'Я считаю, что мода и музыка объединены вечным союзом, они всегда вместе.',
     author: 'Леди Гага',
   },
-]
+];
 
 const getRandomInteger = (min = 0, max = 1) => {
   const lower = Math.ceil(Math.min(min, max));

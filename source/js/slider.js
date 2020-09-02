@@ -10,7 +10,11 @@
     loop: true,
     slidesPerView: 7,
     preloadImages: false,
-    lazy: true,
+
+    lazy: {
+      loadPrevNext: true,
+    },
+
     watchSlidesVisibility: true,
     pagination: {
       el: '.swiper-pagination',
