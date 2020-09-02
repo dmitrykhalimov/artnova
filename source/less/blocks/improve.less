@@ -1,35 +1,41 @@
 .improve {
-  //.outline;
   margin: 0 auto;
+  padding-top: 86px;
+
   width: 100%;
   min-height: 525px;
-  padding-top: 86px;
+
   letter-spacing: -0.2px;
+
   background: url("../img/bg-section2.svg") top center no-repeat;
   background-repeat: repeat-x;
 }
 
 .improve__list {
-  //.outline(gray);
+  display: flex;
+  justify-content: space-between;
+
   padding: 0;
   padding-top: 50px;
   margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  list-style: none;
+
   width: 95%;
   max-width: 1555px;
+
+  list-style: none;
 }
 
 .improve__item {
-  //.outline(tomato);
-  width: 450px;
   padding-top: 180px;
+
+  width: 450px;
 }
 
 .improve__heading {
   margin: 0;
+
   text-align: center;
+
   font-weight: normal;
   font-size: 42px;
   line-height: 47px;
@@ -39,7 +45,9 @@
 .improve__type {
   margin-top: 30px;
   margin-bottom: 14px;
+
   text-align: center;
+
   font-weight: normal;
   font-size: 31px;
   line-height: 35px;
@@ -48,9 +56,11 @@
 
 .improve__text {
   .list-reset;
+
+  text-align: center;
+
   font-size: 26px;
   line-height: 29px;
-  text-align: center;
   color: @black;
 }
 
@@ -64,7 +74,6 @@
 
 .improve__item--you {
   background: url("../img/improve-you.svg") 52% 2% no-repeat;
-
 }
 
 .improve__pagination {
@@ -80,10 +89,6 @@
     .h2-tablet;
   }
 
-  .improve__type {
-    .h3-tablet;
-  }
-
   .improve__item {
     background-size: 85px;
   }
@@ -94,43 +99,52 @@
   }
 
   .improve__type {
+    .h3-tablet;
+
     margin-top: 10px;
+
     font-size: 28px;
   }
 }
 
 @media (max-width: 767px) {
   .improve {
-    position: relative;
-    width: 100%;
     overflow: hidden;
-    min-height: 0;
+    position: relative;
+
     padding-bottom: 30px;
-    background-size: auto 32px;
     padding-top: 50px;
+
+    width: 100%;
+    min-height: 0;
+
+    background-size: auto 32px;
   }
 
   .improve__heading {
+    margin: 0 auto;
+
+    width: 80%;
+
     font-size: 26px;
     line-height: 29px;
-    width: 80%;
-    margin: 0 auto;
-  }
-
-  .improve__item {
-    background-size: 55px;
   }
 
   .improve__list {
     margin: 0;
-    width: 100%;
     padding-top: 20px;
 
-  }
-  .improve__item {
     width: 100%;
+  }
+
+  .improve__item {
     flex-shrink: 0;
+
     padding-top: 120px;
+
+    width: 100%;
+
+    background-size: 55px;
   }
 
   .improve__type {
@@ -139,14 +153,15 @@
   }
 
   .improve__text {
+    margin: 0 auto;
+
+    width: 90vw;
+
     font-size: 18px;
     line-height: 20px;
-    width: 90vw;
-    margin: 0 auto;
   }
 
   .improve__pagination {
     display: block;
   }
-
 }

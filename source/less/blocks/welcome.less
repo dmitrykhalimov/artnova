@@ -1,12 +1,12 @@
 .welcome {
-  width: 100%;
 
   padding-top: 105px;
   padding-bottom: 4vw;
 
+  width: 100%;
+
   background: url("../img/bg-main2.svg") center top no-repeat;
   background-repeat: repeat-x;
-  //.outline(green);
 }
 
 .welcome__wrapper {
@@ -18,10 +18,9 @@
   justify-content: space-between;
 
   margin: 0 auto;
+
   width: 88vw;
   max-width: 1450px;
-
-  //.outline;
 }
 
 .welcome img {
@@ -31,17 +30,18 @@
 
 .welcome__container {
   box-sizing: border-box;
+
   padding-top: 19px;
   padding-left: 29px;
   padding-right: 20px;
   padding-bottom: 26px;
+
   width: 67%;
   max-width: 967px;
 
   background: @red;
   color: white;
-  //font-size: 21px;
-  //line-height: 24px;
+
   font-size: calc(1vw + 7px);
   line-height: calc(1.3vw + 7px);
 
@@ -53,7 +53,7 @@
 
 .welcome__heading {
   .list-reset;
-  //font-size: 24px;
+
   font-size: calc(1.1vw + 10px);
   line-height: 24px;
   font-weight: bold;
@@ -84,7 +84,7 @@
   .welcome img {
     width: 25.2vw;
   }
-};
+}
 
 @media (max-width: 1023px) {
   .welcome {
@@ -92,6 +92,7 @@
     background-position-y: top;
     background-size: auto 42px;
   }
+
   .welcome__container {
     font-size: 17px;
     line-height: 20px;
@@ -107,43 +108,49 @@
   .welcome img {
     width: 270px;
   }
-};
+}
 
 @media (max-width: 767px) {
   .welcome {
     background-size: auto 32px;
     padding-top: 70px;
   }
+
   .welcome__wrapper {
     position: relative;
-    margin: 0 auto;
+
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+
+    margin: 0 auto;
+    padding-right: 20px;
+
     width: 100%;
     max-width: 550px;
-    padding-right: 20px;
   }
 
   .welcome img {
     position: absolute;
     top: -15px;
     left: 20px;
+
     width: 46vw;
     height: 73vw;
     max-width: 216px;
     max-height: 343px;
-
-    //display: none;
   }
 
   .welcome__container {
     box-sizing: border-box;
+
     display: block;
-    width: 85%;
+
     margin: 0;
     padding-right: 5px;
     padding-left: 20px;
+
+    width: 85%;
   }
 
   .welcome__container::before {
@@ -157,17 +164,17 @@
     height: calc(69vw - 20px);
     max-width: 174px;
     max-height: 330px;
-    //background-color: blue;
   }
 
   .welcome__heading,
   .welcome__text {
-    font-size: 14px;
-    line-height: 16px;
-    font-weight: normal;
     padding: 0;
     margin: 0;
     margin-bottom: 20px;
+
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: normal;
 
     @media (min-width: 500px) {
       font-size: 16px;
@@ -183,6 +190,4 @@
   .welcome__heading {
     padding-left: 100px;
   }
-
-
 }
