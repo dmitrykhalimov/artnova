@@ -9,6 +9,9 @@
   var swiper = new Swiper('.swiper-container', {
     loop: true,
     slidesPerView: 7,
+    preloadImages: false,
+    lazy: true,
+    watchSlidesVisibility: true,
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
