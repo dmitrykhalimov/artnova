@@ -1,7 +1,7 @@
 .begin {
   background: url("../img/bg-section2.svg") top center no-repeat;
   //.outline(powderblue);
-
+  background-repeat: repeat-x;
   width: 100%;
 
   padding-top: 83px;
@@ -48,6 +48,12 @@
   background: url("../img/bg-main-begin-guitar@1x.jpg") 0 0 no-repeat;
   background-size: 100%;
 
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background: url("../img/bg-main-begin-guitar@2x.jpg") 0 0 no-repeat;
+    background-size: 450px auto;
+  }
+
   width: 450px;
   height: 450px;
 
@@ -64,6 +70,11 @@
   background: url("../img/bg-main-begin-vocal@1x.jpg") 0 0 no-repeat;
   background-size: 100%;
 
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background: url("../img/bg-main-begin-vocal@2x.jpg") 0 0 no-repeat;
+    background-size: 450px auto;
+  }
+
   width: 450px;
   height: 450px;
 
@@ -79,6 +90,11 @@
   //.outline(orange);
   background: url("../img/bg-main-begin-kids@1x.jpg") 0 0 no-repeat;
   background-size: 100%;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background: url("../img/bg-main-begin-kids@2x.jpg") 0 0 no-repeat;
+    background-size: 450px auto;
+  }
 
   width: 450px;
   height: 450px;
@@ -219,5 +235,7 @@
     max-height: 390px;
     min-width: 320px;
     min-height: 240px;
+
+    background-size: 100%;
   }
 }
