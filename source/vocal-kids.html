@@ -1,11 +1,17 @@
 <!DOCTYPE html>
-<html land="ru">
+<html lang="ru">
   <head>
     <meta charset="utf-8">
     <title>Вокальная студия: Арт Нова</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link href="css/style.css?v=5.5" rel="stylesheet">
-    <script src="js/jquery-3.5.1.js"></script>
+    <meta name="robots" content="all"/>
+    <meta name="title" content="Эстрадный вокал для детей - Вокальная студия Арт Нова"/>
+    <meta name="description" content="Групповые занятия эстрадным вокалом для самых маленьких детей в вокальной студии Арт Нова. Уроки вокала для детей в Санкт-Петербурге (Спб)"/>
+
+    <link href="fonts/FuturaBookC.woff2" as="font" rel="preload" crossorigin="anonymous">
+    <link href="fonts/FuturaMediumC.woff2" as="font" rel="preload" crossorigin="anonymous">
+
+    <link href="css/style.css?v=5.7" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
@@ -81,7 +87,7 @@
         <h1 class="page-main__heading">Вокал для детей</h1>
       </div>
       <section class="lessons">
-        <div class="lessons__block">
+        <div class="lessons__block lessons__block--vocal-kids">
           <div class="lessons__container lessons__container--horisontal">
             <img width="521" height="347" src="img/kids1-desktop@2x.jpg" alt="Фотография поющих детей">
             <div class="lessons__text">
@@ -91,12 +97,12 @@
             </div>
           </div>
         </div>
-        <div class="lessons__block">
+        <div class="lessons__block lessons__block--vocal-kids">
           <div class="lessons__container lessons__container--vertical">
             <img width="364" height="521" src="img/kids3-desktop@2x.jpg" alt="Фотография поющих детей">
             <div class="lessons__wrapper">
               <div class="lessons__text">
-                <p>Потому что занятия вокалом:</p>
+                <p><strong>Потому что занятия вокалом:</strong></p>
               </div>
               <ul class="lessons__list lessons__list--vocal-kids">
                 <li class="lessons__item">развивают слух и чувство ритма;</li>
@@ -113,13 +119,13 @@
             </div>
           </div>
         </div>
-        <div class="lessons__block">
+        <div class="lessons__block lessons__block--vocal-kids">
           <div class="lessons__container">
             <img width="521" height="347" src="img/kids2-desktop@2x.jpg" alt="Фотография поющих детей">
             <div class="lessons__wrapper">
               <div class="lessons__text">
                 <p>При совместном пении с другими детьми, ребенок научится контактировать со сверстниками и работать в команде.</p>
-                <p>Уроки вокала для детей в студии Арт Нова – это увлекательные занятия, в которых сочетаются игровые элементы, уроки ритмики и разучивание новых интересных песен.</p>
+                <p>Уроки вокала для детей в студии Арт Нова – это <strong>увлекательные занятия</strong>, в которых сочетаются игровые элементы, уроки ритмики и разучивание новых интересных песен.</p>
                 <p>Мы работаем с самыми маленькими вокалистами от 4-х лет. Уроки вокала проходят в небольших группах (до шести человек) и включают в себя:</p>
               </div>
               <ul class="lessons__list lessons__list--vocal-kids">
@@ -170,7 +176,7 @@
           <a href="index.html">
             <picture>
               <source media="(max-width: 767px)" srcset="img/logo-footer-mobile.svg">
-              <img width="152" hegiht="172" src="img/logo-footer.svg" alt="Логотип студии Арт Нова">
+              <img width="152" height="172" src="img/logo-footer.svg" alt="Логотип студии Арт Нова">
             </picture>
           </a>
           <ul class="page-footer__social-list">
@@ -224,6 +230,7 @@
         </ul>
       </div>
     </footer>
+    <script src="js/jquery-3.5.1.js"></script>
     <script src="js/jquery.maskedinput.js"></script>
     <script>
       $(function(){
