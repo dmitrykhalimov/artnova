@@ -29,7 +29,6 @@ var showVideos = function () {
   showMoreButton.style.display = 'none';
 };
 
-console.log(window.innerWidth);
 if (window.innerWidth > TABLET_BREAKPOINT) {
   isDesktop = true;
   isMobile = false;
@@ -71,15 +70,11 @@ var showMoreFilms = function() {
 
 var loadMoreFilms = function() {
   if (currentShown <= VIDEO_QUANTITY - 2) {
-    console.log('2 фильма')
     showMoreFilms();
     showMoreFilms();
   } else if (currentShown === VIDEO_QUANTITY - 1) {
-    console.log('1 фильм')
     showMoreFilms();
   }
-  console.log(currentShown);
-  console.log(VIDEO_QUANTITY);
 
   if (currentShown === VIDEO_QUANTITY) {
     showMoreButton.style.display = 'none';
