@@ -23,7 +23,7 @@
   margin: 0 auto;
 
   width: 78vw;
-
+  max-width: 1450px;
 
   list-style: none;
 }
@@ -48,13 +48,14 @@
   color: @black;
 }
 .teachers__item {
-  //.outline(green);
+  .outline(green);
   position: relative;
 }
 
 .teachers__item img {
   //.outline;
   width: 19.4vw;
+  max-width: 363px;
   border-radius: 50%;
   filter: saturate(120%);
 }
@@ -76,10 +77,12 @@
 .teachers__item::before{
   content: '';
   position: absolute;
-  top: 5.4vw;
+  top: 18%;
   left: 5px;
   width: 18.7vw;
   height: 18.7vw;
+  max-width: 352px;
+  max-height: 352px;
   background: #ebebeb;
   z-index: -1;
   border-radius: 50%;
