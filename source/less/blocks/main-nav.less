@@ -7,7 +7,7 @@
   list-style: none;
 }
 
-.main-nav__item--active-desktop a,
+.main-nav__item--active-desktop:not(:hover) a,
 .main-nav__item--active a {
   box-sizing: border-box;
 
@@ -131,7 +131,7 @@
     display: none;
   }
 
-  .main-nav__item--active-desktop a {
+  .main-nav__item--active-desktop:not(:hover) a {
     border: none;
   }
 
@@ -229,7 +229,8 @@
     }
   }
 
-  .main-nav__submenu-item--active a {
+  .main-nav__submenu-item--active:hover a,
+  .main-nav__submenu-item--active:not(:hover) a {
     box-sizing: border-box;
     border-bottom: 2px solid @red;
   }
