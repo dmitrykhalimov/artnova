@@ -6,6 +6,12 @@ $mail->CharSet = 'utf-8';
 
 $name = $_POST['user_name'];
 $phone = $_POST['user_phone'];
+$key = $_POST['user_key'];
+
+if (!isset($key)) {
+    echo('Unauthorized');
+    die;
+}
 //$email = $_POST['user_email'];
 
 //$mail->SMTPDebug = 3;                               // Enable verbose debug output
@@ -33,8 +39,8 @@ $mail->Body    = '' .$name . ' оставил заявку на консульт
 $mail->AltBody = '';
 
 if(!$mail->send()) {
-    echo 'Error';
+  header('location: error.html');
 } else {
-    header('location: thank-you.html');
+  header('location: thank-you.html');
 }
 ?>
