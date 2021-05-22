@@ -112,7 +112,7 @@
         <h2 class="consult__heading">Записаться на консультацию</h2>
         <form class="consult__form" method="post" autocomplete="off" action="mail.php">
           <label class="consult__label visually-hidden" for="name">Ваше имя</label>
-          <input class="consult__input" type="text" id="name" name="user_name" placeholder="Ваше Имя" required>
+          <input class="consult__input" type="text" id="name" name="user_name" placeholder="Ваше Имя" maxlength="45" required>
           <label class="consult__label visually-hidden" for="phone">Номер телефона</label>
           <input class="consult__input" type="tel" id="phone" name="user_phone" placeholder="Номер телефона" required>
           <button class="consult__submit button" id="submit" type="submit">Отправить</button>
